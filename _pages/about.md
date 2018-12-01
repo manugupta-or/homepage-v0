@@ -13,4 +13,3 @@ redirect_from:
 <p>Before transitioning to Toulouse, I was working on pricing mechanism for health-care operations with <a href = "https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma" target="_blank"> Prof. Shruti </a> and <a href = "https://esd.sutd.edu.sg/people/faculty/ying-xu" target="_blank">Prof. Ying</a> at <a href = "https://esd.sutd.edu.sg/" target="_blank"> ESD</a>. 
 I graduated from the <a href = "http://www.ieor.iitb.ac.in/" target="_blank">IEOR@IITB</a> 
 with my Ph.D. studying stochastic systems. 
-
