@@ -7,9 +7,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<table cellspacing="1" cellpadding="1" border="0" style="width: 891px; height: 129px;">
-    <tbody>
-        <tr>
+   
+   <tr>
             <td>
             <h3><span style="color: rgb(0, 51, 102); ">Postdoctoral Fellow</span></h3>
             <div><a href="https://www.irit.fr/Members,531" target="_blank">Network and Telecommunications Engineering</a></div>
@@ -19,19 +18,8 @@ redirect_from:
 <!--            <td class="rteright"><img width="130" height="130" alt="" src="manu.JPG" /></td>-->
 		<a href="manu2.jpg"><td class="rteright"><img class="floatright" width="140" height="160" src="manu2.jpg" 
 alt="image of manu"></td></a>
-        </tr>
-    </tbody>
-</table>
-
-<!--Research Scholor <br>-->
-<!--<a href="http://www.ieor.iitb.ac.in">Industrial Engineering and Operations Research</a><br>-->
-<!--<a href="http://www.iitb.ac.in">IIT Bombay</a>-->
-
-<!-- anything over this remains the same -->
-<!--<a href="manu.jpg"><td class="rteright"><img class="floatright" width="130" height="130" src="manu.jpg" -->
-<!--alt="image of manu"></td></a>-->
-<!--<h1>Content</h1>-->
-<h3>Research Interest </h3>
+    </tr>
+   
 <p>I am currently reading various aspects restless bandits with <a href = "https://www.irit.fr/~Urtzi.Ayesta/" target="_blank">Prof. Urtzi Ayesta</a> and <a href = "http://verloop.perso.enseeiht.fr/" target="_blank">Prof. Maaike Verloop</a> at <a href = "http://www.enseeiht.fr/en/index.html" target="_blank">INP-ENSEEIHT</a>. </p>
 
 <p>Before transitioning to Toulouse, I was working on pricing mechanism for health-care operations with <a href = "https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma" target="_blank"> Prof. Shruti </a> and <a href = "https://esd.sutd.edu.sg/people/faculty/ying-xu" target="_blank">Prof. Ying</a> at <a href = "https://esd.sutd.edu.sg/" target="_blank"> ESD</a>. 
