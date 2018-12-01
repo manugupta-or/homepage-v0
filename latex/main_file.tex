@@ -1,0 +1,334 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage{a4wide}
+\usepackage{anysize}
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts,amssymb,amsthm}
+\usepackage{times,graphicx}
+%\usepackage{natbib}
+\usepackage{multirow}
+%\usepackage{bibtopic}
+\usepackage{wrapfig}
+\usepackage{fullpage}
+\usepackage{rotating}
+         \usepackage{color}
+     \usepackage[colorlinks=true,linkcolor= blue]{hyperref}
+%\usepackage{color}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{natbib}
+\renewcommand{\baselinestretch}{1.2} %line spacing
+\marginsize{0.8in}{0.8in}{0.8in}{0.8in}
+\usepackage{tikz}
+%    \newcommand{\figcolref}[1]%
+%    {\hypersetup{linkcolor=red}%
+%    \ref{#1}%
+%    \hypersetup{linkcolor=black}}
+%\hypersetup{linkcolor=blue}
+\usepackage{changes}
+%\usepackage[usenames,dvipsnames]{color}
+%\usepackage[round]{natbib}
+%\usepackage[hyperfootnotes=false]{hyperref}
+%\usepackage[hyperfootnotes=false]{hyperref}
+\hypersetup{
+ %colorlinks=false,
+ citecolor=Blue,
+ %linkcolor=Red,
+ urlcolor=Blue}
+%\usepackage{bm}
+%add packesges while using in windows
+%\usepackage{longtable,mathtools, enumerate}
+%\usepackage[noend]{algorithmic}
+\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{claim}[thm]{Claim}
+
+%\definecolor{linkcolor}{rgb}{0.149019,0,0.439215}
+%\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+%\renewcommand{\algorithmicensure}{\textbf{Output:}}
+%\renewcommand{\algorithmiccomment}[1]{/* {\it #1} */}
+%\algsetup{indent=1.3em}
+%\DeclareFontFamily{U}{futm}{}
+%\DeclareFontShape{U}{futm}{m}{n}{
+%  <-> s * [.92] fourier-bb
+ % }{}
+%\DeclareSymbolFont{Ufutm}{U}{futm}{m}{n}
+%\DeclareSymbolFontAlphabet{\mathbb}{Ufutm}
+
+
+
+\title{\itshape \textbf{Multiclass queue: pricing, completeness and dynamic priority}}
+%\author{Bharat Singh Raghav
+%and N. Hemachandra$^\ast$\thanks{$^\ast$Corresponding author. Email: nh@iitb.ac.in}
+%\\\vspace{6pt}  {{\small Industrial Engineering and Operations Research, IIT Bombay,  Mumbai -- 400076, India.}}}
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{plain}
+\begin{center} 
+{\bf \Large Pricing, Completeness and Dynamic Priority in Multiclass Queues  \\
+\vspace{0.25in}
+{\normalsize {Second annual progress seminar report}}\\
+{\normalsize {submitted in partial fulfilment of the requirements for the degree of}}\\
+\vspace*{6mm}{\large  Doctor of Philosophy}\\
+\vspace*{3mm}
+{\it by}\\
+{\Large \bf Manu Kumar Gupta}\\
+{\large Roll No. 09i19005}\\
+\vspace{.2in}
+{\normalfont\normalsize {Under the guidance of}}\\
+{\bfseries\Large{Prof. Jayendran Venkateswaran}\\
+Prof. N. Hemachandra } \\
+\vspace{20mm}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{iitblogo.pdf}  
+\end{figure}
+
+\vspace{.125in} %\singlespace
+{\large \bfseries {\normalfont Inter Disciplinary Programme\\
+ \textit{in}}\\ 
+ {Industrial Engineering and Operations Research}\\
+Indian Institute of Technology Bombay\\
+August 2012}}
+\end{center}
+
+\newpage
+\begin{center}
+\textbf{Declaration}
+\end{center}
+I declare that this written submission represents my ideas in my own words and
+where others' ideas or words have been included, I have adequately cited and referenced the original sources. I also declare that I have adhered to all principles of
+academic honesty and integrity and have not misrepresented or fabricated or falsified
+any idea/data/fact/source in my submission. I understand that any violation of the
+above will be cause for disciplinary action by the Institute and can also evoke penal
+action from the sources which have thus not been properly cited or from whom proper
+permission has not been taken when needed.\\
+
+\vspace{1.5in}
+Manu Kumar Gupta
+%\maketitle
+
+\newpage
+
+
+\pagenumbering{roman}
+%{\color{blue}
+%\abstractname{}
+\tableofcontents
+%    \cleardoublepage
+%    \phantomsection
+%    \addcontentsline{toc}{References}
+% %   \bibliography{...}
+%}
+%\listoftables
+%\listoffigures
+
+\cleardoublepage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\begin{abstract}
+Multi class queues offer a flexible way of modelling a variety of complex dynamic real world problems where customers arrive over time and service discrimination is one of the other criterion for each class of customers. In this report, we study the various aspects of multi class queues including dynamic priority, pricing and completeness.\\
+\indent Pricing is one of the most important tool used in queueing systems for service discrimination. A generic problem of pricing server's surplus capacity in a stable M/G/1 queue is solved in literature and an algorithm is proposed assuming a particular conjecture is true. We give complete proof of conjecture. This proof is based on optimization and queueing based arguments. We also come up with an algorithm to find optimal operating parameters for joint pricing and scheduling problem with two class of customers. Here a delay dependent pre-emptive priority is used across classes.\\
+\indent Another important aspect of multi class queues is achievable region for mean waiting time of each class. A parametrized policy is called complete if all vectors of waiting time are achievable. We prove some results on completeness and equivalence of three types of dynamic priorities, i.e., delay dependent, relative priority and earliest due date based. We also comment on nature of global FCFS policy as this point being somewhere deep inside the polytope of achievable region. Global FCFS point turn out to be min max fair point. We extend the theory of completeness with respect to second moment of waiting time by defining \textit{2-moment complete} policy. There are some parametrized queue disciplines which turn out to be \textit{2-moment complete}. This parametrized queue discipline is then compared with some standard queue disciplines like random order of service, random insertion and processor sharing etc. A queue discipline \textit{2-level priority} turn out to be good approximation for processor sharing in two class with heavy traffic from variance view point.
+
+
+ % network with multiple class of customers arriving is an important problem in many applications. An optimization model developed in \cite{Sudhir} solves the problem of optimally pricing the server surplus capacity in a single node system with two classes of customers. A delay dependent non pre-emptive priority queueing discipline is used across classes in their work.\\
+%\indent We first give a complete proof of conjecture proposed in \cite{Sudhir}. Mainly, optimization and queueing based arguments are given for the proof of conjecture and some relevant information from \cite{bharat_tech} is also exploited. Next, we consider the joint pricing and scheduling problem similar to \cite{Sudhir} with two class of customers and pre-emptive delay dependent priority queue discipline for exponential service time. Waiting time expressions for this setting are derived using the expressions developed by Kleinrock in \cite{Kleinrock_ddp}. Two separate optimization problems are solved similar to \cite{Sudhir_TR}, depending on queue discipline parameter being finite or infinite. In order to find the global optima, objectives of these two optimization problems are compared. A finite step algorithm is proposed to find the global optima. We also present a comparative study of two systems i.e. pre-emptive and non pre-emptive priority and give queueing arguments in most of the cases for results 
+%obtained. We observe that optimal admission rate for secondary class customers is more in pre-emptive model than that in non pre-emptive model for many cases. Also avenues of future research is presented.
+%\footnote[3]{Manu}
+\end{abstract}
+
+\include{chapter1/introduction}
+\include{Chapter2/Chapter2_litrature}
+%\include{Chapter3/chapter_3}
+
+
+\chapter{A Proof of Conjecture}
+\label{con_proof}
+In this section, we present proof of conjecture. First we prove few claims and theorem, then we give proof of conjecture as corollary. Claim 1 is already proved in \cite{Sudhir_standard_style}, we further write it's proof and give complete detail of all arguments. %Following relation about intervals was first identified by \cite{bharat_tech} but they didn't give the proof of this relationship, here we are giving the formal proof of following claim.\\
+
+\label{con_proof}
+In this section, we present proof of conjecture. First we prove few claims and theorem, then we give proof of conjecture as corollary. Claim 1 is already proved in \cite{Sudhir_TR}, we further write it's proof and give complete detail of all arguments. %Following relation about intervals was first identified by \cite{bharat_tech} but they didn't give the proof of this relationship, here we are giving the formal proof of following claim.\\
+
+
+\textbf{Claim 1.} \textit{ $\lambda_s^{(3)} > \lambda_s^{(1)}$, where $\lambda_s^{(3)}$ and $\lambda_s^{(1)}$ are the unique roots of cubic $\tilde{G}(\lambda_s)$ and $G(\lambda_s)$ in interval $(0,\mu-\lambda_p)$ as defined in \cite{Sudhir_standard_style}.}
+\begin{proof} $\lambda_s^{(1)}$ is the unique root of cubic $G(\lambda_s)$ in the interval $(0, \mu-\lambda_p)$ whenever $\dfrac{a}{c} > \dfrac{\lambda_p(2\mu-\lambda_p)}{\mu(\mu-\lambda_p)^2}\psi$ (Theorem 1 in \cite{Sudhir_standard_style}). So $\lambda_s^{(1)}\in (0,\mu-\lambda_p) \text{ for } a \in (a_l, \infty)$ where $a_l =\dfrac{\lambda_p(2\mu-\lambda_p)}{\mu(\mu-\lambda_p)^2}c\psi $. $\lambda_s^{(3)}$ is the unique root of cubic $\tilde{G}(\lambda_s)$ in the interval $(0, \mu-\lambda_p)$  whenever $\dfrac{\mu-\lambda_p}{\mu\lambda_p} > \dfrac{a\lambda_p - c\psi}{2\mu\lambda_p^2 + c\psi(\mu+\lambda_p)}$ and $\dfrac{a}{c} > \dfrac{\lambda_p}{\mu^2}\psi$ (Theorem 3 in \cite{Sudhir_standard_style}). So $\lambda_s^{(3)} \in (0,\mu-\lambda_p)$ for $a \in (\tilde{a}_l, \tilde{a}_u)$ where $\tilde{a}_l = \dfrac{\lambda_p}{\mu^2}c\psi$ and $\tilde{a}_u = 2(\mu-\lambda_p) + \dfrac{c\psi}{\lambda_p}\left[1+\dfrac{\mu^2-\lambda_p^2}{\mu\lambda_p}\right]$. If $\dfrac{\mu-\lambda_p}{\mu\lambda_p} \leq \dfrac{a\lambda_p - c\psi}{2\mu\lambda_p^2 + c\psi(\mu+\lambda_p)}$ i.e. $a \ge \tilde{a}_u$ then $\mu-\lambda_p \leq \lambda_s^{(3)} < \mu$. This follows from claim 3 in \cite{Sudhir_standard_style}. Note that $\dfrac{\lambda_p}{\mu^2}\psi <\dfrac{\lambda_p(2\mu-\lambda_p)}{\mu(\mu-\lambda_p)^2}\psi$, so $\tilde{a}_l < a_l$. Note that $\lambda_s^{(1)} = 0$ at $a = a_l$, $\lambda_s^{(3)} = 0$ at $a = \tilde{a}_l$ and $\lambda_s^{(3)} = \mu-\lambda_p$ at $a = \tilde{a}_u$. These arguments follow by the nature of $G(\lambda_s)$ and $\tilde{G}(\lambda_s)$. $a \nless \tilde{a}_l$ otherwise problem becomes infeasible. On the basis of relative values for $a_l,~\tilde{a}_l$ and $ \tilde{a}_u$, we have:
+\begin{itemize}
+\item If $a_l < \tilde{a}_u$ then
+\begin{enumerate}
+\item $\lambda_s^{(1)} \leq 0$ and $0 < \lambda_s^{(3)} < \mu-\lambda_p$ for $a \in (\tilde{a}_l, a_l]$
+\item $0<\lambda_s^{(1)} < \mu-\lambda_p$ and $0 < \lambda_s^{(3)} < \mu-\lambda_p$ for $a \in (a_l, \tilde{a}_u)$
+\item $0<\lambda_s^{(1)} < \mu-\lambda_p$ and $\mu-\lambda_p < \lambda_s^{(3)} < \mu$ for $a \ge \tilde{a}_u$
+\end{enumerate}
+\item If $a_l \ge \tilde{a}_u$ then
+\begin{enumerate}
+\item $\lambda_s^{(1)} < 0$ and $0 < \lambda_s^{(3)} < \mu-\lambda_p$ for $a \in (\tilde{a}_l, \tilde{a}_u)$
+\item $\lambda_s^{(1)} \le 0$ and $\mu-\lambda_p \le \lambda_s^{(3)} < \mu$ for $a \in [\tilde{a}_u,a_l ]$
+\item $0<\lambda_s^{(1)} < \mu-\lambda_p$ and $\mu-\lambda_p < \lambda_s^{(3)} < \mu$ for $a >a_l$
+\end{enumerate}
+\end{itemize}
+Above arguments follow since $\lambda_s^{(1)}$ and $\lambda_s^{(3)}$ are increasing function of $a$ (claim 5 \cite{Sudhir_standard_style}). Hence $\lambda_s^{(3)} > \lambda_s^{(1)}$ for all cases except the case when $a_l < \tilde{a}_u$ and $a \in (a_l, \tilde{a}_u)$. $\lambda_s^{(1)} = 0$ and $\lambda_s^{(3)} = 0 $ at $a = a_l\text{ and }\tilde{a}_l$ respectively. $\lambda_s^{(3)} > \lambda_s^{(1)}$ at $a= \tilde{a}_u$ as $\lambda_s^{(1)}<\mu-\lambda_p$ and $\lambda_s^{(3)} = \mu-\lambda_p$. Note that $G(\lambda_s)$ and $\tilde{G}(\lambda_s)$ has exactly one root in interval $[0, \mu-\lambda_p]$. Root of $G(\lambda_s)$ is 0 at $a=a_l$ and $G(\lambda_s)$ is increasing in the interval $(0, \mu-\lambda_p)$. Root of $\tilde{G}(\lambda_s)$, $\lambda_s^{(3)}$, is zero at $a=\tilde{a}_l < a_l$ and $\lambda_s^{(3)}$ is an increasing function of $a$. So $\lambda_s^{(3)} > \lambda_s^{(1)}$ at $a=a_l$. Consider the plots of $G(\lambda_s)$ and $\tilde{G}(\lambda_s)$ as shown in Figure \ref{fig:Gls} and \ref{fig:Gtildals}.
+\begin{figure}[ht]
+\begin{minipage}[b]{0.5\linewidth}
+\include{Gls}
+\caption{Plot of $G(\lambda_s)$ Vs $\lambda_s$ in range $(0, \mu-\lambda_p)$ at $a=a_l$}\label{fig:Gls}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\include{Gtildals}
+ \caption{ Plot of $\tilde{G}(\lambda_s)$ Vs $\lambda_s$ in range $(0, \mu-\lambda_p)$ at $a=a_l$ }\label{fig:Gtildals}
+\end{minipage}
+\end{figure}
+$$\dfrac{\partial G(\lambda_s)}{\partial a} = -\mu(\mu-\lambda_p - \lambda_s)^2 \text{ and }\dfrac{\partial \tilde{G}(\lambda_s)}{\partial a} =  -\mu(\mu-\lambda_s)^2$$
+Note that $G(\lambda_s)$ and $\tilde{G}(\lambda_s)$ both are decreasing functions of $a$. Since $\tilde{G(\lambda_s)}$ decreases with higher rate than $G(\lambda_s)$. Hence $\lambda_s^{(3)}$ will increase with higher rate than $\lambda_s^{(1)}$. So $\lambda_s^{(3)}>\lambda_s^{(1)}$ holds.
+%Consider $$\dfrac{\partial G(\lambda_s, a)}{\partial a}-\dfrac{\partial \tilde{G}(\lambda_s, a)}{\partial a} = -\mu(\mu-\lambda_p - \lambda_s)^2 -(-\mu(\mu-\lambda_s)^2)= \mu\lambda_p(2\mu-2\lambda_s-\lambda_p)> 0$$ Hence the gap between $G(\lambda_s, a)$ and $\tilde{G}(\lambda_s, a)$ will always exist as a function of $a$.	
+\end{proof}
+\textbf{Claim 2.} \textit{Consider Intervals $I^-$, $I$ and $J^-$ of primary class service level $S_p$ as defined in \cite{Sudhir_standard_style}. Then $I^- \cup I \subset J^-$ holds.}
+\begin{proof} Note that for the case when scheduling parameter $\beta = \infty$, solution is given by theorem 3 and 4 in \cite{Sudhir_standard_style} and by interval $J$ and $J^-$. So $(\hat{S_p},\infty)$ is divided in interval $J^-\cup J$. From theorem 3 and 4, it is clear that if $\dfrac{\mu -\lambda_p}{\mu \lambda_p} >\dfrac{a\lambda_p-c\psi}{2\mu \lambda_p^2+c\psi(\mu +\lambda_p)}$ then $J^- = (\hat{S_p},J_l]$ and $J = (J_l,\infty)$ otherwise $J^- = (\hat{S_p},\infty)$ and $J=\phi$ where $J_l = \dfrac{\psi \lambda_3}{(\mu-\lambda_s^{(3)})(\mu-\lambda_3)}$ and $\hat{S}_p = \dfrac{\psi\lambda_p}{\mu(\mu-\lambda_p)}$. So consider following two cases\\
+\indent \textit{\textbf{Case 1:}} When $\dfrac{\mu -\lambda_p}{\mu \lambda_p} \leq \dfrac{a\lambda_p-c\psi}{2\mu \lambda_p^2+c\psi(\mu +\lambda_p)}$\\
+Interval $J^-$ becomes $(\hat{S_p},\infty)$ under the condition of this case. Since lower and upper limit of $I^-\cup I$ are $\hat{S_p}$ and $I_u$ (finite) \cite{Sudhir_standard_style}. So $I^- \cup I \subset J^-$ holds.\\
+\vspace{-0.3in}
+
+\begin{figure}[ht]
+\begin{minipage}[b]{0.5\linewidth}
+\includegraphics[scale=0.5]{Intervals}
+\caption{Relation among Intervals of $S_p$ \cite{bharat_thesis}}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\includegraphics[scale=0.5]{sks_4}
+ \caption{ $\lambda_s^{(3)} > \lambda_s^{(1)}$ \cite{Sudhir_standard_style} }
+\end{minipage}
+\end{figure}
+
+\indent \textit{\textbf{Case 2:}} When $\dfrac{\mu -\lambda_p}{\mu \lambda_p} > \dfrac{a\lambda_p-c\psi}{2\mu \lambda_p^2+c\psi(\mu +\lambda_p)}$\\
+In this case, $J^- = (\hat{S_p},J_l]$ where $J_l = \dfrac{\psi\lambda_3}{(\mu-\lambda_s^{(3)})(\mu-\lambda_3)}$ and $I^-\cup I = (\hat{S_p},I_u)$ where $I_u = \dfrac{\psi\lambda_1}{(\mu-\lambda_s^{(1)})(\mu-\lambda_1)} $ and by definition $\lambda_1 = \lambda_p + \lambda_s^{(1)},~ \lambda_3 = \lambda_p +\lambda_s^{(3)}$. This follows from above discussion. Note that, $I_u = \xi(\lambda_s^{(1)})$ and $J_l = \xi(\lambda_s^{(3)})$ where $\xi(\lambda_s) = \dfrac{\psi\lambda}{(\mu-\lambda_s)(\mu-\lambda)}$ and $\lambda = \lambda_p + \lambda_s$. On computing partial derivative of $\xi(\lambda_s)$ with respect to $\lambda_s$, we have $\dfrac{\partial\xi(\lambda_s)}{\partial\lambda_s}=\dfrac{\psi(\mu(\mu-\lambda_s)+\lambda(\mu - \lambda))}{(\mu - \lambda_s)^2(\mu - \lambda)^2} >0$. $\xi(\lambda_s)$ is an increasing function of $\lambda_s$. So $J_l > I_u$ iff $\xi(\lambda_s^{(3)})>\xi(\lambda_s^{(1)})$ iff $\lambda_s^{(3)}>\lambda_s^{(1)}$. It is clear from \cite{Sudhir_standard_style} that $\lambda_s^{(3)} > \lambda_s^{(1)}$ in all cases except from the case when $a_l<\hat{a_u}$ and $a\in (a_l,\tilde{a}_u)$ (refer \cite{Sudhir_standard_style} for notations $a_l, \tilde{a}_u$). It follows from claim 5 (refer P.N. 24 in \cite{Sudhir_standard_style}) that $\lambda_s^{(1)}$ and $\lambda_s^{(3)}$ are increasing function of a. Note that $\dfrac{\partial G(\lambda_s)}{\partial a} - \dfrac{\partial \tilde{G}(\lambda_s)}{\partial a} =\mu \lambda_p(2\mu - 2\lambda_s - \lambda_p) > 0 $ Hence gap between $\lambda_s^{(3)} $ and $ \lambda_s^{(1)}$ will always exist (refer figure 4 which follows from \cite{Sudhir_standard_style} and above arguments). So $\lambda_s^{(3)} > \lambda_s^{(1)}$ follows hence $I^- \cup I \subset J^-$ holds in this case also. Hence the claim follows.
+
+\end{proof}
+\begin{thm}
+Optimal solution for optimization problem $P_2$ i.e. $O_2^*$ is increasing concave in interval $I^- \cup I$ while $O_1^*$ is increasing concave in $I^-$ and linearly increasing in I.
+\end{thm}
+\begin{proof}
+ The fact that $O_1^*$ is increasing concave in $I^-$ and linearly increasing in I is shown in \cite{Sudhir_standard_style}, we will give details here for completeness. Optimal objective of problem $P_1$ and $P_2$ are given by $O_{1}^{*}$ and $O_{2}^{*}$ and let corresponding optimal solutions are given by $(\lambda_s^f,\beta^f)$ and $(\lambda_s^i,\infty)$ respectively. In case of finite $\beta$, solution is given by Theorem 1 and 2 in \cite{Sudhir_standard_style} for $S_p \in I^-\cup I$, So waiting time constraint is binding ($W_p \leq S_p$) by the statements of theorems. From above claim it follows that  $I^-\cup I$ is subset of $J^-$. By the statement of theorem 4 we again have primary class customer's waiting time constraint binding. So constraint $W_p \leq S_p$ is always binding when $S_p \in I^- \cup I$. By using the interpretation of Lagrange multiplier (Proposition 3.3.3 P.N. 315 in \cite{bertsekas} and \cite{Sudhir_standard_style}), we have
+\begin{equation}\label{eqn:22}
+\dfrac{\partial O_1^*}{\partial S_p} = -u_1^f~\text{and}~\dfrac{\partial O_2^*}{\partial S_p} = -v_1^i 
+\end{equation}
+where $u_1^f$ and $v_1^i$ are the corresponding values of the Lagrangian multipliers associated
+with the constraint $W_p(\lambda_s,\beta) = S_p$ of the optimization problems P1 and P2 respectively. $u_1^f$ and $v_1^i$ are given by \cite{Sudhir_standard_style}
+\begin{eqnarray}\label{eqn:23}
+u_1^f = \dfrac{(\mu-\lambda_p)G(\lambda_s^f)}{b\psi(\mu-\lambda_p-\lambda_s^f)}-\dfrac{c\lambda_p}{b}~\text{and}\\ v_1^i = \dfrac{(\mu-\lambda_p-\lambda_s^i)^2\tilde{G}(\lambda_s^i)}{b\psi\mu[\mu(\mu+\lambda_p)-(\lambda_p+\lambda_s)^2]}
+\end{eqnarray}
+Note that for $S_p \in I^-\cup I$ solution for problem $P_2$ i.e. objective $O_2^*$ is given by theorem 4 so $\lambda_s^i = \lambda_s^{(4)}$. This again follows from above claim. Also note that sign of $v_1^i$ is decided by $\tilde{G}(\lambda_s^i)$ and $\tilde{G}(\lambda_s)$ is the cubic whose root is $\lambda_s^{(3)}$. It follows that $\lambda_s^{(4)} < \lambda_s^{(3)}$ (refer figure 3 in \cite{Sudhir_standard_style}). We note that $\tilde{G}(\lambda_s)$ is negative and increasing in interval $[0,\lambda_s^{(3)}]$. So $\tilde{G}(\lambda_s^4) =\tilde{G}(\lambda_s^i)\leq0$ hence $v_1^i\leq 0$ for $S_p \in I^-\cup I $. In case of optimization problem P1, for $S_p \in I$ solution is given by theorem 1 so $\lambda_s^f = \lambda_s^{(1)}$ and for $S_p \in I^-$ solution is given by theorem 2 so $\lambda_s^f = \lambda_s^{(2)}$. Since these theorems came from case C1 and C2 (refer P.N. 13 in \cite{Sudhir_standard_style}) respectively, So corresponding $u_1^f = u_1 \leq \dfrac{-c\lambda_p}{b} \leq 0$ (Lagrangian multiplier corresponding to primary class waiting time constraint). Hence for $S_p \in I^-\cup I$, we have 
+\begin{equation}\label{eqn:25}
+\dfrac{\partial O_1^*}{\partial S_p} \geq 0~\text{and}~\dfrac{\partial O_2^*}{\partial S_p} \geq 0
+\end{equation}
+So $O_1^*$ and $O_2^*$ are increasing functions of $S_p$ in interval $I^-\cup I$. Following result about partial derivatives of Lagrangian multiplier holds \cite{Sudhir_standard_style}, we have 
+\begin{equation}
+\dfrac{\partial u_1^f}{\partial \lambda_s^f} \geq 0~\text{and}~\dfrac{\partial v_1^i}{\partial \lambda_s^i} \geq 0\\
+\end{equation}
+\begin{equation}\label{eqn:27}
+\dfrac{\partial^2 O_1^*}{\partial S_p^2} = -\dfrac{\partial u_1^f}{\partial S_p} = -\dfrac{\partial u_1^f}{\partial \lambda_s^f}\dfrac{\partial \lambda_s^f}{\partial S_p}
+\end{equation}
+Equation \ref{eqn:27} follows from equation \ref{eqn:22}. Consider corollary 1 in \cite{Sudhir_standard_style} which states that the mean arrival rate of secondary class customers $\lambda_s^{(1)}$ is independent of $S_p$ in interval I so $\dfrac{\partial \lambda_s^f}{\partial S_p} = 0$. So for $S_p \in I$, $\lambda_s^f = \lambda_s^{(1)}$ and we have,
+\begin{equation}\label{eqn:28}
+\dfrac{\partial^2 O_1^*}{\partial S_p^2} =0 
+\end{equation}
+Consider corollary 2 in \cite{Sudhir_standard_style} which states that the mean arrival rate of secondary class customers $\lambda_s^{(2)}$ is linearly increasing function of $S_p$ in interval $I^-$ i.e. $\dfrac{\partial \lambda_s^f}{\partial S_p} > 0$. So for $S_p \in I^-$, $\lambda_s^f = \lambda_s^{(2)}$ and we have,
+\begin{equation}\label{eqn:29}
+\dfrac{\partial^2 O_1^*}{\partial S_p^2} \leq 0 
+\end{equation}
+\begin{figure}[ht]
+\begin{minipage}[b]{0.5\textwidth}
+\includegraphics[scale=0.5]{sksg}\label{fig:5}
+\caption{No contradiction } \label{fig:lambda_svssigma}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.5\textwidth}
+\centering
+\includegraphics[scale=0.5]{sksg_conj}\label{fig:6}
+\caption{Contradiction from concavity of $O_2^* $}
+\end{minipage}
+\end{figure}
+
+By using equations \ref{eqn:25}, \ref{eqn:27} and \ref{eqn:28} we can say that $O_1^*$ is linearly increasing function of $S_p$ in interval I while it is an increasing concave function of $S_p$ in interval $I^-$. It is clear from earlier discussion that $\lambda_s^f = \lambda_s^{(1)}$ for $S_p \in I$ while $\lambda_s^f = \lambda_s^{(2)}$ for $S_p \in I^-$. Recall that $\lambda_s^{(1)}$ is the root of cubic $G(\lambda_s)$. So from equation \ref{eqn:22} and \ref{eqn:23}, for $S_p \in I$ we have 
+\begin{equation}
+\dfrac{\partial O_1^*}{\partial S_p} = -u_1^f = -\left(-\dfrac{c\lambda_p}{b}\right) =  \dfrac{c\lambda_p}{b}
+\end{equation}
+As above expression is independent of $S_p$ for $S_p \in I$, so slope of $O_1^*$ remains constant in interval I. For $S_p \in I^-$, we have
+\begin{equation}
+\dfrac{\partial O_1^*}{\partial S_p} = -u_1^f = \dfrac{c\lambda_p}{b}-\dfrac{(\mu-\lambda_p)G(\lambda_s^f)}{b\psi(\mu-\lambda_p-\lambda_s^f)}
+\end{equation}
+Note that $\lambda_s^{(1)}$ is the root of cubic $G(\lambda_s)$. Note that $G(\lambda_s)$ is negative and increasing in interval $[0,\lambda_s^{(1)}]$ (refer figure 10 in \cite{Sudhir_standard_style}). it follows that $\lambda_s^{(2)} \leq \lambda_s^{(1)}$ when $S_p \in I^-$ (refer corollary 2 and figure 5 in \cite{Sudhir_standard_style}). So $\dfrac{\partial O_1^*}{\partial S_p}$ decreases as $S_p$ increases. So slope of $O_1^*$ is decreasing in interval $I^-$. For $S_p \in I^- \cup I$ with $\beta$ infinity, solution is given by theorem 4. So $\lambda_s^i = \lambda_s^{(4)}$
+
+\begin{equation}
+\dfrac{\partial^2 O_2^*}{\partial S_p^2} = -\dfrac{\partial v_1^i}{\partial S_p} = -\dfrac{\partial v_1^i}{\partial \lambda_s^i}\dfrac{\partial \lambda_s^i}{\partial S_p}
+\end{equation}
+Consider corollary 3 in \cite{Sudhir_standard_style} which states that $\lambda_s^{(4)}$ is an increasing function of $S_p$ in interval $J^-$. Since $I^-\cup I \subset J^-$. So $\dfrac{\partial \lambda_s^i}{\partial S_p} \geq 0$ for $S_p \in I^-\cup I $. So we have  
+\begin{equation}
+\dfrac{\partial^2 O_2^*}{\partial S_p^2} \leq 0~\text{for}~S_p\in I^-\cup I
+\end{equation}
+Above equation follows from equation \ref{eqn:27} and above discussion. So $O_2^*$ is increasing concave function of $S_p$ in interval $I^- \cup I$ and it's slope is decreasing. Hence the statement of theorem follows.
+\begin{figure}[ht]
+\begin{minipage}[b]{0.45\textwidth}
+\includegraphics[scale=0.5]{sksg_1}\label{fig:7}
+\caption{Contradiction from $O_2^*(\lambda_s^i,\infty) < O_1^*(\lambda_s^f,\beta^f)$ at $\hat{S_p}+\epsilon$ and infeasibility  }
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\textwidth}
+\centering
+\includegraphics[scale=0.5]{sksg_2}\label{fig:8}
+\caption{Contradiction from $O_2^*(\lambda_s^i,\infty) < O_1^*(\lambda_s^f,\beta^f)$ at $\hat{S_p}+\epsilon$ and infeasibility }
+\end{minipage}
+\end{figure}
+
+\end{proof}
+\indent \textbf{Corollary.} \textit{For $S_p \in I^- \cup I$, the optimal solution of P0 is given by optimal solution of P1.}\\
+\textbf{Proof.} It has already been proved in \cite{Sudhir_standard_style} that $O_1^*(\lambda_s^f,\beta^f) > O_2^*(\lambda_s^i,\beta^i)$ in interval $I$. So we need to be concerned about only interval $I^-$. We have four cases possible as shown in figure 5, 6 and 7, 8.  Note that Figure 8 is not possible as we get contradiction from $O_1^*(\lambda_s^f,\beta^f) > O_2^*(\lambda_s^i,\beta^i)$ in interval $I$ \cite{Sudhir_standard_style}. Figure 7 is also not possible as we get contradiction from infeasibility as $S_p$ becomes less than $\hat{S_p}$ and contradiction also comes from the fact that $O_2^*(\lambda_s^i,\infty) < O_1^*(\lambda_s^f,\beta^f)$ at $\hat{S_p}+\epsilon$ where $\epsilon$ is a small positive number (refer P.N. 26 in \cite{Sudhir_standard_style}). Note that figure 6 is not possible as we will get contradiction from $O_2^*$ being concave (refer to the statement of theorem proved above). Hence the only way possible is figure 2. So $O_2^*(\lambda_s^i,\infty) < O_1^*(\lambda_s^f,\beta^f)$ when $S_p \in I^-$ also. Hence Corollary follows.\\
+\indent \textbf{Conjecture.} \textit{For $S_p \in I^- $, the optimal solution of P0 is given by optimal solution of P1.}\\
+\textbf{Proof.} Follows from above corollary. 
+
+%\section{Analytical Proof}
+
+\include{Chapter4_sks_variation/sks_variation}
+\include{Chapter5/completeness}
+\include{future_work/future_work}
+\appendix
+\chapter{Global FCFS}
+%\section{Appendix}
+\section{Weights structure}
+Null space of waiting time matrix has following three elements in basis $\{\beta_1, \beta_2, \beta_3\}$ in case of three classes and one particular solution is given by $\gamma$.\\ 
+$\beta_1$ = 
+$\{\frac{(\rho_2-1) (\rho_2+\rho_3-1) \left(1-\frac{\frac{1}{(-\rho_2-\rho_3+1) (-\rho_1-\rho_2-\rho_3+1)}-\frac{1}{1-\rho_1}}{\frac{1}{(1-\rho_2) (-\rho_1-\rho_2+1)}-\frac{1}{1-\rho_1}}\right) \left(2 \rho_1 \rho_2+\rho_2^2+\rho_2 \rho_3-2 \rho_2\right)}{(\rho_1-1) \rho_1 (\rho_1+\rho_3-1) (\rho_1+2 \rho_2+\rho_3-2)}-1,$
+\\
+$\frac{(\rho_2-1)^2 (\rho_1+\rho_2-1) (2 \rho_1+\rho_2+\rho_3-2) \left(\rho_1 \rho_2+\rho_1 \rho_3+\rho_2^2+2 \rho_2 \rho_3-2 \rho_2+\rho_3^2-2 \rho_3\right)}{(\rho_1-1) \rho_1 (\rho_1+\rho_2-2) (\rho_1+\rho_3-1) (\rho_1+\rho_2+\rho_3-1) (\rho_1+2 \rho_2+\rho_3-2)},-\frac{(\rho_2-1) (\rho_2+\rho_3-1) \left(2 \rho_1 \rho_2+\rho_2^2+\rho_2 \rho_3-2 \rho_2\right)}{(\rho_1-1) \rho_1 (\rho_1+\rho_3-1) (\rho_1+2 \rho_2+\rho_3-2)},0,0,1\}$\\
+\\
+$\beta_2$ = $\{\frac{X}{\rho_1 (\rho_1+\rho_2-2) (\rho_1+\rho_3-1) (\rho_1+\rho_2+\rho_3-1)}, -\frac{(\rho_2-1) (\rho_2+\rho_3-1) \left(\frac{1}{(-\rho_2-\rho_3+1) (-\rho_1-\rho_2-\rho_3+1)}-\frac{1}{1-\rho_1}\right) \left(\rho_1^2+2 \rho_1 \rho_2+\rho_1 \rho_3-2 \rho_1+\rho_2^2+\rho_2 \rho_3-2 \rho_2\right)}{\rho_1 (\rho_3-1) \left(\frac{1}{(1-\rho_2) (-\rho_1-\rho_2+1)}-\frac{1}{1-\rho_1}\right) (\rho_1+2 \rho_2+\rho_3-2)}-\frac{(\rho_2-1) (\rho_1+\rho_2-1) \left(\rho_1 \rho_3+\rho_3^2-2 \rho_3\right)}{\rho_2 (\rho_3-1) (\rho_1+\rho_2-2) (\rho_1+\rho_3-1)},\frac{(\rho_2-1) (\rho_2+\rho_3-1) \left(\rho_1^2+2 \rho_1 \rho_2+\rho_1 \rho_3-2 \rho_1+\rho_2^2+\rho_2 \rho_3-2 \rho_2\right)}{\rho_1 (\rho_3-1) (\rho_1+2 \rho_2+\rho_3-2)},0,1,0\}$\\
+\\
+$\beta_3$ = $\{-\frac{\rho_1^2 \rho_2 \rho_3+\rho_1^2 \rho_3^2-2 \rho_1^2 \rho_3+\rho_1 \rho_2^2 \rho_3+\rho_1 \rho_2 \rho_3^2-4 \rho_1 \rho_2 \rho_3-2 \rho_1 \rho_3^2+4 \rho_1 \rho_3-\rho_2^2 \rho_3-\rho_2 \rho_3^2+3 \rho_2 \rho_3+\rho_3^2-2 \rho_3}{\rho_1 (\rho_3-1) (\rho_1+\rho_2-2) (\rho_2+\rho_3-1)},$\\$-\frac{(\rho_2-1) (\rho_1+\rho_2-1)^2 \left(\rho_1 \rho_2^2+2 \rho_1 \rho_2 \rho_3-2 \rho_1 \rho_2+\rho_1 \rho_3^2-2 \rho_1 \rho_3+\rho_2^3+3 \rho_2^2 \rho_3-4 \rho_2^2+3 \rho_2 \rho_3^2-8 \rho_2 \rho_3+4 \rho_2+\rho_3^3-4 \rho_3^2+4 \rho_3\right)}{\rho_1 (\rho_3-1) (\rho_1+\rho_2-2) (\rho_2+\rho_3-1) (\rho_1+2 \rho_2+\rho_3-2)},$\\$\frac{(\rho_2-1) (\rho_2+\rho_3-1) \left(\rho_1^2+2 \rho_1 \rho_2+\rho_1 \rho_3-2 \rho_1+\rho_2^2+\rho_2 \rho_3-2 \rho_2\right)}{\rho_1 (\rho_3-1) (\rho_1+2 \rho_2+\rho_3-2)},1,0,0\}$\\
+ $\gamma = \{ \frac{\rho_1^3+\rho_1^2 \rho_2+\rho_1^2 \rho_3-2 \rho_1^2+\rho_1 \rho_2 \rho_3-\rho_1 \rho_2-2 \rho_1 \rho_3+\rho_1-\rho_2 \rho_3+\rho_3}{\rho_1 (\rho_1+\rho_2-2) (\rho_1+\rho_2+\rho_3-1)},$\\$\frac{(\rho_2-1) (\rho_1+\rho_2-1) \left(\rho_1^2 \rho_2+\rho_1^2 \rho_3+2 \rho_1 \rho_2^2+3 \rho_1 \rho_2 \rho_3-2 \rho_1 \rho_2+\rho_1 \rho_3^2-2 \rho_1 \rho_3+\rho_2^3+2 \rho_2^2 \rho_3-3 \rho_2^2+\rho_2 \rho_3^2-4 \rho_2 \rho_3+2 \rho_2-\rho_3^2+2 \rho_3\right)}{\rho_1 (\rho_1+\rho_2-2) (\rho_1+\rho_2+\rho_3-1) (\rho_1+2 \rho_2+\rho_3-2)},$\\$-\frac{(\rho_2-1) (\rho_1+\rho_2) (\rho_2+\rho_3-1)}{\rho_1 (\rho_1+2 \rho_2+\rho_3-2)},0,0,0\}$\\ \\
+where $X = -(\rho_1^4+2 \rho_1^3 \rho_2+2 \rho_1^3 \rho_3-4 \rho_1^3+\rho_1^2 \rho_2^2+3 \rho_1^2 \rho_2 \rho_3-5 \rho_1^2 \rho_2+\rho_1^2 \rho_3^2-6 \rho_1^2 \rho_3+5 \rho_1^2+\rho_1 \rho_2^2 \rho_3-\rho_1 \rho_2^2+\rho_1 \rho_2 \rho_3^2-6 \rho_1 \rho_2 \rho_3+3 \rho_1 \rho_2-2  \rho_1 \rho_3^2+6 \rho_1 \rho_3-2 \rho_1-\rho_2^2 \rho_3-\rho_2 \rho_3^2+3 \rho_2 \rho_3+\rho_3^2-2 \rho_3).$ All possible weights given to the corner points has the structure $\alpha$ = $\{\gamma + a_1\beta_1+ a_2\beta_2+ a_3\beta_3: a_1,a_2,a_3 \in \mathbb{R}\}$. Similar structure for higher dimension can be obtained but expressions are likely to be messy with no particular structure.
+\section{Monotonicity of $I(\bar{u})$ and $\tilde{I}(\bar{u})$ }
+\begin{claim}
+$I(\bar{u})$ is monotonically increasing while $\tilde{I}(\bar{u})$ is monotonically decreasing.
+\end{claim}
+\begin{proof}
+By definition $I(\bar{u}) = \int_0^{\bar{u}}P(T_2(W)>y)dy$, we have
+\begin{eqnarray}
+I(\bar{u}+\epsilon) - I(\bar{u}) = \int_0^{\bar{u}+\epsilon}P(T_2(W)>y)dy -\int_0^{\bar{u}}P(T_2(W)>y)dy = \int_{\bar{u}}^{\bar{u}+\epsilon}P(T_2(W)>y)dy
+\end{eqnarray}
+In above equation integration of a positive function over a positive range is done. Hence $I(\bar{u}+\epsilon) - I(\bar{u}) \geq 0$. Since $\epsilon \geq 0$ is arbitrary so $I(\bar{u})$ is monotonically increasing.\\
+By definition $\tilde{I}(\bar{u}) = \int_0^{-\bar{u}}P(T_1(W)>y)dy$, we have
+\begin{eqnarray}\nonumber
+\tilde{I}(\bar{u}) - \tilde{I}(\bar{u} -\epsilon) = \int_0^{-\bar{u}}P(T_1(W)>y)dy -\int_0^{-(\bar{u}-\epsilon)}P(T_2(W)>y)dy = -\int_{-\bar{u}}^{-\bar{u}+\epsilon}P(T_2(W)>y)dy
+\end{eqnarray}
+n above equation integration of a positive function over a positive range (as $\bar{u} \leq 0$) is done. Hence $\tilde{I}(\bar{u}) - \tilde{I}(\bar{u} -\epsilon) \leq 0 $. Since $\epsilon \geq 0$ is arbitrary so $\tilde{I}(\bar{u})$ is monotonically decreasing.
+\end{proof}
+
+\bibliographystyle{model5-names}
+\bibliography{aps2ref}
+
+\end{document}

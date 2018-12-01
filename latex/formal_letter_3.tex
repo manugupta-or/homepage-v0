@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Letter of Notice
+% LaTeX Template
+% Version 1.0 (23/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rashadul Islam (ross08@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{letter}
+
+\usepackage[a4paper]{geometry} % Use A4 paper margins
+
+\usepackage{color} % Required for color customization
+\usepackage{amsfonts}
+\usepackage{fouriernc} % Use the New Century Schoolbook font, comment this line to use the default LaTeX font or replace it with another
+\usepackage{enumitem}
+\usepackage{lipsum} % Required for inserting dummy text
+\usepackage{anysize}
+\marginsize{1in}{1in}{1in}{1in}
+\definecolor{Navy}{RGB}{50,90,122} % Define a custom color for the heading box
+\makeatletter
+\let\@texttop\relax
+\makeatother
+\setlength\topmargin{-80pt}
+\setlength\textheight{10in}
+\setlist[itemize,2]{label=$\checkmark$}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	DATE AND FROM ADDRESS
+%----------------------------------------------------------------------------------------
+
+\date{\begin{flushleft} \end{flushleft}} % Use todays date and left-align it
+
+\begin{letter}{\large \bfseries European Journal of Operational Research\\ On a conjecture and performance of a two class delay dependent priority
+queue arising from pricing surplus server capacity} % From address or department
+
+%----------------------------------------------------------------------------------------
+%	HEADING BOX
+%----------------------------------------------------------------------------------------
+
+%\colorbox{Navy}{ % Creates a highlight behind the text using the previously-defined navy color
+%
+%\parbox[t]{\linewidth}{ % Creates a box to take up the entire line width
+%
+%\vspace*{14pt} % Whitespace above the text
+%
+%\hfill \color{white} \textsc{\huge notice of inspection} % Right-aligned heading text
+%
+%\vspace*{14pt} % Whitespace below the text
+%}}
+
+%----------------------------------------------------------------------------------------
+%	SIGNATURE
+%----------------------------------------------------------------------------------------
+
+\signature{
+Manu K. Gupta \\ % Your name
+%\textbf{Property Manager} \\ % Job title
+%\textsc{Initech Rentals} \\ % Company
+\small{Email: manu.gupta@iitb.ac.in} % Contact information
+}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\opening{Dear Editor,}
+
+\begin{quotation} % Enclosing the entire letter contents in a quotation gives it a narrow centered appearance
+
+\fontsize{11pt}{15pt}\selectfont % Set a larger font with a larger line spacing for the letter content
+Thank you for your useful comments and suggestions on the language and structure of our manuscript. We have modified the manuscript accordingly, and detailed corrections are listed below point by point. 
+\begin{enumerate}
+\item[1)] All the pages should be numbered sequentially.
+{\color{blue}\begin{itemize}[label={\checkmark}]
+\item We now have numbered the pages sequentially throughout the manuscript. 
+\end{itemize}}
+\item[2)] A maximum of five keywords should be provided.
+{\color{blue}\begin{itemize}[label={\checkmark}]
+\item Keywords have been revised and number of keywords are five now.
+\end{itemize}}
+\item[3)] Highlights are mandatory and each one should be no more than 125 characters including spaces.
+{\color{blue}\begin{itemize}[label={\checkmark}]
+\item Highlights have been revised and every highlight has less than 125 characters including spaces.
+\end{itemize}}
+\item[4)] In its current state, the level of English throughout your manuscript does not meet the journal's desired standard. There are a number of grammatical errors and instances of badly constructed sentences. Please check the manuscript and refine the language carefully.
+{\color{blue}\begin{itemize}[label={\checkmark}]
+\item We have revised the WHOLE manuscript carefully and tried to avoid any grammar or syntax error. In addition, we have asked several colleagues who are skilled authors of English language papers to check the English. We believe that the language is now acceptable for the review process. 
+\end{itemize}}
+\end{enumerate} 
+The manuscript has been resubmitted to your journal. We look forward to your positive response. 
+
+%\lipsum[4]\vspace{10pt}\lipsum[5] % Dummy text
+%\lipsum[4]\vspace{10pt}\lipsum[5] % Dummy text
+%\lipsum[4]\vspace{10pt}\lipsum[5] % Dummy text
+\end{quotation}
+
+\closing{Sincerely,}
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+
+\end{document}

@@ -1,0 +1,497 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{mathtools,url, enumerate,anysize}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{lscape}
+\usepackage{hyperref}
+\algsetup{indent=1.5em}
+\renewcommand{\algorithmiccomment}[1]{/* {\it #1} */}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{color}
+%\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[titletoc]{appendix}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{defn}[thm]{Definition}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newtheorem{claim}[thm]{Claim}
+\newenvironment{mylemma}[1]{{ \textbf{\textit{Proof of Lemma #1:}}}}{}
+%opening
+\title{On Completeness and Equivalence of Some Dynamic Priority Schemes}
+\author{\normalsize{Manu K. Gupta, N. Hemachandra\footnote{Corresponding author email id:  nh@iitb.ac.in} and J. Venkateswaran}\\ {\normalsize Industrial Engineering and Operations Research, IIT Bombay}}
+%\marginsize{1cm}{1cm}{1cm}{1cm}
+
+\marginsize{2cm}{2cm}{2cm}{2cm}
+\begin{document}
+
+\maketitle 
+\begin{abstract}
+This paper identifies various parametrized dynamic priority queue disciplines from literature which are complete in two class M/G/1 queue. Equivalence between these queue disciplines is established by obtaining non linear transformation in closed form. Motivation behind these completeness and equivalence results is discussed from optimal control perspective. Some comments on global FCFS policy are made. Further, an alternative proof of optimality of $c/\rho$ rule is given using completeness ideas. %Notion of second moment completeness is introduced in single class queue. Further, some parametrized single class disciplines from literature are identified as \textit{2-moment complete}.  
+\end{abstract}
+\textbf{keywords:}
+parametrized dynamic priority, optimal control, multi-class queue, achievable region 
+
+\section{INTRODUCTION}
+Multi class queues offer a flexible way of modelling a variety of complex dynamic real world problems where customers arrive over time and service discrimination is one of the other criterion for each class of customers. Choice of queueing discipline plays significant role in such scenarios. Different types of priority logics are possible to schedule
+multiple class of customers for service at a common resource.
+Suppose absolute or strict priority is given to one classes of
+customers, then the lower priority class may starve for resource
+access for a very long time.
+
+There are various types of parametrized dynamic priority rules possible to overcome the starvation of lower priority class. Kleinrock~\cite{Kleinrock1964} proposed dynamic priority based on delay in queues. Other parametrized dynamic priority rule is earliest due date (EDD) based dynamic priority (see \cite{EDDpriority}). Head of line priority jump (HOL-PJ) is another type of dynamic priority rule similar to due date based dynamic priority proposed in~\cite{holpj}. Relative priority is another class of parametrized dynamic priority based on number in queue recently proposed in \cite{haviv2}.
+
+Another community of researchers focused on dynamic control over multi-class queueing systems due to its various applications in computers, communication networks, and manufacturing systems. One of the main tool for such control problems is to characterize the achievable region for performance measure of interest, then use optimization methods to find optimal control policy (see \cite{bertsimas1995achievable}, \cite{bertsimas1996conservation} and \cite{li2012delay}). Optimal control policy in two class polling system for certain optimization problems using achievable region approach is recently developed  in \cite{2classpolling}. Optimal control policy for certain non linear optimization problems for two class work conserving queueing systems is derived in \cite{hassin2009use}. 
+
+%A well known queueing discipline to provide such quality of service differentiation is strict priority queueing discipline, but this discipline does not give enough degree of freedom for service differentiation, because here it is possible that lower priority customers will starve for service.
+Average waiting time for each class forms a nice geometric structure (polytope) driven by conservation laws under certain scheduling assumptions for multi class single server priority queue (see \cite{coffman1980characterization}, \cite{shanthikumar1992multiclass}). This kind of structure also helps if one wants to do optimization over all scheduling policies. Researchers in this field have come up with geometrical structure of achievable region in case of multiple servers and even for networks (See \cite{federgruen}, \cite{bertsimas}). Unbounded achievable region for mean waiting time in two class deterministic polling system is recently identified in \cite{2classpolling}. 
+%Note that achievable region described in literature so for is with respect to mean waiting time. In this paper, we come up with the notion of achievable region for second moment of waiting time in single class queue.  
+
+
+A parametrized scheduling policy is called \textit{complete} by Mitrani and Hine \cite{complete} if it achieves all possible vectors of waiting time. This question of completeness is important in following aspect. A complete scheduling class can be used to find the optimal control policy over all scheduling disciplines. Discriminatory processor sharing (DPS) class of parametrized dynamic priority is identified as \textit{complete} policy in case of two class M/G/1 queue and used to find the optimal control policy in \cite{hassin2009use}. This idea of completeness is also useful in designing synthesis algorithms where service provider wants to design a system with certain service level (mean waiting time) for each class. Federgruen and Groenvelt \cite{federgruen} came up with synthesis algorithm using the completeness of mixed dynamic priority which is based on delay dependent priority proposed by Kleinrock \cite{Kleinrock1964}. 
+
+In this paper, completeness and equivalence of different parametrized dynamic priority rules (EDD and HOL-PJ) are shown in two classes. We are currently working on completeness of relative priority (see \cite{haviv2}) and some optimal control problems there. 
+
+\subsection{Main Contribution}     
+We identify various parametrized dynamic priorities from literature (\cite{EDDpriority}, \cite{holpj}) i.e., earliest due date (EDD) based dynamic priority and head of line priority jump (HOL-PJ) discipline which are complete in two class M/G/1 queue. We find the explicit non-linear transformations from one class of parametrized policy to other. Motivation behind these transformations and completeness results are briefly described. Global FCFS policy is discussed and some comments on this policy are made from achievable region view point. We propose an alternative proof of a celebrated result on optimality of $c/\rho$ rule (see \cite{yao2002dynamic}, \cite{mitranibook}) using these completeness arguments in case of two class queues for illustration purpose.  
+
+ %Further, notion of \textit{2-moment completeness} is introduced for single class queue with respect to second moment of waiting time. Certain parametrized policy from literature (\cite{impolite_Arrivals}, \cite{Q_parameter}) are identified as \textit{2-moment complete}.   
+
+\subsection{Paper Organization}
+This paper is organized as follows. Section \ref{sec:description} describes the idea of completeness and different types of parametrized dynamic priorities. Section \ref{sec:completeness_proofs} presents the results on completeness and equivalence between these dynamic priority and also the motivation behind this. Section \ref{applications} discusses the applications of these completeness results where some comments on global FCFS policy are made and an alternate proof of $c/\rho$ rule is proposed. Section \ref{sec:conclusion} ends with discussion on conclusions and direction for future avenues.
+
+\section{Completeness and parametrized dynamic priority description}
+\label{sec:description}
+In this section, we briefly describe the idea of completeness and different types of parametrized dynamic priorities in single server $N$ class M/G/1 queues.\\
+\indent Consider a single server system with $N$ different classes of customers arriving in a Poisson stream with rate $\lambda_i$ and mean service time be $1/\mu_i$ for class $i$. Let $\rho_i = \lambda_i/\mu_i$ and $\rho = \rho_1 + \rho_2 +\cdots +\rho_N$. Assume that $\rho < 1$, i.e., system attains steady state. The performance of the system is measured by vector $\mathbf{W} = (w_1, w_2, \cdots, w_N)$, where $w_i$ is the expected response time (time spent in system) of class $i$ job in steady state. It is obvious that not all performance vectors are possible for example $\mathbf{W =0}$ (see \cite{complete}). We restrict our attention where following two conditions are satisfied.
+\begin{enumerate}
+\item Server is not idle when there are jobs in the system. 
+\item Information about remaining processing time does not affect the system in any way (non anticipative).
+\end{enumerate}
+Under above mentioned conditions, Kleinrock's conservation law holds \cite{Kleinrock1965}:
+\begin{equation}
+\sum_{i=1}^N\rho_i w_i = \dfrac{\rho W_0}{1-\rho}
+\end{equation} 
+where $W_0 = \sum_{i=1}^N\dfrac{\lambda_i}{2}\left(\sigma_i^2 + \dfrac{1}{\mu_i^2}\right)$ and $\sigma_i^2$ is variance of service time of class $i$. This equation defines a \textit{hyperplane} in N-dimensional space of $\mathbf{W}$. 
+\begin{figure}[htb!]
+\centering
+%\begin{minipage}[b]{0.3\linewidth}
+\resizebox{0.35 \textwidth}{!}{\input{Diagram1.tex}}
+%\vspace{-.25in}
+\caption{Achievable performance vectors in a two class M/G/1 queue \cite{mitranibook}}
+\label{2classline}
+%\end{minipage}
+\end{figure}
+
+In case of two classes, performance vector $\mathbf{W} = (w_1,w_2)$ achieves the points lying on a \textit{straight line segment} defined by conservation laws. There are two special points on this line (refer Figure \ref{2classline}), $\mathbf{w_{12}}$ and $\mathbf{w_{21}}$. These two points correspond to response time when class 1 and class 2 are given strict priority respectively. The priority policy (1,2) yields the lowest possible average response time for type 1 and the highest possible one for type 2, the situation is reversed with the policy (2,1). Thus, no point to the left of (1,2) or to the right of (2,1) can be achieved. Clearly, every point in the line segment is a convex combination of extreme points $\mathbf{w_{12}}$ and $\mathbf{w_{21}}$. All achievable performance vectors lie in ($N$-1)-dimensional \textit{hyperplane} for $N$ customer's type. There are $(N)!$ extreme points, corresponding to $(N)!$  non-preemptive strict priority policies. Hence set of achievable performance vectors forms a \textit{polytope} with these \textit{vertices}. In case of three classes, achievable performance vector forms a 2-dimensional polytope with 6 (=3!) vertices as shown in Figure \ref{3classline}. Each vertex corresponds to non-preemptive strict priority for example in vertex corresponding to 123, class 1 has strict priority over class 2 and class 2 has strict priority over class 3. 
+\begin{figure}[htb!]
+\centering
+%\begin{minipage}[b]{0.3\linewidth}
+\resizebox{0.5 \textwidth}{!}{\input{3class.tex}}
+%\vspace{-.25in}
+\caption{Achievable performance vectors in a three class M/G/1 queue \cite{galenbemitranibook}}
+\label{3classline}
+%\end{minipage}
+\end{figure}
+\\
+\indent If for a given scheduling strategy $S$, the value of performance vector is $W$, we say that $S$ achieves $W$. A family of scheduling strategy is called \textbf{\textit{complete}} if it achieves the polytope described above (see \cite{complete}). The set of all scheduling strategies is trivially a complete family; one is interested in a subset of all strategies, parametrized suitably, but complete. In this article, we identify family of parametrized scheduling strategies which are complete. We now describe different types of parametrized dynamic priorities from literature. 
+\subsection{Delay Dependent Priority} 
+Delay dependent priorities were first introduced by Kleinrock \cite{Kleinrock1964}. The logic of this discipline works as follows. Each customer class is assigned a queue discipline parameter, $b_i$, $i \in \{1, \cdots, N\}$, $0 \le b_1 \le b_2 \le \cdots \le b_N$. Higher the value of $b_i$, higher the priority for class $i$. The instantaneous dynamic priority for customer of class $i$ at time $t$, $q_i(t)$, is given by: 
+\begin{equation}
+q_i(t) = (t-\tau)\times b_i, i = 1,2, \cdots, N.
+\label{ddpinst}
+\end{equation}
+where $\tau$ is the arrival time of customer. After the current customer is served, the server will pick the customer with the highest instantaneous dynamic priority parameter $q_i(t)$ for service. Ties are broken using First-Come-First-Served rule. Hence according to this discipline the higher priority customers gain higher dynamic priority at higher rate.
+%\begin{figure}[htb!]
+%\centering
+%%\resizebox{0.4 \textwidth}{!}{ddpi}
+%\includegraphics[scale=0.5]{ddpi}
+%%\vspace{-1.25in}
+%\caption{Illustration of delay dependent priority \cite{Kleinrock1964}}
+%\label{basicmodel}
+%\end{figure} 
+% \\
+%\indent A comparison of two tagged customers is shown in Figure \ref{basicmodel}, here a customer $c$ comes at $\tau$ and another customer $c^{'}$ comes at $\tau^{'}$ and have priority parameter as $b_p$ and $b_p^{'}$ where $\tau^{'} > \tau $ and $b_p^{'} > b_p$. We can see in the figure that even though the customer $c$ came earlier to customer $c^{'}$, after time $t_0$, customer $c^{'}$ will be served prior to customer $c$. This happens because customer $c$ gains dynamic priority at higher rate. But before $t_0$, delay incurred by customer $c$ dominates hence it is served. At time $t_0$ a tie occurs which is broken by FCFS rule i.e. by serving $c$ first.
+Mean waiting time for $p$th class under this discipline is given by following recursion \cite{Kleinrock1964}:
+\begin{equation}\label{eqn:DDP_recursion}
+W_p = \dfrac{\dfrac{W_0}{1-\rho} + \displaystyle\sum_{i=1}^{p-1} \rho_i W_i\left(1-\dfrac{b_i}{b_p}\right)}{1-\displaystyle\sum_{i=p+1}^{N}\rho_i\left(1-\dfrac{b_p}{b_i}\right)}
+\end{equation}
+where $\rho_i = \frac{\lambda_i}{\mu_i}$, $\rho = \sum_{p=1}^N\rho_i$ and $W_0 = \sum_{p=1}^N\frac{\lambda_p}{2}\left(1-\frac{b_p}{b_i}\right)$ and $0\leq \rho\le 1$.
+
+Federgruen and Gruenevelt \cite{federgruen} proposed synthesis algorithm exploiting the completeness of mixed dynamic priority which is based on delay dependent priority. An alternate proof for completeness of delay dependent dynamic priority using completeness ideas for two class queue is kept in appendix \ref{proof:DDP_cmplt}.
+
+\subsection{Relative Priority}
+This is another class of dynamic priorities first proposed by Moshe Haviv and Van Der Wal \cite{haviv2}. In this multi-class priority system, a \textit{positive} parameter $p_i$ is associated with each class $i$. Inter arrival times are  expo($\lambda_i$) for class $i$. If there are $n_j$ jobs of class $j$ on service completion the next job to commence service is from class $i$ with following probability:
+\begin{equation}
+\dfrac{n_i p_i}{\sum_{j=1}^N n_j p_j}, ~~~1 \leq i \leq N
+\end{equation}
+ Mean waiting time for class $i$ under this discipline is given by following recursion \cite{haviv2}:
+\begin{equation}
+W_i = W_0 + \sum_{j}W_j \rho_j\dfrac{p_j}{p_i + p_j} + \tau_i W_i,~~~1\leq i\leq N.
+\end{equation}  
+  where $\tau_i = \displaystyle \sum_{j = 1}^N\rho_j\dfrac{p_j}{p_i + p_j},~~1 \leq i \leq N $. 
+\subsection{Earliest Due Date Dynamic Priority}  
+  This type of dynamic priority across multiple classes was first proposed by Henry M. Goldberg \cite{EDDpriority}. Consider a single server queueing system with $k$ number of classes similar to delay dependent and relative priorities. Each class $i$ has a constant urgency number $u_i$ (weights) associated with it. Without loss of generality, classes are numbered so that $u_1 \leq u_2 \leq \dots \leq u_k$. If a customer from class $i$ arrives at the system at time $t_i$, he is assigned a real number $t_i + u_i$. Server chooses the next customer to go into service out of those present in the queue as the one with minimum value of $\{t_i + u_i\}$. The server is busy so long as customers are present in the system. If $W_{r,n}$ denotes the waiting time of a class $r$ jobs in non pre-emptive priority, here $n$ stands for non pre-emptive priority. In steady state, $E(W_{r,n})$ is given by \cite{EDDpriority}
+  \begin{eqnarray}\nonumber
+  E(W_{r,n}) &=& E(W) + \sum_{i=1}^{r-1}\rho_i\int_{0}^{u_r-u_i}P(W_{r,n} > t)dt \\\label{eqn:EDD_recursion}
+ & & - \sum_{i=r+1}^{k}\rho_i\int_{0}^{u_i-u_r}P(W_{i,n} > t)dt 
+  \end{eqnarray}
+for $r = 1, \dots, k$. Here $W$ is the steady state workload in the system (same as under FCFS) and $\rho_i$ is the traffic due to class $i$. 
+\subsection{Head of Line Priority Jump (HOL-PJ)}
+This is another class of parametrized dynamic priority policy proposed in \cite{holpj}. The fundamental principle of HOL-PJ is to give priority to the customers having the largest queueing delay in excess of it's delay requirement. In HOL-PJ, an explicit priority is assigned to each class; the more stringent the delay requirement of the class; the higher the priority. From the server's point of view, HOL-PJ is same as HOL strict priority queue.    Unlike HOL, the priorities of customers increase as their queueing delay increase relative to their delay requirements. This is performed by customer \textit{priority jumping} (PJ) mechanism.
+\begin{figure}[htb!]
+\centering
+%\resizebox{0.4 \textwidth}{!}{ddpi}
+\includegraphics[scale=0.4]{priorityjump}
+%\vspace{-1.25in}
+\caption{Head-of-line with priority jump \cite{holpj}}
+\label{PriortyJump}
+\end{figure}
+
+Consider a server serving $C$ number of classes. Let $D_j,~j=1,2,\ldots,C$ be the delay requirement for class $j$ customers where $0<D_1<D_2<\cdots<D_C\leq \infty$. Class 1 has most stringent delay requirement and class $C$ the least; class 1 has the highest priority and class $C$ the least. $T_j,~j=2,3,\cdots, C$ is set to $D_j - D_{j-1}$. If a customer is still there in queue after a period of time $T_j$, It jumps to the tail of queue $j-1$. Figure \ref{PriortyJump} illustrates the operation of HOL-PJ. Define excessive delay of a customer to be its queueing delay in excess of its original delay requirement. It is concluded in \cite{holpj} that all the customers are queued according to largeness of their excessive delay. Mean waiting time for class $k$ in HOL-PJ queueing discipline is derived in \cite{holpj} as:
+\begin{eqnarray}\nonumber
+E(W_k)\hspace{-0,12in} &=&\hspace{-0,12in} E(W_{FIFO}) - \sum_{j =k+1}^C \rho_j \int_0^{\sum_{l = k+1}^jT_l}P(W_j > t)dt \\
+&&+ \sum_{j=1}^{k-1}\rho_j\int_{0}^{\sum_{l = j+1}^k T_l}P(W_k > t)dt
+\end{eqnarray}
+Since $T_j = D_j -D_{j-1}$. This gives 
+\begin{eqnarray}\nonumber
+E(W_k)& =& E(W_{FIFO}) + \sum_{j=1}^{k-1}\rho_j\int_{0}^{D_k - D_j}P(W_k > t)dt\\\label{eqn:holpj_recursion}
+&& - \sum_{j =k+1}^C \rho_j \int_0^{D_j-D_k}P(W_j > t)dt
+\end{eqnarray}
+\section{Completeness and Equivalence in Two Classes}
+\label{sec:completeness_proofs}
+In this section, we prove the completeness of different parametrized dynamic priorities discussed in previous section for two class M/G/1 queue. Closed form expression of non-linear transformation from one class to another are derived. Advantages of these completeness and equivalence results are discussed. An alternative proof of optimality of $c/\rho$ rule in two class M/G/1 queue is proposed using these completeness result. 
+\subsection{Motivation}
+These results on completeness and equivalence of dynamic priority are substantially useful in the theory of optimal control. We discuss some of the advantages here. 
+
+All parametrized dynamic priority policies are shown to be complete and equivalent. Hence optimality of control policy will not be lost if it is posed over any type of the dynamic priority discipline. Note that priority parameter in relative priority discipline ($0\le p_1 \le 1$) is compact while it is unbounded in case of other parametrized dynamic priority queue discipline. This can help significantly in solving optimal control problems when posed over relative priority without loosing optimality.
+
+HOL-PJ is \textit{computationally most efficient} among all class of dynamic priorities discussed here. No additional processing delay is involved with HOL-PJ compared to HOL. Implementation of the priority jump (PJ) mechanism would require at each priority queue a local clock, a list of the arrival times of the customers currently in queue, and circuitry for the timing mechanism to make the customer at the head of the queue jump (see \cite{holpj}). It is suggested in \cite{holpj} that this information can be provided without incurring too much system complexity and/or cost. Note that this dynamic priority will have \textit{less} \textit{switching rate} as compare to other dynamic priorities due to it's mechanism being similar to HOL.
+
+\subsection{Completeness Results} 
+
+\subsubsection{\textbf{Relative priority}} Mean waiting time for class $i$, $W_i$, in case of two classes is given by \cite{haviv2}: 
+\begin{equation}\label{eqn:2class_relative}
+W_i = \dfrac{1-\rho p_i}{(1- \rho_1 - p_2 \rho_2)(1 - \rho_1 - p_1\rho_1)-p_1 p_2 \rho_1\rho_2}W_0, 
+\end{equation}   
+ for $i=1,~2$, here $\rho = \rho_1 + \rho_2$ and $W_0$ is mean residual amount of work in service, i.e., $W_0 = \sum_{i=1}^N\lambda_i \bar{x}_i^2$ where $\bar{x}_i^2$ is the second moment of service time of class $i$. Also $p_1+p_2 = 1$ without loss of generality as described in \cite{haviv2}. We extend the definition of relative priorities in natural ways which helps in proving completeness result.\\
+\indent \textit{\underline{Modified Relative priorities:}} We consider weights given to class $i$ as $p_i$ to be non-negative instead of only positive and this happens for at most one $p_i$. Also when $p_i = 0$ and $n_i > 0 = n_j~\forall~j$ then class $i$ customer is served. Remaining setting is same as \textit{relative priority}.
+
+ It follows from equation \ref{eqn:2class_relative} that $p_1 = 1$ and $p_1 = 0$ gives the corresponding waiting time when strict higher priority is given to class 1 and class 2 respectively. Hence we suspect this class of dynamic priority to be complete when parametrized over $p_1$. We prove our intuition below in following lemma.
+ 
+\begin{lem}\label{clm:relprt2cls}
+\textit{Modified relative priorities are complete with two classes.}
+\end{lem}
+\begin{proof}
+ See Appendix \ref{proof:lemmaclaim}.
+\end{proof}
+\subsubsection{\textbf{Earliest due date (EDD) based priority}}
+In case of two classes, expected waiting time is given by theorem 2 in \cite{EDDpriority}:
+\begin{eqnarray}\label{eqn:2clsedd1}
+E(W_{h,n}) = E(W) - \rho_l \int_0^u P(T_h[W] > y)dy\\
+E(W_l) = E(W) + \rho_h \int_0^u P(T_h[W] > y)dy\label{eqn:2clsedd2}
+\end{eqnarray}
+Here index $h$ and $l$ are for higher and lower class priority. $u_l$ and $u_h$ are the weights associated with lower and higher classes, $u = u_l - u_h \geq 0$. $W(t)$ be the total uncompleted service time of all customers present in the system at time $t$, regardless of priority. $W(t) \rightarrow W$ as $t \rightarrow \infty $.
+$$T_h[W(t)] = \inf\{t^{'} \geq  0 ;~ \hat{W}_h(t+t^{'}: W(t)) = 0\}$$
+where $\hat{W}_h(t+t^{'}: W(t))$ is the residual workload of the server at time $t+t^{'}$ given an initial workload of $W(t)$ at time $t$ and considering input workload from class $h$ only after time $t$.\\
+\indent Consider the more general setting with this type of priority where $u_1 ,~ u_2 \geq 0$ be the weights associated with class 1 and class 2. Let $\bar{u} = u_1 - u_2$. So $\bar{u}$ can take value in interval $[ -\infty, \infty]$. Class 1 will have higher or lower priority depending on $\bar{u}$ being negative or positive. By using equations (\ref{eqn:2clsedd1}) and (\ref{eqn:2clsedd2}), mean waiting time for this general setting in case of two classes can be written as  
+ \begin{eqnarray}\label{eqn:EDDcombined1}\nonumber
+ E(W_1) &=& E(W) + \rho_2\left[\int_0^{\bar{u}}P(T_2(W) > y)dy ~\mathbf{1}_{\{\bar{u} \geq 0\}}\right.\\
+ && \left.-\int_0^{-\bar{u}}P(T_1(W) > y)dy ~\mathbf{1}_{\{\bar{u} < 0\}} \right]\\\nonumber
+  E(W_2) &=& E(W) - \rho_1\left[\int_0^{\bar{u}}P(T_2(W) > y)dy ~\mathbf{1}_{\{\bar{u} \geq 0\}}\right.\\
+  && \left. -\int_0^{-\bar{u}}P(T_1(W) > y)dy ~\mathbf{1}_{\{\bar{u} < 0\}} \right]\label{eqn:EDDcombined2}
+ \end{eqnarray}
+ 
+  Note that $\bar{u} = -\infty $ and $\bar{u} = \infty$ gives the corresponding waiting time when strict higher priority is given to class 1 and class 2 respectively. Hence we suspect this class of dynamic priority to be complete when parametrized over $\bar{u}$. We prove our intuition below in following lemma.
+  
+\begin{lem}\label{clm:EDDcomplete}
+\textit{EDD dynamic priority is complete in two classes.}
+\end{lem}  
+\begin{proof}
+See Appendix.
+\end{proof}
+\subsubsection{\textbf{HOL-PJ dynamic priority}}
+It can be observed from equation (\ref{eqn:EDD_recursion}) and (\ref{eqn:holpj_recursion}) that waiting time recursion in HOL-PJ is same as EDD priority policy. Urgency number and overdue in EDD correspond to delay requirement and excessive delay in HOL-PJ. From our previous result of completeness of two class EDD dynamic priority, following lemma follows.
+\begin{lem}
+\textit{HOL-PJ dynamic priority is complete in two classes.} \hspace{2.8in}$\blacksquare$
+\end{lem}
+
+\subsection{Equivalence results}
+Since delay dependent priority and relative priority both turn out to be complete, it is expected that there should be a transformation from one class to another. Following lemma finds this explicit non-linear transformation. 
+\begin{lem}\label{clm:equivalenceDDPnRP}
+\textit{Delay dependent priority and relative priority are equivalent in two classes and priority parameters ($\beta$ and $p_1$) are related as:}
+\begin{equation}
+\beta = \frac{\mu-\lambda p_1}{(2\mu-\lambda)p_1}\mathbf{1}_{\{0 \le  p_1 \le \frac{1}{2}\}} + \frac{(2\mu-\lambda)(1-p_1)}{\mu-\lambda(1-p_1)}\mathbf{1}_{\{\frac{1}{2} \le  p_1 \le 1\}}
+\end{equation}
+\end{lem}
+\begin{proof}
+See Appendix.
+\end{proof}
+EDD dynamic priority is also complete. Following lemma finds the explicit non linear transformation between delay dependent priority parameter ($\beta$) and EDD priority parameter~($\bar{u}$).
+\begin{lem}\label{clm:equivalenceDDPnEDD}
+\textit{Delay dependent priority and earliest due date priority are equivalent in two classes and priority parameters ($\beta$ and $\bar{u}$) are related as:}
+\begin{eqnarray}\nonumber
+\beta = \frac{\mu-\lambda}{\lambda_2+\frac{\rho_2}{\mu W_0}(\mu-\lambda)\lambda_1 \tilde{I}(\bar{u})}\left[\frac{\mu-\lambda_1}{\mu(1 - \rho)} - \frac{\rho_2(\mu-\lambda_1)\tilde{I}(\bar{u})}{\mu W_0}\right.\\\nonumber
+ - \left.1\right]\mathbf{1}_{\{-\infty \le  \bar{u} \le 0\}} + \frac{\lambda_2\left( \frac{\mu W_0}{\mu-\lambda} + \rho_2 I(\bar{u})\right)}{\frac{\mu \lambda_2 W_0}{\mu-\lambda}	-\rho_2(\mu-\lambda_2)I(\bar{u})}\mathbf{1}_{\{0 \le  \bar{u} \le \infty\}}
+\end{eqnarray}
+where integrals $\tilde{I}(\bar{u})=\int_0^{-\bar{u}}P(T_1(W)>y)dy$ and $I(\bar{u})=\int_0^{\bar{u}}P(T_2(W)>y)dy$. 
+\end{lem}
+\begin{proof}
+See Appendix.
+\end{proof}
+
+\subsection{Optimal Scheduling Policy}
+It is well known in literature (see \cite[page 110]{mitranibook}, \cite{yao2002dynamic}) that linear cost objective function of waiting time, $C=\sum_{i=1}^{K}c_iW_i$, is minimized by $c/\rho$ rule if all work conserving non-preemptive scheduling policies are considered. Here $c_i$ and $W_i$ are the cost and mean waiting time associated with class $i$ respectively. This rule states that optimal scheduling discipline with respect to objective $C$ is strict priority where priority is given in the order of ratio $c_i/\rho_i$.  
+
+We prove this result in two class M/G/1 queue using completeness ideas discussed in this paper. Since delay dependent priority is complete for two classes. It is enough to show the optimality of $c/\rho$ rule over delay dependent priority. On simplifying the average waiting time expressions for two classes in DDP using equation (\ref{eqn:DDP_recursion}) and conservation law $\rho_1W_1+\rho_2W_2 = \frac{\rho W_0}{(1-\rho)}$:
+\begin{equation}
+W_1 =  \frac{W_0}{(1-\rho)(1-\rho_2(1-\psi))}, W_2 = \frac{W_0(1-\rho(1-\psi))}{(1-\rho)(1-\rho_2(1-\psi))}%\text{&}
+\end{equation} 
+Here $\psi := b_1/b_2$ and $\rho = \rho_1 + \rho_2$. We want to minimize $f(\psi) = c_1W_1+c_2W_2$. On simplifying for $f(\psi)$, we have 
+\begin{equation}
+f(\psi) =  \frac{W_0}{(1-\rho)}\left(\frac{c_1 + c_2 - c_2\rho +c_2\rho\psi}{1-\rho_2(1-\psi)} \right)
+\end{equation}
+On taking derivative with respect to $\psi$, we have $f'(\psi)$ as:
+\begin{equation}\nonumber
+\frac{W_0}{1-\rho}\left[\frac{(1-\rho_2(1-\psi))c_2\rho - (c_1+c_2(1-\rho) + c_2\rho\psi)\rho_2}{(1-\rho_2(1-\psi))^2}\right]
+\end{equation}
+$$f'(\psi) = 0 \Rightarrow \frac{c_1}{\rho_1} = \frac{c_2}{\rho_2}$$
+Hence we can say that no matter what $\psi$ (randomization) we choose as long as above condition is satisfied objective will be minimized. $f(\psi)$ can be rewritten as:
+$$f(\psi) = \frac{W_0(c_1+c_2 - c_2 \rho) + W_0 c_2\rho\psi}{(1-\rho)(1-\rho_2) + \rho_2(1-\rho)\psi} = \frac{a_1 + a_2\psi}{a_3 + a_4\psi}$$
+Note that $a_1,a_2, a_3 \text{ and } a_4$ are all positive constants. Now consider 
+$$f(\psi +\delta) - f(\psi) = \frac{\delta(a_2a_3 - a_1a_4)}{(a_3+a_4\psi)(a_3+a_4(\psi+\delta))}$$
+Hence if $a_2a_3 > a_1a_4$, increasing the value of $\psi$ by $\delta$ will increase the objective hence $\psi = 0$ is an optimal solution. On the other hand ($a_2a_3 > a_1a_4$) arguments will be reversed and $\psi = \infty$ will be the optimal solution. Note that 
+$$a_2a_3 > a_1a_4 \Rightarrow \frac{c_2}{\rho_2} > \frac{c_1}{\rho_1}, ~~\psi = 0 \Rightarrow b_1 = 0$$ 
+Hence static priority will be given to class 2 when $\frac{c_2}{\rho_2} > \frac{c_1}{\rho_1}$. This completes the proof of optimality of $c/\rho$ rule over all possible scheduling policies with two classes.
+\subsection{Global FCFS}
+Global FCFS is the policy when customers are served according to the order of their arrivals. It is noted that this important policy is realizable by all parametrized dynamic priority policies. Global FCFS is achieved by delay dependent, relative, earliest due date based priority by keeping all $b_i$'s, $p_i$'s and $u_i$'s equal. Mean waiting time for each class is equal in global FCFS policy and is given by $\frac{W_0}{(1-\rho)}$. In case of two class parametrized queueing system, global FCFS policy is realized by delay dependent priority with $\beta=1$ while $p_1 =1/2$ and $\bar{u} = 0$ are parameters in case of relative and EDD dynamic priority respectively.
+
+Global FCFS is the policy which minimizes the maximum dissatisfaction where dissatisfaction is in terms of mean waiting time. We find the weights given to the extreme points of line segment of figure \ref{2classline} to achieve global FCFS in case of two classes. Consider weights $\alpha_1 = \frac{(1-\rho_1)}{(2-\rho_1 -\rho_2)}$ to class 1 and $\alpha_2 = \frac{(1-\rho_2)}{(2-\rho_1 -\rho_2)}$ to class 2. On simplifying, we have 
+\begin{equation}
+\begin{bmatrix}
+\alpha_1 & \alpha_2
+\end{bmatrix} \begin{bmatrix}
+       W_{12}^{(1)} & W_{12}^{(2)}  \\
+       W_{21}^{(1)} &  W_{21}^{(2)} \\
+      
+     \end{bmatrix} = \begin{bmatrix}
+     \dfrac{W_0}{1-\rho}    & \dfrac{W_0}{1-\rho}   
+        \end{bmatrix} 
+\end{equation}
+ Note that with two classes, we have exactly \textit{one and unique} pair of weights given to extreme points to get the global FCFS point in interior of polytope (line segment).
+\section{Conclusions and Future work}
+Idea of completeness is discussed for work conserving queueing systems. Certain parametrized dynamic priorities are shown to be complete in two class M/G/1 queue. Equivalence among different class of dynamic priority is established by obtaining closed form expression of non linear transformations. Significance of these results in optimal control of queueing system is also discussed. Importance of Global FCFS policy  and some results are obtained. It will be interesting to extend these ideas in higher dimensions ($N$ class queue). Another fascinating future avenue will be to come up with a synthesis algorithm with different parametrized dynamic priority.   % Notion of \textit{2-moment completeness} is also introduced in single class and certain parametrized policies are identified as \textit{2-moment complete}. It will be interesting to carry forward these ideas in higher dimension or for network of queue. Solving some optimal control problems using the idea of \textit{2-moment completeness} will be another fascinating future avenue.     
+\label{sec:conclusion}
+
+%\subsubsection{Interpretation for different values of $\bar{u}$}
+%\begin{enumerate}
+%\item $\bar{u} = -\infty:$ On using equations \ref{eqn:EDDcombined1} and \ref{eqn:EDDcombined2} for $\bar{u} = -\infty$, we obtain 
+%\begin{eqnarray}
+%E(W_1) = E(W) - \rho_2 E(T_1(W)) = \dfrac{W_0}{1-\rho_1}\\
+%E(W_2) = E(W) + \rho_1 E(T_1(W)) = \dfrac{W_0}{(1-\rho)(1-\rho_1)}
+%\end{eqnarray}
+%This matches with the Cobham's \cite{cobham} formulae when class 1 has static priority over class 2. So $\bar{u} = -\infty$ corresponds to strict priority of class 1 over class 2.
+%\item $\bar{u} = 0:$ On solving for class 1 and class 2 waiting time for this case, we have
+%\begin{equation}
+%E(W_1) = E(W_2) = \dfrac{W_0}{1-\rho}
+%\end{equation}
+%which is average waiting time under global FCFS discipline. So $\bar{u} = 0$ corresponds to global FCFS queue discipline.
+%\item $\bar{u} = \infty:$ Again by using equations \ref{eqn:EDDcombined1} and \ref{eqn:EDDcombined2} for $\bar{u} = -\infty$, we obtain
+%\begin{eqnarray}
+%E(W_1) = E(W) + \rho_2 E(T_2(W)) = \dfrac{W_0}{(1-\rho)(1-\rho_2)}\\
+%E(W_2) = E(W) - \rho_1 E(T_2(W)) = \dfrac{W_0}{(1-\rho_2)}
+%\end{eqnarray}
+%This matches with the Cobham's \cite{cobham} formulae when class 2 has static priority over class 1. So $\bar{u} = -\infty$ corresponds to strict priority of class 2 over class 1.
+%\end{enumerate}
+%Hence we suspect this generalised EDD dynamic priority to be complete.
+
+  
+
+
+%\addtolength{\textheight}{-3cm}   % This command serves to balance the column lengths
+                                  % on the last page of the document manually. It shortens
+                                  % the textheight of the last page by a suitable amount.
+                                  % This command does not take effect until the next page
+                                  % so it should come on the page before the last. Make
+                                  % sure that you do not shorten the textheight too much.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{ref1}
+\begin{appendices}
+\section{Completeness of delay dependent priority (DDP)}
+\label{proof:DDP_cmplt}
+It is clear from equation (\ref{eqn:DDP_recursion}) that average waiting time expressions in delay dependent priority (DDP) depends on ratios $b_i$ only. Define $\beta := b_2/b_1$. Average waiting time expression for class 1, $W_1$, and for class 2, $W_2$, in two classes DDP can be derived using recursion (\ref{eqn:DDP_recursion}) as follows:
+\begin{eqnarray}\nonumber
+W_1 &=& \frac{\lambda \psi (\mu-\lambda(1-\beta))}{\mu(\mu-\lambda)(\mu-\lambda_1(1-\beta))}\mathbf{1}_{\{\beta \leq 1\}}\\\label{eqn:DDPclass1}
+&&+\frac{\lambda \psi }{(\mu-\lambda)(\mu -\lambda_2(1-\frac{1}{\beta}))}\mathbf{1}_{\{\beta > 1\}}
+\end{eqnarray}
+\begin{eqnarray}\nonumber
+W_2 &=&\frac{\lambda \psi}{(\mu-\lambda)(\mu -\lambda_1(1-\beta))}\mathbf{1}_{\{\beta \leq 1\}}\\\label{eqn:DDPclass2}
+&&+ \frac{\lambda \psi(\mu-\lambda(1-\frac{1}{\beta}))}{\mu(\mu-\lambda)(\mu-\lambda_2(1-\frac{1}{\beta}))}\mathbf{1}_{\{\beta > 1\}}
+\end{eqnarray}
+where $\lambda = \lambda_1 + \lambda_2$, $\psi = (1+\sigma^2 \mu^2)/2$ and $\mathbf{1_{\{.\}}}$ is indicator function. Here $\mu$ is the common service rate for both the classes and $\sigma^2$ is the variance of service time. Note that $\beta = 0$ and $\beta = \infty$ gives the corresponding waiting time when strict higher priority is given to class 1 and class 2 respectively. Hence we suspect this class of dynamic priority to be complete when parametrized over $\beta$. We prove our intuition below in following lemma.  
+\begin{claim} \textit{Delay dependent priorities are complete in two classes.}
+\end{claim}
+\begin{proof}
+It follows from lemma \ref{clm:equivalenceDDPnRP} that there is one to one correspondence between delay dependent priority parameter $\beta$ and relative priority parameter $p_1$. It is shown in lemma \ref{clm:relprt2cls} that relative priority forms a complete class. Hence this claim follows.
+\end{proof}
+
+\section{Proofs of lemma and claims}
+\label{proof:lemmaclaim}
+\begin{mylemma}{\ref{clm:relprt2cls}}
+Note that from the definition of modified relative priorities, if $p_1 = 0$ then class 2 has strict priority over class 1 and it follows other way around also when $p_1 = 1$. Consider the notation $W_{12}^{(i)}$ to be the mean waiting time for class $i$, $i=1,2$,  when class 1 has strict priority over class 2, On using the expression for mean waiting time from \cite{haviv2} and putting $p_1 = 0$, we have
+\begin{equation}
+W_{12}^{(1)} = \dfrac{W_0}{1 - \rho_1}~~~~~\text{and}~~~~~~~W_{12}^{(2)} = \dfrac{1}{(1 - \rho_1)(1 - \rho_1 - \rho_2)}W_0
+\label{eqn:class1p}
+\end{equation}
+Point $W_{12} = (W_{12}^{(1)}, W_{12}^{(2)})$  is shown in Figure \ref{2classline}. Above expressions match with Cobham's \cite{cobham} strict priority mean waiting time. Similarly, when class 2 has strict priority over class 1 ($p_2 = 0$ so $p_1 = 1$ as $p_1+p_2 =1$), we have
+\begin{equation}
+W_{21}^{(1)} = \dfrac{W_0}{(1 - \rho_2)(1 - \rho_1 - \rho_2)}~~~\text{and}~~~W_{21}^{(2)} = \dfrac{1}{(1 - \rho_2)}W_0
+\label{eqn:class2p}
+\end{equation}
+$W_{21} = (W_{21}^{(1)}, W_{21}^{(2)})$ is other extreme point shown in figure \ref{2classline}. Consider the notation $W_{\alpha}^{(i)}$ for class $i$ as $W_{\alpha}^{(i)} = \alpha W_{12}^{(i)} + (1-\alpha)W_{21}^{(i)}$. Note that when $0 \leq \alpha \leq 1$, it achieves all values in the line segment of figure \ref{2classline}. So it is enough to show that there exist $p =(p_1, p_2) $ (existence of  $p_1$ only is enough as $p_2$ automatically get fixed by relation $p_2 = 1 - p_1$) for every $\alpha$. On simplifying the expression for $W_{\alpha}^{(1)}$, by using equations \ref{eqn:class1p} and \ref{eqn:class2p}, we have:
+\begin{equation}
+W_{\alpha}^{(1)} = \dfrac{\alpha \rho_2 (\rho_1 + \rho_2 	- 2) + 1-\rho_1 }{(1 - \rho_1)(1 - \rho_2)(1 - \rho_1 - \rho_2)}W_0
+\end{equation}
+Consider the notation $W_{p_{1}}^{(1)}$ as the average waiting time of class 1 with pure dynamic relative priority i.e. $0 < p_1 < 1$, then we have \cite{haviv2}:
+\begin{equation}
+W_{p_{1}}^{(1)} = \dfrac{(1-\rho p_1)}{(1-\rho_1 - p_2 \rho_2)(1-\rho_2 - p_1 \rho_1) - p_1 p_2 \rho_1 \rho_2} W_0
+\end{equation}
+On equating above two equations, we get following relation between $\alpha$ and $p_1$
+\begin{equation}
+p_1 = \dfrac{\alpha \rho_2 (2-\rho_1 - \rho_2)(1-\rho_2)(1-\rho_1 - \rho_2)}{D}
+\label{eqn:p1-alpha}
+\end{equation} 
+where $D$ is $(\alpha \rho_2(\rho_1+\rho_2-2)+ 1-\rho_1)(\rho_2(1-\rho_2) - \rho_1(1-\rho_1)) +\rho (1-\rho_1)(1-\rho_2)(1-\rho_1 - \rho_2))$. On putting $\alpha = 0$ in $W_{\alpha}^{(1)} = \alpha W_{12}^{(1)} + (1-\alpha)W_{21}^{(1)}$, We get $W_{\alpha}^{(1)} = W_{21}^{(1)}$. Also note that $\alpha = 0 \Rightarrow p_1 = 0 $ by above equation and under the condition $p_1 = 0$ class 2 will have strict priority over class 1 which matches with 
+the expression of $W_{\alpha}^{(1)}$ at $\alpha = 0$. Similarly $\alpha = 1 \Rightarrow W_{\alpha}^{(1)} = W_{12}^{(1)} $ and on putting $\alpha= 1$ in above equation it simplifies to $p_1 = 1$ or $p_2 = 0$. This again implies that class 1 has priority over class 2 by the definition of relative priorities. So it follows that $\forall ~\alpha \in[0,1]~ \exists~ p_1$ in relative priorities defined by equation \ref{eqn:p1-alpha}.\\
+\indent Here we considered average waiting time of class 1 only. One can get similar results while considering waiting time of class 2. Consider the following system of linear equations
+
+$$\begin{bmatrix}
+\alpha & 1 - \alpha
+\end{bmatrix} \begin{bmatrix}
+       W_{12}^{(1)} & W_{12}^{(2)}  \\
+       W_{21}^{(1)} &  W_{21}^{(2)} \\
+      
+     \end{bmatrix} = \begin{bmatrix}
+     W_{p_1}^{(1)} & W_{p_1}^{(2)}
+     \end{bmatrix}$$
+$$\begin{vmatrix}
+ W_{12}^{(1)} & W_{12}^{(2)}  \\
+       W_{21}^{(1)} &  W_{21}^{(2)} \\
+      
+\end{vmatrix} = \dfrac{W_0^2}{(1-\rho_1)(1-\rho_2)}\left(1 - \dfrac{1}{(1-\rho)^2}\right) \neq 0$$
+So $\forall~\alpha$ there exists $p_1$, Hence in two dimension or with two classes all achievable performance vectors can be achieved. So relative priorities are \textit{complete} for two classes. \hspace{0.35in}$\blacksquare$
+\end{mylemma}
+
+
+\begin{mylemma}{\ref{clm:EDDcomplete}}
+Consider $W_{\alpha}^{(1)}$ similar to lemma \ref{clm:relprt2cls} as 
+\begin{equation}
+W_{\alpha}^{(1)} = \dfrac{\alpha \rho_2 (\rho_1 + \rho_2 	- 2) + 1-\rho_1 }{(1 - \rho_1)(1 - \rho_2)(1 - \rho_1 - \rho_2)}W_0
+\end{equation}
+Average waiting time in EDD priority depends on $\bar{u}$ being positive or negative (see equation (\ref{eqn:EDDcombined1}) and (\ref{eqn:EDDcombined2})), consider the following two cases:
+\begin{enumerate}
+\item $0 \leq \bar{u} \leq \infty:$ Consider the notation for integral $I(\bar{u}) = \int_0^{\bar{u}}P(T_2(w)> y)dy$. Expected waiting time for class 1 is given by (using equation (\ref{eqn:EDDcombined1}))
+\begin{equation}\nonumber
+E(W_1) = E(W) + \rho_2 \int_0^{\bar{u}}P(T_2(w)> y)dy
+\end{equation}
+On equating $E(W_1)$ with $W_{\alpha}^{(1)}$ and solving for $\alpha$, we have
+\begin{equation}\label{eqn:alpha1}
+\alpha = \dfrac{1-\rho_1}{2-\rho_1 -\rho_2} - \dfrac{I(\bar{u})(1-\rho_1)(1-\rho_2)(1-\rho)}{W_0(2-\rho_1 - \rho_2)}
+\end{equation}
+$\bar{u} = 0 \Rightarrow  I(\bar{u}) = 0$ so $\alpha = \frac{1-\rho_1}{2-\rho_1-\rho_2}$ and $\bar{u} = \infty \Rightarrow I(\bar{u}) = \int_0^{\infty}P(T_2(w)> y)dy = E(T_2(W)) = \frac{W_0}{(1-\rho)(1-\rho_2)}$. On putting back this value of $I(\bar{u})$ in \ref{eqn:alpha1}, we get $\alpha = 0$. Since $I(\bar{u})$ is monotone increasing, we have 
+\begin{equation}
+0 \leq \bar{u} \leq \infty \Leftrightarrow 0 \leq \alpha \leq \frac{1-\rho_1}{2-\rho_1 -\rho_2}
+\end{equation}
+\item $-\infty \leq \bar{u} \leq 0$ Consider the notation for integral $\tilde{I}(\bar{u}) = \int_0^{-\bar{u}}P(T_1(w)> y)dy$. Expected waiting time for class 1 is given by (using equation (\ref{eqn:EDDcombined1}))
+\begin{equation}\nonumber
+E(W_1) = E(W) - \rho_2 \int_0^{-\bar{u}}P(T_1(W)> y)dy
+\end{equation}
+On equating $E(W_1)$ with $W_{\alpha}^{(1)}$ and solving for $\alpha$, we have
+\begin{equation}\label{eqn:alpha2}
+\alpha = \dfrac{(1-\rho_1)(1-\rho_2)(1-\rho)\tilde{I}(\bar{u})}{(2-\rho_1 -\rho_2)W_0} + \dfrac{(1-\rho_1)}{(2-\rho_1 - \rho_2)}
+\end{equation}
+$\bar{u} = 0 \Rightarrow  \tilde{I}(\bar{u}) = 0$ so $\alpha = \frac{1-\rho_1}{2-\rho_1-\rho_2}$ and $\bar{u} = -\infty \Rightarrow \tilde{I}(\bar{u}) = \int_0^{\infty}P(T_1(w)> y)dy = E(T_1(W)) = \frac{W_0}{(1-\rho)(1-\rho_2)}$. On putting back this value of $I(\bar{u})$ in \ref{eqn:alpha2}, we get $\alpha = 1$. Since $\tilde{I}(\bar{u})$ is monotone decreasing, we have 
+\begin{equation}
+-\infty \leq \bar{u} \leq 0 \Leftrightarrow \frac{1-\rho_1}{2-\rho_1 -\rho_2}\leq \alpha \leq 1
+\end{equation} 
+\end{enumerate} 
+Since entire range of $\alpha$ is achieved by some value of $\bar{u}$. Similar arguments will work if waiting time of other class is considered. Hence EDD dynamic priority are complete for two classes.\hspace{2.6in}$\blacksquare$
+\end{mylemma}
+
+
+\begin{mylemma}{\ref{clm:equivalenceDDPnRP}}
+Note that, average waiting time expressions in delay dependent priority (DDP) depends on ratios $b_i$ only. Define $\beta := b_2/b_1$. Observe that average waiting time expression for two classes depends on $\beta$ only and given by equations (\ref{eqn:DDPclass1}) and (\ref{eqn:DDPclass2}). In relative priority $p_1 = 1$ indicates strict priority to class 1. On simplification, we have
+\begin{equation}
+W_{12}^{(1)}|_{\beta = 0} = \dfrac{(\lambda_1 + \lambda_2)(1+\sigma^2\mu^2)}{2\mu (\mu -\lambda_1)} = W_{12}^{(1)}|_{p_1 = 0}
+\end{equation}
+Hence $\beta = 0 $ is equivalent to $p_1 =1$. Since average waiting time expression in DDP depends on the value of $\beta$. So consider following two cases:\\
+\textbf{\underline{CASE 1: $0 < \beta \leq 1$}} For this range of $\beta$, we have average waiting time for class 1:
+$$W^{(1)}|_{\beta \leq 1} = \dfrac{\lambda \psi(\mu - \lambda(1-\beta)}{\mu(\mu -\lambda)(\mu - \lambda_1(1-\beta))}$$
+On simplifying the expression of average waiting time in relative priority setting for $p = p_1$ is as follows
+\begin{equation}
+W^{(1)}|_{p = p_1 } = \dfrac{(1-\rho p_1)(\lambda_1 + \lambda_2)(1+\sigma^2 \mu^2)}{2(\mu-\lambda)(\mu - \lambda_2 - p_1(\lambda_1 - \lambda_2))}
+\end{equation} 
+On simplifying the expressions for $W^{(1)}|_{p = p_1 } = W^{(1)}|_{\beta \leq 1} $, we have 
+\begin{equation}
+p_1 = \dfrac{\mu + (\mu - \lambda_1 - \lambda_2)(1-\beta)}{2 \mu -(\lambda_1 + \lambda_2)(1-\beta)}
+\end{equation}
+Note that $\beta = 0 \rightarrow p_1 =1$ and $\beta = 1 \rightarrow p_1 =1/2$, on solving the above equation for $\beta$, we get
+\begin{equation}
+\beta = \dfrac{(2\mu - \lambda)(1 - p_1)}{\mu - \lambda(1 - p_1)}
+\end{equation}
+Note that, we are in the case of $0 \leq \beta \le 1$. On further using above equation with this condition gives:
+$$0 \leq \beta \leq 1 \Leftrightarrow \frac{1}{2} \leq p_1 \leq 1$$ 
+\textbf{\underline{CASE 2: $1 < \beta \leq \infty $}}
+$$W^{(1)}|_{\beta > 1} = \dfrac{\lambda\psi}{(\mu - \lambda)(\mu - \lambda_2(1 - \frac{1}{\beta}))}$$
+ On equating above equation with $W^{(1)}|_{p=p_1}$, we get
+ \begin{equation}
+ \beta = \dfrac{\mu -\lambda p_1}{(2\mu -\lambda)p_1}
+ \end{equation}
+Since we are in the case of $\beta > 1$ this gives $p_1 < 1/2$. Also note that $p_1 = 0  \rightarrow \beta = \infty$. Hence we have 
+$$ 1 < \beta \leq \infty \Leftrightarrow 0 \leq p_1 < \frac{1}{2}$$ 
+So for both cases it follows that for every $\beta $ there exists $p$ and other way also. Hence lemma follows. 
+\end{mylemma}
+
+\begin{mylemma}{\ref{clm:equivalenceDDPnEDD}}
+Since global FCFS, strict priorities are given by $\bar{u} = 0, -\infty, \infty$ in EDD and $\beta = 1, 0, \infty$ in DDP respectively. On considering following two cases, we have
+\begin{enumerate}
+\item $-\infty \le \bar{u} \le 0$ and $0 \le \beta \le 1:$ On equating the waiting time for class 1 under these two dynamic priority using equations (\ref{eqn:DDPclass1}) and (\ref{eqn:EDDcombined1}):\\ $E(W) - \rho_2\int_0^{-\bar{u}}P(T_1(W)> y)dy =$
+\begin{equation}
+ \frac{\lambda \psi(\mu - \lambda(1-\beta)}{\mu(\mu -\lambda)(\mu - \lambda_1(1-\beta))}
+\end{equation}  
+On simplifying the above equation for $\beta$, we have $\beta =$
+\begin{eqnarray}\nonumber
+  \frac{\mu-\lambda}{\lambda_2+\frac{\rho_2}{\mu W_0}(\mu-\lambda)\lambda_1 \tilde{I}(\bar{u})}\times
+  \end{eqnarray}
+\begin{eqnarray}\label{eqn:relbetau1}
+\hspace{2cm}\left[\frac{\mu-\lambda_1}{\mu(1 - \rho)} - \frac{\rho_2(\mu-\lambda_1)\tilde{I}(\bar{u})}{\mu W_0} - 1\right]
+\end{eqnarray}
+as $\bar{u} \rightarrow 0, \tilde{I}(\bar{u}) \rightarrow 0$ so $\beta \rightarrow 1$ from above equation. Similarly, as $\bar{u} \rightarrow -\infty, \tilde{I}(\bar{u}) \rightarrow E(T_1(W))$ or $\frac{W_0}{(1-\rho)(1-\rho_1)}$ Hence $\beta \rightarrow 0$. So
+$$-\infty \le \bar{u} \le 0 \Leftrightarrow 0 \le \beta \le 1$$ 
+Above relation follow from equation \ref{eqn:relbetau1} and by the fact that $\beta$ is monotonically increasing with $\bar{u}$ as $\tilde{I}(\bar{u})$ is monotonically decreasing. 
+\item $0 \le \bar{u} \le \infty$ and $1 \le \beta \le \infty:$ Again on equating the waiting time for class 1 under these two dynamic priority using equations (\ref{eqn:DDPclass1}) and (\ref{eqn:EDDcombined1}):\\
+$E(W) + \rho_2\int_0^{\bar{u}}P(T_2(W)> y)dy =$
+\begin{equation}
+ \frac{\lambda \psi}{(\mu -\lambda)(\mu - \lambda_2(1-\frac{1}{\beta}))}
+\end{equation} 
+On simplifying the above equation for $\beta$, we have
+\begin{equation}\label{eqn:relbetau2}
+\beta  = \frac{\lambda_2\left( \frac{\mu W_0}{\mu-\lambda} + \rho_2 I(\bar{u})\right)}{\frac{\mu \lambda_2 W_0}{\mu-\lambda}	-\rho_2(\mu-\lambda_2)I(\bar{u})}
+\end{equation}
+as $\bar{u} \rightarrow 0, I(\bar{u}) \rightarrow 0$ so $\beta \rightarrow 1$ from above equation. Similarly, as $\bar{u} \rightarrow \infty, {I}(\bar{u}) \rightarrow E(T_2(W))$ or $\frac{W_0}{(1-\rho)(1-\rho_2)}$ Hence $\beta \rightarrow \infty$. So
+$$0 \le \bar{u} \le \infty \Leftrightarrow 1 \le \beta \le \infty$$ 
+Above relation follow from equation \ref{eqn:relbetau2} and by the fact that $\beta$ is monotonically increasing with $\bar{u}$ as $\tilde{I}(\bar{u})$ is monotonically increasing. 
+\end{enumerate}
+\end{mylemma}
+
+\end{appendices}
+
+\end{document}

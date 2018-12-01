@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>HTML Frames Example - Menu 1</title>
+<style type="text/css">
+body {
+	font-family:verdana,arial,sans-serif;
+	font-size:lem;
+	margin:10px;
+	background-color:#FFFAF0;
+	}
+</style>
+</head>
+<body>
+</br></br>
+</br>
+<h3>Research</h3>
+<a href="content.html" target="content">Home</a><br />
+<a href="Courses.html" target="content">Courses</a><br />
+<a href="teaching.html" target="content">Teaching</a>
+<!--
+<p><a href="white.html" target="content">White Page</a></p>#DCDCC6-->
+</P>
+</P>
+</P>
+</P>
+</br></br>
+</br>
+<h3>Diversions</h3>
+<a href="latex.html" target="content">LaTeX</a><br />
+<a href="resources.html" target="content">Resources</a><br />
+<a href="learning.html" target="content">Learning</a><br />
+</br></br>
+</br>
+</br>
+<h3>Fun stuff</h3>
+<a href="chaibuddies.html" target="content">Chai Buddies</a><br />
+<a href="Miscellaneous.html" target="content">Miscellaneous</a><br />
+<a href="Reading.html" target="content">Reading</a><br />
+<!--
+<a href="http://www.quackit.com/html/templates/frames/frames_example_1.html" target="_top">Example 1</a><br />
+<a href="http://www.quackit.com/html/templates/frames/frames_example_2.html" target="_top">Example 2</a><br />
+<a href="http://www.quackit.com/html/templates/frames/frames_example_3.html" target="_top">Example 3</a><br />
+<a href="http://www.quackit.com/html/templates/frames/frames_example_4.html" target="_top">Example 4</a><br />
+<a href="http://www.quackit.com/html/templates/frames/frames_example_5.html" target="_top">Example 5</a><br />-->
+</body>
+</html>

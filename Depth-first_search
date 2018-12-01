@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Depth-first search - Wikipedia, the free encyclopedia</title>
+<meta name="generator" content="MediaWiki 1.26wmf15" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Depth-first_search" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Depth-first_search&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Depth-first_search&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Depth-first_search" />
+<link rel="stylesheet" href="//en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=ext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.viewPageTarget.noscript%7Cext.wikihiero%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cmw.PopUpMediaTransform.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="//en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: global:resourceloader:filter:minify-css:7:de1ab5287c9076b96eedd3f97a84a7b6 */</style>
+<script src="//en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Depth-first_search","wgTitle":"Depth-first search","wgCurRevisionId":673028015,"wgRevisionId":673028015,"wgArticleId":97034,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from July 2010","All articles needing additional references","Commons category with local link same as on Wikidata","Graph algorithms","Search algorithms","Articles with example pseudocode","Articles containing video clips"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Depth-first_search","wgRelevantArticleId":97034,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wikilove-recipient":"","wikilove-anon":0,"wgPoweredByHHVM":true,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgGatherShouldShowTutorial":true,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Depth-first-tree.svg/100px-Depth-first-tree.svg.png","wgULSAcceptLanguageList":["en-us","en","he"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q816319"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});
+/* cache key: global:resourceloader:filter:minify-js:7:b2706269305541eba923c165462b22c4 */
+}</script>
+<script>if(window.mw){
+mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mw.TMHGalleryHook.js","mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.centralauth.centralautologin","mmv.head","ext.imageMetrics.head","ext.visualEditor.viewPageTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+}</script>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf15/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Depth-first_search skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Depth-first search</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="metadata plainlinks ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="262" data-file-height="204" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Depth-first_search&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing/1" title="Help:Introduction to referencing/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(July 2010)</i></small></span></td>
+</tr>
+</table>
+<table class="infobox" style="width:22em">
+<caption>Depth-first search</caption>
+<tr>
+<td colspan="2" style="text-align:center">
+<div class="floatnone"><a href="/wiki/File:Depth-first-tree.svg" class="image" title="Order in which the nodes get expanded"><img alt="Order in which the nodes get expanded" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Depth-first-tree.svg/300px-Depth-first-tree.svg.png" width="300" height="192" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Depth-first-tree.svg/450px-Depth-first-tree.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Depth-first-tree.svg/600px-Depth-first-tree.svg.png 2x" data-file-width="390" data-file-height="250" /></a></div>
+<small>Order in which the nodes are visited</small></td>
+</tr>
+<tr>
+<th scope="row">Class</th>
+<td><a href="/wiki/Search_algorithm" title="Search algorithm">Search algorithm</a></td>
+</tr>
+<tr>
+<th scope="row">Data structure</th>
+<td><a href="/wiki/Graph_(data_structure)" title="Graph (data structure)" class="mw-redirect">Graph</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Best,_worst_and_average_case" title="Best, worst and average case">Worst case performance</a></th>
+<td><img class="mwe-math-fallback-image-inline tex" alt="O(|E|)" src="//upload.wikimedia.org/math/5/0/4/5047506d94a45a73aa51fc971a0ff38d.png" /> for explicit graphs traversed without repetition, <img class="mwe-math-fallback-image-inline tex" alt="O(b^d)" src="//upload.wikimedia.org/math/5/8/7/5873c300ac7f4699044640975dff9892.png" /> for implicit graphs with branching factor <i>b</i> searched to depth <i>d</i></td>
+</tr>
+<tr>
+<th scope="row"><a href="/wiki/Best,_worst_and_average_case" title="Best, worst and average case">Worst case space complexity</a></th>
+<td><img class="mwe-math-fallback-image-inline tex" alt="O(|V|)" src="//upload.wikimedia.org/math/c/0/8/c08c0e45a937a414cd20dbdf046ca4b5.png" /> if entire graph is traversed without repetition, O(longest path length searched) for implicit graphs without elimination of duplicate nodes</td>
+</tr>
+</table>
+<table class="vertical-navbox nowraplinks hlist" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%">
+<tr>
+<th style="padding:0.2em 0.4em 0.2em;font-size:145%;line-height:1.2em"><a href="/wiki/Graph_traversal" title="Graph traversal">Graph</a> and <a href="/wiki/Tree_traversal" title="Tree traversal">tree<br />
+search algorithms</a></th>
+</tr>
+<tr>
+<td style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/Alpha%E2%80%93beta_pruning" title="Alpha–beta pruning">α–β</a></li>
+<li><a href="/wiki/A*_search_algorithm" title="A* search algorithm">A*</a></li>
+<li><a href="/wiki/B*" title="B*">B*</a></li>
+<li><a href="/wiki/Backtracking" title="Backtracking">Backtracking</a></li>
+<li><a href="/wiki/Beam_search" title="Beam search">Beam</a></li>
+<li><a href="/wiki/Bellman%E2%80%93Ford_algorithm" title="Bellman–Ford algorithm">Bellman–Ford</a></li>
+<li><a href="/wiki/Best-first_search" title="Best-first search">Best-first</a></li>
+<li><a href="/wiki/Bidirectional_search" title="Bidirectional search">Bidirectional</a></li>
+<li><a href="/wiki/Bor%C5%AFvka%27s_algorithm" title="Borůvka's algorithm">Borůvka</a></li>
+<li><a href="/wiki/Branch_and_bound" title="Branch and bound">Branch &amp; bound</a></li>
+<li><a href="/wiki/Breadth-first_search" title="Breadth-first search">BFS</a></li>
+<li><a href="/wiki/British_Museum_algorithm" title="British Museum algorithm">British Museum</a></li>
+<li><a href="/wiki/D*" title="D*">D*</a></li>
+<li><strong class="selflink">DFS</strong></li>
+<li><a href="/wiki/Depth-limited_search" title="Depth-limited search">Depth-limited</a></li>
+<li><a href="/wiki/Dijkstra%27s_algorithm" title="Dijkstra's algorithm">Dijkstra</a></li>
+<li><a href="/wiki/Edmonds%27_algorithm" title="Edmonds' algorithm">Edmonds</a></li>
+<li><a href="/wiki/Floyd%E2%80%93Warshall_algorithm" title="Floyd–Warshall algorithm">Floyd–Warshall</a></li>
+<li><a href="/wiki/Fringe_search" title="Fringe search">Fringe search</a></li>
+<li><a href="/wiki/Hill_climbing" title="Hill climbing">Hill climbing</a></li>
+<li><a href="/wiki/IDA*" title="IDA*" class="mw-redirect">IDA*</a></li>
+<li><a href="/wiki/Iterative_deepening_depth-first_search" title="Iterative deepening depth-first search">Iterative deepening</a></li>
+<li><a href="/wiki/Johnson%27s_algorithm" title="Johnson's algorithm">Johnson</a></li>
+<li><a href="/wiki/Jump_point_search" title="Jump point search">Jump point</a></li>
+<li><a href="/wiki/Kruskal%27s_algorithm" title="Kruskal's algorithm">Kruskal</a></li>
+<li><a href="/wiki/Lexicographic_breadth-first_search" title="Lexicographic breadth-first search">Lexicographic BFS</a></li>
+<li><a href="/wiki/Prim%27s_algorithm" title="Prim's algorithm">Prim</a></li>
+<li><a href="/wiki/SMA*" title="SMA*">SMA*</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em">Listings</th>
+</tr>
+<tr>
+<td style="padding:0 0.1em 0.4em">
+<ul>
+<li><i><a href="/wiki/Category:Graph_algorithms" title="Category:Graph algorithms">Graph algorithms</a></i></li>
+<li><i><a href="/wiki/Category:Search_algorithms" title="Category:Search algorithms">Search algorithms</a></i></li>
+<li><i><a href="/wiki/List_of_algorithms#Graph_algorithms" title="List of algorithms">List of graph algorithms</a></i></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em">Related topics</th>
+</tr>
+<tr>
+<td style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/Dynamic_programming" title="Dynamic programming">Dynamic programming</a></li>
+<li><a href="/wiki/Graph_traversal" title="Graph traversal">Graph traversal</a></li>
+<li><a href="/wiki/Tree_traversal" title="Tree traversal">Tree traversal</a></li>
+<li><a href="/wiki/Search_game" title="Search game">Search games</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;font-size:115%">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Graph_search_algorithm" title="Template:Graph search algorithm"><span title="View this template">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Graph_search_algorithm" title="Template talk:Graph search algorithm"><span title="Discuss this template">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Graph_search_algorithm&amp;action=edit"><span title="Edit this template">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p><b>Depth-first search</b> (<b>DFS</b>) is an <a href="/wiki/Algorithm" title="Algorithm">algorithm</a> for traversing or searching <a href="/wiki/Tree_data_structure" title="Tree data structure" class="mw-redirect">tree</a> or <a href="/wiki/Graph_(data_structure)" title="Graph (data structure)" class="mw-redirect">graph</a> data structures. One starts at the <a href="/wiki/Tree_(data_structure)#Terminology" title="Tree (data structure)">root</a> (selecting some arbitrary node as the root in the case of a graph) and explores as far as possible along each branch before <a href="/wiki/Backtracking" title="Backtracking">backtracking</a>.</p>
+<p>A version of depth-first search was investigated in the 19th century by French mathematician <a href="/wiki/Charles_Pierre_Tr%C3%A9maux" title="Charles Pierre Trémaux" class="mw-redirect">Charles Pierre Trémaux</a><sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> as a strategy for <a href="/wiki/Maze_solving_algorithm" title="Maze solving algorithm">solving mazes</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Properties"><span class="tocnumber">1</span> <span class="toctext">Properties</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Output_of_a_depth-first_search"><span class="tocnumber">3</span> <span class="toctext">Output of a depth-first search</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Vertex_orderings"><span class="tocnumber">3.1</span> <span class="toctext">Vertex orderings</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Pseudocode"><span class="tocnumber">4</span> <span class="toctext">Pseudocode</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Applications"><span class="tocnumber">5</span> <span class="toctext">Applications</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Complexity"><span class="tocnumber">6</span> <span class="toctext">Complexity</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Notes"><span class="tocnumber">8</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Properties">Properties</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Depth-first_search&amp;action=edit&amp;section=1" title="Edit section: Properties">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <a href="/wiki/Time_complexity" title="Time complexity">time</a> and <a href="/wiki/Memory_management" title="Memory management">space</a> analysis of DFS differs according to its application area. In theoretical computer science, DFS is typically used to traverse an entire graph, and takes time Θ(|V| + |E|),<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup> linear in the size of the graph. In these applications it also uses space O(|V|) in the worst case to store the stack of vertices on the current search path as well as the set of already-visited vertices. Thus, in this setting, the time and space bounds are the same as for <a href="/wiki/Breadth-first_search" title="Breadth-first search">breadth-first search</a> and the choice of which of these two algorithms to use depends less on their complexity and more on the different properties of the vertex orderings the two algorithms produce.</p>
+<p>For applications of DFS in relation to specific domains, such as searching for solutions in <a href="/wiki/Artificial_intelligence" title="Artificial intelligence">artificial intelligence</a> or web-crawling, the graph to be traversed is often either too large to visit in its entirety or infinite (DFS may suffer from <a href="/wiki/Halting_problem" title="Halting problem">non-termination</a>). In such cases, search is only performed to a <a href="/wiki/Depth-limited_search" title="Depth-limited search">limited depth</a>; due to limited resources, such as memory or disk space, one typically does not use data structures to keep track of the set of all previously visited vertices. When search is performed to a limited depth, the time is still linear in terms of the number of expanded vertices and edges (although this number is not the same as the size of the entire graph because some vertices may be searched more than once and others not at all) but the space complexity of this variant of DFS is only proportional to the depth limit, and as a result, is much smaller than the space needed for searching to the same depth using breadth-first search. For such applications, DFS also lends itself much better to <a href="/wiki/Heuristics" title="Heuristics" class="mw-redirect">heuristic</a> methods for choosing a likely-looking branch. When an appropriate depth limit is not known a priori, <a href="/wiki/Iterative_deepening_depth-first_search" title="Iterative deepening depth-first search">iterative deepening depth-first search</a> applies DFS repeatedly with a sequence of increasing limits. In the artificial intelligence mode of analysis, with a <a href="/wiki/Branching_factor" title="Branching factor">branching factor</a> greater than one, iterative deepening increases the running time by only a constant factor over the case in which the correct depth limit is known due to the geometric growth of the number of nodes per level.</p>
+<p>DFS may also be used to collect a <a href="/wiki/Sample_(statistics)" title="Sample (statistics)">sample</a> of graph nodes. However, incomplete DFS, similarly to incomplete <a href="/wiki/Breadth-first_search#Bias_towards_nodes_of_high_degree" title="Breadth-first search">BFS</a>, is <a href="/wiki/Bias" title="Bias">biased</a> towards nodes of high <a href="/wiki/Degree_(graph_theory)" title="Degree (graph theory)">degree</a>.</p>
+<h2><span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Depth-first_search&amp;action=edit&amp;section=2" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For the following graph:</p>
+<p><a href="/wiki/File:Graph.traversal.example.svg" class="image"><img alt="Graph.traversal.example.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/61/Graph.traversal.example.svg/200px-Graph.traversal.example.svg.png" width="200" height="162" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/61/Graph.traversal.example.svg/300px-Graph.traversal.example.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/61/Graph.traversal.example.svg/400px-Graph.traversal.example.svg.png 2x" data-file-width="332" data-file-height="269" /></a></p>
+<p>a depth-first search starting at A, assuming that the left edges in the shown graph are chosen before right edges, and assuming the search remembers previously visited nodes and will not repeat them (since this is a small graph), will visit the nodes in the following order: A, B, D, F, E, C, G. The edges traversed in this search form a <a href="/wiki/Tr%C3%A9maux_tree" title="Trémaux tree">Trémaux tree</a>, a structure with important applications in <a href="/wiki/Graph_theory" title="Graph theory">graph theory</a>.</p>
+<p>Performing the same search without remembering previously visited nodes results in visiting nodes in the order A, B, D, F, E, A, B, D, F, E, etc. forever, caught in the A, B, D, F, E cycle and never reaching C or G.</p>
+<p><a href="/wiki/Iterative_deepening_depth-first_search" title="Iterative deepening depth-first search">Iterative deepening</a> is one technique to avoid this infinite loop and would reach all nodes.</p>
+<h2><span class="mw-headline" id="Output_of_a_depth-first_search">Output of a depth-first search</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Depth-first_search&amp;action=edit&amp;section=3" title="Edit section: Output of a depth-first search">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:272px;"><a href="/wiki/File:Tree_edges.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/57/Tree_edges.svg/270px-Tree_edges.svg.png" width="270" height="161" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/57/Tree_edges.svg/405px-Tree_edges.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/57/Tree_edges.svg/540px-Tree_edges.svg.png 2x" data-file-width="412" data-file-height="245" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Tree_edges.svg" class="internal" title="Enlarge"></a></div>
+The four types of edges defined by a spanning tree</div>
+</div>
+</div>
+<p>A convenient description of a depth first search of a graph is in terms of a <a href="/wiki/Spanning_tree_(mathematics)" title="Spanning tree (mathematics)" class="mw-redirect">spanning tree</a> of the vertices reached during the search. Based on this spanning tree, the edges of the original graph can be divided into three classes: <b>forward edges</b>, which point from a node of the tree to one of its descendants, <b>back edges</b>, which point from a node to one of its ancestors, and <b>cross edges</b>, which do neither. Sometimes <b>tree edges</b>, edges which belong to the spanning tree itself, are classified separately from forward edges. If the original graph is undirected then all of its edges are tree edges or back edges.</p>
+<h3><span class="mw-headline" id="Vertex_orderings">Vertex orderings</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Depth-first_search&amp;action=edit&amp;section=4" title="Edit section: Vertex orderings">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>It is also possible to use the depth-first search to linearly order the vertices of the original graph (or tree). There are three common ways of doing this:</p>
+<ul>
+<li>A <b>preordering</b> is a list of the vertices in the order that they were first visited by the depth-first search algorithm. This is a compact and natural way of describing the progress of the search, as was done earlier in this article. A preordering of an <a href="/wiki/Parse_tree" title="Parse tree">expression tree</a> is the expression in <a href="/wiki/Polish_notation" title="Polish notation">Polish notation</a>.</li>
+</ul>
+<ul>
+<li>A <b>postordering</b> is a list of the vertices in the order that they were <i>last</i> visited by the algorithm. A postordering of an expression tree is the expression in <a href="/wiki/Reverse_Polish_notation" title="Reverse Polish notation">reverse Polish notation</a>.</li>
+</ul>
+<ul>
+<li>A <b>reverse postordering</b> is the reverse of a postordering, i.e. a list of the vertices in the opposite order of their last visit. Reverse postordering is not the same as preordering. For example, when searching the directed graph in pre-order</li>
+</ul>
+<dl>
+<dd><a href="/wiki/File:If-then-else-control-flow-graph.svg" class="image"><img alt="If-then-else-control-flow-graph.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/If-then-else-control-flow-graph.svg/125px-If-then-else-control-flow-graph.svg.png" width="125" height="245" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/If-then-else-control-flow-graph.svg/188px-If-then-else-control-flow-graph.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/68/If-then-else-control-flow-graph.svg/250px-If-then-else-control-flow-graph.svg.png 2x" data-file-width="125" data-file-height="245" /></a></dd>
+</dl>
+<dl>
+<dd>beginning at node A, one visits the nodes in sequence, to produce lists either A B D B A C A, or A C D C A B A (depending upon whether the algorithm chooses to visit B or C first). Note that repeat visits in the form of backtracking to a node, to check if it has still unvisited neighbours, are included here (even if it is found to have none). Thus the possible preorderings are A B D C and A C D B (order by node's leftmost occurrence in above list), while the possible reverse postorderings are A C B D and A B C D (order by node's rightmost occurrence in above list). Reverse postordering produces a <a href="/wiki/Topological_sorting" title="Topological sorting">topological sorting</a> of any <a href="/wiki/Directed_acyclic_graph" title="Directed acyclic graph">directed acyclic graph</a>. This ordering is also useful in <a href="/wiki/Control_flow_graph" title="Control flow graph">control flow analysis</a> as it often represents a natural linearization of the control flows. The graph above might represent the flow of control in a code fragment like</dd>
+</dl>
+<pre>
+if (<b>A</b>) then {
+       <b>B</b>
+} else {
+       <b>C</b>
+     } <b>D</b>
+</pre>
+<dl>
+<dd>and it is natural to consider this code in the order A B C D or A C B D, but not natural to use the order A B D C or A C D B.</dd>
+</dl>
+<h2><span class="mw-headline" id="Pseudocode">Pseudocode</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Depth-first_search&amp;action=edit&amp;section=5" title="Edit section: Pseudocode">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><b>Input</b>: A graph <i>G</i> and a vertex <i>v</i> of G</p>
+<p><b>Output</b>: All vertices reachable from <i>v</i> labeled as discovered</p>
+<p>A recursive implementation of DFS:<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<pre>
+1  <b>procedure</b> DFS(<i>G</i>,<i>v</i>):
+2      label <i>v</i> as discovered
+3      <b>for all</b> edges from <i>v</i> to <i>w</i> <b>in</b> <i>G</i>.adjacentEdges(<i>v</i>) <b>do</b>
+4          <b>if</b> vertex <i>w</i> is not labeled as discovered <b>then</b>
+5              recursively call DFS(<i>G</i>,<i>w</i>)
+</pre>
+<p>A non-recursive implementation of DFS:<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<pre>
+1  <b>procedure</b> DFS-iterative(<i>G</i>,<i>v</i>):
+2      let <i>S</i> be a stack
+3      <i>S</i>.push(<i>v</i>)
+4      <b>while</b> <i>S</i> is not empty
+5            <i>v</i> = <i>S</i>.pop() 
+6            <b>if</b> <i>v</i> is not labeled as discovered:
+7                label <i>v</i> as discovered
+8                <b>for all</b> edges from <i>v</i> to <i>w</i> <b>in</b> <i>G</i>.adjacentEdges(<i>v</i>) <b>do</b>
+9                    <i>S</i>.push(<i>w</i>)
+</pre>
+<p>These two variations of DFS visit the neighbors of each vertex in the opposite order from each other: the first neighbor of <i>v</i> visited by the recursive variation is the first one in the list of adjacent edges, while in the iterative variation the first visited neighbor is the last one in the list of adjacent edges. The non-recursive implementation is similar to <a href="/wiki/Breadth-first_search" title="Breadth-first search">breadth-first search</a> but differs from it in two ways: it uses a stack instead of a queue, and it delays checking whether a vertex has been discovered until the vertex is popped from the stack rather than making this check before pushing the vertex. Note that this non-recursive implementation of DFS may use O(|E|) space in the worst case, for example on a complete graph.</p>
+<h2><span class="mw-headline" id="Applications">Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Depth-first_search&amp;action=edit&amp;section=6" title="Edit section: Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:332px;">
+<div id="mwe_player_0" class="PopUpMediaTransform" style="width:330px;" videopayload="&lt;div class=&quot;mediaContainer&quot; style=&quot;position:relative;display:block;width:714px&quot;&gt;&lt;video id=&quot;mwe_player_1&quot; style=&quot;width:714px;height:480px&quot; poster=&quot;//upload.wikimedia.org/wikipedia/commons/thumb/4/45/MAZE_30x20_DFS.ogv/714px--MAZE_30x20_DFS.ogv.jpg&quot; controls=&quot;&quot; preload=&quot;none&quot; autoplay=&quot;&quot; class=&quot;kskin&quot; data-durationhint=&quot;60.5&quot; data-startoffset=&quot;0&quot; data-mwtitle=&quot;MAZE_30x20_DFS.ogv&quot; data-mwprovider=&quot;wikimediacommons&quot;&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/4/45/MAZE_30x20_DFS.ogv/MAZE_30x20_DFS.ogv.480p.webm&quot; type=&quot;video/webm; codecs=&amp;quot;vp8, vorbis&amp;quot;&quot; transcodekey=&quot;480p.webm&quot; data-title=&quot;Web streamable WebM (480P)&quot; data-shorttitle=&quot;WebM 480P&quot; data-width=&quot;714&quot; data-height=&quot;480&quot; data-bandwidth=&quot;55800&quot; data-framerate=&quot;10&quot; /&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/4/45/MAZE_30x20_DFS.ogv/MAZE_30x20_DFS.ogv.480p.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; transcodekey=&quot;480p.ogv&quot; data-title=&quot;Web streamable Ogg video (480P)&quot; data-shorttitle=&quot;Ogg 480P&quot; data-width=&quot;714&quot; data-height=&quot;480&quot; data-bandwidth=&quot;59496&quot; data-framerate=&quot;10&quot; /&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/4/45/MAZE_30x20_DFS.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora&amp;quot;&quot; data-title=&quot;Original Ogg file, 732 × 492 (69 kbps)&quot; data-shorttitle=&quot;Ogg source&quot; data-width=&quot;732&quot; data-height=&quot;492&quot; data-bandwidth=&quot;68999&quot; data-framerate=&quot;10&quot; /&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/4/45/MAZE_30x20_DFS.ogv/MAZE_30x20_DFS.ogv.160p.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; transcodekey=&quot;160p.ogv&quot; data-title=&quot;Low bandwidth Ogg video (160P)&quot; data-shorttitle=&quot;Ogg 160P&quot; data-width=&quot;238&quot; data-height=&quot;160&quot; data-bandwidth=&quot;20480&quot; data-framerate=&quot;15&quot; /&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/4/45/MAZE_30x20_DFS.ogv/MAZE_30x20_DFS.ogv.360p.webm&quot; type=&quot;video/webm; codecs=&amp;quot;vp8, vorbis&amp;quot;&quot; transcodekey=&quot;360p.webm&quot; data-title=&quot;Web streamable WebM (360P)&quot; data-shorttitle=&quot;WebM 360P&quot; data-width=&quot;536&quot; data-height=&quot;360&quot; data-bandwidth=&quot;37576&quot; data-framerate=&quot;10&quot; /&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/4/45/MAZE_30x20_DFS.ogv/MAZE_30x20_DFS.ogv.360p.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; transcodekey=&quot;360p.ogv&quot; data-title=&quot;Web streamable Ogg video (360P)&quot; data-shorttitle=&quot;Ogg 360P&quot; data-width=&quot;536&quot; data-height=&quot;360&quot; data-bandwidth=&quot;47296&quot; data-framerate=&quot;10&quot; /&gt;Sorry, your browser either has JavaScript disabled or does not have any supported player.&lt;br /&gt;
+You can &lt;a href=&quot;//upload.wikimedia.org/wikipedia/commons/4/45/MAZE_30x20_DFS.ogv&quot;&gt;download the clip&lt;/a&gt; or &lt;a href=&quot;https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:TimedMediaHandler/Client_download&quot;&gt;download a player&lt;/a&gt; to play the clip in your browser.&lt;/video&gt;&lt;/div&gt;"><img alt="File:MAZE 30x20 DFS.ogv" style="width:330px;height:222px" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/45/MAZE_30x20_DFS.ogv/330px--MAZE_30x20_DFS.ogv.jpg" /><a href="//upload.wikimedia.org/wikipedia/commons/4/45/MAZE_30x20_DFS.ogv" title="Play media" target="new"><span class="play-btn-large"><span class="mw-tmh-playtext">Play media</span></span></a></div>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:MAZE_30x20_DFS.ogv" class="internal" title="Enlarge"></a></div>
+Randomized algorithm similar to depth-first search used in generating a maze.</div>
+</div>
+</div>
+<p>Algorithms that use depth-first search as a building block include:</p>
+<ul>
+<li>Finding <a href="/wiki/Connected_component_(graph_theory)" title="Connected component (graph theory)">connected components</a>.</li>
+<li><a href="/wiki/Topological_sorting" title="Topological sorting">Topological sorting</a>.</li>
+<li>Finding 2-(edge or vertex)-connected components.</li>
+<li>Finding 3-(edge or vertex)-connected components.</li>
+<li>Finding the <a href="/wiki/Bridge_(graph_theory)#Bridge-finding_algorithm" title="Bridge (graph theory)">bridges</a> of a graph.</li>
+<li>Generating words in order to plot the Limit Set of a <a href="/wiki/Group_(mathematics)" title="Group (mathematics)">Group</a>.</li>
+<li>Finding <a href="/wiki/Strongly_connected_components" title="Strongly connected components" class="mw-redirect">strongly connected components</a>.</li>
+<li><a href="/wiki/Planarity_testing" title="Planarity testing">Planarity testing</a><sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup></li>
+<li>Solving puzzles with only one solution, such as <a href="/wiki/Maze" title="Maze">mazes</a>. (DFS can be adapted to find all solutions to a maze by only including nodes on the current path in the visited set.)</li>
+<li><a href="/wiki/Maze_generation" title="Maze generation" class="mw-redirect">Maze generation</a> may use a randomized depth-first search.</li>
+<li>Finding <a href="/wiki/Biconnected_graph" title="Biconnected graph">biconnectivity in graphs</a>.</li>
+</ul>
+<h2><span class="mw-headline" id="Complexity">Complexity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Depth-first_search&amp;action=edit&amp;section=7" title="Edit section: Complexity">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <a href="/wiki/Analysis_of_algorithms" title="Analysis of algorithms">computational complexity</a> of DFS was investigated by Reif, who showed that a <a href="/wiki/Decision_problem" title="Decision problem">decision version</a> of it (establish whether some vertex <span class="texhtml mvar" style="font-style:italic;">u</span> occurs before some vertex <span class="texhtml mvar" style="font-style:italic;">v</span> in a DFS order of a rooted graph) is <a href="/wiki/P-complete" title="P-complete"><b>P</b>-complete</a>,<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>9<span>]</span></a></sup> meaning that it is "a nightmare for <a href="/wiki/Parallel_algorithm" title="Parallel algorithm">parallel processing</a>".<sup id="cite_ref-mehlhorn_10-0" class="reference"><a href="#cite_note-mehlhorn-10"><span>[</span>10<span>]</span></a></sup><sup class="reference" style="white-space:nowrap;">:189</sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Depth-first_search&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Tree_traversal" title="Tree traversal">Tree traversal</a> (for details about pre-order, in-order and post-order depth-first traversal)</li>
+<li><a href="/wiki/Breadth-first_search" title="Breadth-first search">Breadth-first search</a></li>
+<li><a href="/wiki/Iterative_deepening_depth-first_search" title="Iterative deepening depth-first search">Iterative deepening depth-first search</a></li>
+<li><a href="/wiki/Search_games" title="Search games" class="mw-redirect">Search games</a></li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Depth-first_search&amp;action=edit&amp;section=9" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a href="/wiki/Charles_Pierre_Tr%C3%A9maux" title="Charles Pierre Trémaux" class="mw-redirect">Charles Pierre Trémaux</a> (1859–1882) École Polytechnique of Paris (X:1876), French engineer of the telegraph<br />
+in Public conference, December 2, 2010 – by professor <a href="/w/index.php?title=Jean_Pelletier-Thibert&amp;action=edit&amp;redlink=1" class="new" title="Jean Pelletier-Thibert (page does not exist)">Jean Pelletier-Thibert</a> in Académie de Macon (Burgundy – France) – (Abstract published in the Annals academic, March 2011 – ISSN: 0980-6032)</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><span id="CITEREFEven2011" class="citation"><a href="/wiki/Shimon_Even" title="Shimon Even">Even, Shimon</a> (2011), <a rel="nofollow" class="external text" href="http://books.google.com/books?id=m3QTSMYm5rkC&amp;pg=PA46"><i>Graph Algorithms</i></a> (2nd ed.), Cambridge University Press, pp.&#160;46–48, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-521-73653-4" title="Special:BookSources/978-0-521-73653-4">978-0-521-73653-4</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADepth-first+search&amp;rft.au=Even%2C+Shimon&amp;rft.aufirst=Shimon&amp;rft.aulast=Even&amp;rft.btitle=Graph+Algorithms&amp;rft.date=2011&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3Dm3QTSMYm5rkC%26pg%3DPA46&amp;rft.isbn=978-0-521-73653-4&amp;rft.pages=46-48&amp;rft.pub=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span>.</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><span id="CITEREFSedgewick2002" class="citation">Sedgewick, Robert (2002), <i>Algorithms in C++: Graph Algorithms</i> (3rd ed.), Pearson Education, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-201-36118-6" title="Special:BookSources/978-0-201-36118-6">978-0-201-36118-6</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADepth-first+search&amp;rft.aufirst=Robert&amp;rft.aulast=Sedgewick&amp;rft.au=Sedgewick%2C+Robert&amp;rft.btitle=Algorithms+in+C%2B%2B%3A+Graph+Algorithms&amp;rft.date=2002&amp;rft.edition=3rd&amp;rft.genre=book&amp;rft.isbn=978-0-201-36118-6&amp;rft.pub=Pearson+Education&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span>.</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Cormen, Thomas H., Charles E. Leiserson, and Ronald L. Rivest. p.606</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">Goodrich and Tamassia; Cormen, Leiserson, Rivest, and Stein</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">Kleinberg and Tardos</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><span id="CITEREFHopcroftTarjan1974" class="citation"><a href="/wiki/John_Hopcroft" title="John Hopcroft">Hopcroft, John</a>; <a href="/wiki/Robert_Tarjan" title="Robert Tarjan">Tarjan, Robert E.</a> (1974), "Efficient planarity testing", <i><a href="/wiki/Journal_of_the_ACM" title="Journal of the ACM">Journal of the Association for Computing Machinery</a></i> <b>21</b> (4): 549–568, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F321850.321852">10.1145/321850.321852</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADepth-first+search&amp;rft.atitle=Efficient+planarity+testing&amp;rft.aufirst=John&amp;rft.au=Hopcroft%2C+John&amp;rft.aulast=Hopcroft&amp;rft.au=Tarjan%2C+Robert+E.&amp;rft.date=1974&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1145%2F321850.321852&amp;rft.issue=4&amp;rft.jtitle=Journal+of+the+Association+for+Computing+Machinery&amp;rft.pages=549-568&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=21" class="Z3988"><span style="display:none;">&#160;</span></span>.</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><span id="CITEREFde_FraysseixOssona_de_MendezRosenstiehl2006" class="citation">de Fraysseix, H.; Ossona de Mendez, P.; <a href="/wiki/Pierre_Rosenstiehl" title="Pierre Rosenstiehl">Rosenstiehl, P.</a> (2006), "Trémaux Trees and Planarity", <i>International Journal of Foundations of Computer Science</i> <b>17</b> (5): 1017–1030, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1142%2FS0129054106004248">10.1142/S0129054106004248</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADepth-first+search&amp;rft.atitle=Tr%C3%A9maux+Trees+and+Planarity&amp;rft.au=de+Fraysseix%2C+H.&amp;rft.aufirst=H.&amp;rft.aulast=de+Fraysseix&amp;rft.au=Ossona+de+Mendez%2C+P.&amp;rft.au=Rosenstiehl%2C+P.&amp;rft.date=2006&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1142%2FS0129054106004248&amp;rft.issue=5&amp;rft.jtitle=International+Journal+of+Foundations+of+Computer+Science&amp;rft.pages=1017-1030&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=17" class="Z3988"><span style="display:none;">&#160;</span></span>.</span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation journal">Reif, John H. (1985). "Depth-first search is inherently sequential". <i>Information Processing Letters</i> <b>20</b> (5). <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2F0020-0190%2885%2990024-9">10.1016/0020-0190(85)90024-9</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADepth-first+search&amp;rft.atitle=Depth-first+search+is+inherently+sequential&amp;rft.aufirst=John+H.&amp;rft.aulast=Reif&amp;rft.au=Reif%2C+John+H.&amp;rft.date=1985&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1016%2F0020-0190%2885%2990024-9&amp;rft.issue=5&amp;rft.jtitle=Information+Processing+Letters&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=20" class="Z3988"><span style="display:none;">&#160;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1016.2F0020-0190.2885.2990024-9&amp;action=edit&amp;editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-mehlhorn-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-mehlhorn_10-0">^</a></b></span> <span class="reference-text"><span class="citation book"><a href="/wiki/Kurt_Mehlhorn" title="Kurt Mehlhorn">Mehlhorn, Kurt</a>; <a href="/wiki/Peter_Sanders_(computer_scientist)" title="Peter Sanders (computer scientist)">Sanders, Peter</a> (2008). <i>Algorithms and Data Structures: The Basic Toolbox</i>. Springer.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADepth-first+search&amp;rft.aufirst=Kurt&amp;rft.aulast=Mehlhorn&amp;rft.au=Mehlhorn%2C+Kurt&amp;rft.au=Sanders%2C+Peter&amp;rft.btitle=Algorithms+and+Data+Structures%3A+The+Basic+Toolbox&amp;rft.date=2008&amp;rft.genre=book&amp;rft.pub=Springer&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Depth-first_search&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="refbegin" style="">
+<ul>
+<li><a href="/wiki/Thomas_H._Cormen" title="Thomas H. Cormen">Thomas H. Cormen</a>, <a href="/wiki/Charles_E._Leiserson" title="Charles E. Leiserson">Charles E. Leiserson</a>, <a href="/wiki/Ronald_L._Rivest" title="Ronald L. Rivest" class="mw-redirect">Ronald L. Rivest</a>, and <a href="/wiki/Clifford_Stein" title="Clifford Stein">Clifford Stein</a>. <i><a href="/wiki/Introduction_to_Algorithms" title="Introduction to Algorithms">Introduction to Algorithms</a></i>, Second Edition. MIT Press and McGraw-Hill, 2001. <a href="/wiki/Special:BookSources/0262032937" class="internal mw-magiclink-isbn">ISBN 0-262-03293-7</a>. Section 22.3: Depth-first search, pp.&#160;540–549.</li>
+<li><span id="CITEREFGoodrichTamassia2001" class="citation"><a href="/wiki/Michael_T._Goodrich" title="Michael T. Goodrich">Goodrich, Michael T.</a>; <a href="/wiki/Roberto_Tamassia" title="Roberto Tamassia">Tamassia, Roberto</a> (2001), <i>Algorithm Design: Foundations, Analysis, and Internet Examples</i>, Wiley, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-471-38365-1" title="Special:BookSources/0-471-38365-1">0-471-38365-1</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADepth-first+search&amp;rft.aufirst=Michael+T.&amp;rft.au=Goodrich%2C+Michael+T.&amp;rft.aulast=Goodrich&amp;rft.au=Tamassia%2C+Roberto&amp;rft.btitle=Algorithm+Design%3A+Foundations%2C+Analysis%2C+and+Internet+Examples&amp;rft.date=2001&amp;rft.genre=book&amp;rft.isbn=0-471-38365-1&amp;rft.pub=Wiley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span id="CITEREFKleinbergTardos2006" class="citation"><a href="/wiki/Jon_Kleinberg" title="Jon Kleinberg">Kleinberg, Jon</a>; <a href="/wiki/%C3%89va_Tardos" title="Éva Tardos">Tardos, Éva</a> (2006), <i>Algorithm Design</i>, Addison Wesley, pp.&#160;92–94</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADepth-first+search&amp;rft.aufirst=Jon&amp;rft.au=Kleinberg%2C+Jon&amp;rft.aulast=Kleinberg&amp;rft.au=Tardos%2C+%C3%89va&amp;rft.btitle=Algorithm+Design&amp;rft.date=2006&amp;rft.genre=book&amp;rft.pages=92-94&amp;rft.pub=Addison+Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span id="CITEREFKnuth1997" class="citation"><a href="/wiki/Donald_Knuth" title="Donald Knuth">Knuth, Donald E.</a> (1997), <a rel="nofollow" class="external text" href="http://www-cs-faculty.stanford.edu/~knuth/taocp.html"><i>The Art Of Computer Programming Vol 1. 3rd ed</i></a>, Boston: Addison-Wesley, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-89683-4" title="Special:BookSources/0-201-89683-4">0-201-89683-4</a>, <a href="/wiki/OCLC" title="OCLC">OCLC</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/oclc/155842391">155842391</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADepth-first+search&amp;rft.aufirst=Donald+E.&amp;rft.au=Knuth%2C+Donald+E.&amp;rft.aulast=Knuth&amp;rft.btitle=The+Art+Of+Computer+Programming+Vol+1.++3rd+ed&amp;rft.date=1997&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww-cs-faculty.stanford.edu%2F~knuth%2Ftaocp.html&amp;rft_id=info%3Aoclcnum%2F155842391&amp;rft.isbn=0-201-89683-4&amp;rft.place=Boston&amp;rft.pub=Addison-Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Depth-first_search&amp;action=edit&amp;section=11" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="//commons.wikimedia.org/wiki/Category:Depth-first_search" class="extiw" title="commons:Category:Depth-first search">Depth-first search</a></b></i>.</td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://opendatastructures.org/versions/edition-0.1e/ods-java/12_3_Graph_Traversal.html#SECTION001532000000000000000">Open Data Structures - Section 12.3.2 - Depth-First-Search</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cse.ohio-state.edu/~gurari/course/cis680/cis680Ch14.html">Depth-First Explanation and Example</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.boost.org/libs/graph/doc/depth_first_search.html">C++ Boost Graph Library: Depth-First Search</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.duke.edu/csed/jawaa/DFSanim.html">Depth-First Search Animation (for a directed graph)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.kirupa.com/developer/actionscript/depth_breadth_search.htm">Depth First and Breadth First Search: Explanation and Code</a></li>
+<li><a rel="nofollow" class="external text" href="http://quickgraph.codeplex.com/Wiki/View.aspx?title=Depth%20First%20Search%20Example">QuickGraph</a>, depth first search example for .Net</li>
+<li><a rel="nofollow" class="external text" href="http://www.algolist.net/Algorithms/Graph_algorithms/Undirected/Depth-first_search">Depth-first search algorithm illustrated explanation (Java and C++ implementations)</a></li>
+<li><a rel="nofollow" class="external text" href="http://code.google.com/p/yagsbpl/">YAGSBPL – A template-based C++ library for graph search and planning</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1230
+CPU time usage: 0.214 seconds
+Real time usage: 0.328 seconds
+Preprocessor visited node count: 1079/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 40610/2097152 bytes
+Template argument size: 956/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 2/500
+Lua time usage: 0.066/10.000 seconds
+Lua memory usage: 2.78 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  256.315      1 - -total
+ 32.84%   84.167      1 - Template:Infobox_algorithm
+ 31.85%   81.640      1 - Template:Infobox
+ 25.57%   65.543      1 - Template:Reflist
+ 18.38%   47.120      1 - Template:Refimprove
+ 16.43%   42.110      7 - Template:Citation
+ 11.69%   29.953      1 - Template:Ambox
+  9.16%   23.482      1 - Template:Commons_category
+  4.60%   11.788      1 - Template:Cite_doi
+  3.66%    9.378      1 - Template:Graph_search_algorithm
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:97034-0!*!0!!en!4!*!math=0 and timestamp 20150725152320 and revision id 673028015
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Depth-first_search&amp;oldid=673028015">https://en.wikipedia.org/w/index.php?title=Depth-first_search&amp;oldid=673028015</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Graph_algorithms" title="Category:Graph algorithms">Graph algorithms</a></li><li><a href="/wiki/Category:Search_algorithms" title="Category:Search algorithms">Search algorithms</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_needing_additional_references_from_July_2010" title="Category:Articles needing additional references from July 2010">Articles needing additional references from July 2010</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:Commons_category_with_local_link_same_as_on_Wikidata" title="Category:Commons category with local link same as on Wikidata">Commons category with local link same as on Wikidata</a></li><li><a href="/wiki/Category:Articles_with_example_pseudocode" title="Category:Articles with example pseudocode">Articles with example pseudocode</a></li><li><a href="/wiki/Category:Articles_containing_video_clips" title="Category:Articles containing video clips">Articles containing video clips</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Depth-first+search&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Depth-first+search" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Depth-first_search"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Depth-first_search"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Depth-first_search" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Depth-first_search&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Depth-first_search&amp;action=history"  title="Past versions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if one exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikimedia Shop">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Depth-first_search" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Depth-first_search" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Depth-first_search&amp;oldid=673028015" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Depth-first_search&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q816319" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Depth-first_search&amp;id=673028015" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Depth-first+search">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Depth-first+search&amp;oldid=673028015&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Depth-first_search&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-bg"><a href="//bg.wikipedia.org/wiki/%D0%9E%D0%B1%D1%85%D0%BE%D0%B6%D0%B4%D0%B0%D0%BD%D0%B5_%D0%B2_%D0%B4%D1%8A%D0%BB%D0%B1%D0%BE%D1%87%D0%B8%D0%BD%D0%B0" title="Обхождане в дълбочина – Bulgarian" lang="bg" hreflang="bg">Български</a></li><li class="interlanguage-link interwiki-bar"><a href="//bar.wikipedia.org/wiki/Diafnsuach" title="Diafnsuach – Bavarian" lang="bar" hreflang="bar">Boarisch</a></li><li class="interlanguage-link interwiki-ca"><a href="//ca.wikipedia.org/wiki/Cerca_en_profunditat" title="Cerca en profunditat – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="//cs.wikipedia.org/wiki/Prohled%C3%A1v%C3%A1n%C3%AD_do_hloubky" title="Prohledávání do hloubky – Czech" lang="cs" hreflang="cs">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Tiefensuche" title="Tiefensuche – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-el"><a href="//el.wikipedia.org/wiki/%CE%91%CE%BD%CE%B1%CE%B6%CE%AE%CF%84%CE%B7%CF%83%CE%B7_%CE%9A%CE%B1%CF%84%CE%AC_%CE%92%CE%AC%CE%B8%CE%BF%CF%82" title="Αναζήτηση Κατά Βάθος – Greek" lang="el" hreflang="el">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/B%C3%BAsqueda_en_profundidad" title="Búsqueda en profundidad – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85_%D8%AC%D8%B3%D8%AA%D8%AC%D9%88%DB%8C_%D8%B9%D9%85%D9%82_%D8%A7%D9%88%D9%84" title="الگوریتم جستجوی عمق اول – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Algorithme_de_parcours_en_profondeur" title="Algorithme de parcours en profondeur – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="//ko.wikipedia.org/wiki/%EA%B9%8A%EC%9D%B4_%EC%9A%B0%EC%84%A0_%ED%83%90%EC%83%89" title="깊이 우선 탐색 – Korean" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Ricerca_in_profondit%C3%A0" title="Ricerca in profondità – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="//he.wikipedia.org/wiki/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D_%D7%97%D7%99%D7%A4%D7%95%D7%A9_%D7%9C%D7%A2%D7%95%D7%9E%D7%A7" title="אלגוריתם חיפוש לעומק – Hebrew" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-ka"><a href="//ka.wikipedia.org/wiki/%E1%83%A1%E1%83%98%E1%83%A6%E1%83%A0%E1%83%9B%E1%83%94%E1%83%A8%E1%83%98_%E1%83%AB%E1%83%94%E1%83%91%E1%83%9C%E1%83%90" title="სიღრმეში ძებნა – Georgian" lang="ka" hreflang="ka">ქართული</a></li><li class="interlanguage-link interwiki-lv"><a href="//lv.wikipedia.org/wiki/Mekl%C4%93%C5%A1ana_dzi%C4%BCum%C4%81" title="Meklēšana dziļumā – Latvian" lang="lv" hreflang="lv">Latviešu</a></li><li class="interlanguage-link interwiki-lt"><a href="//lt.wikipedia.org/wiki/Paie%C5%A1ka_%C4%AF_gyl%C4%AF" title="Paieška į gylį – Lithuanian" lang="lt" hreflang="lt">Lietuvių</a></li><li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/Depth-first_search" title="Depth-first search – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E6%B7%B1%E3%81%95%E5%84%AA%E5%85%88%E6%8E%A2%E7%B4%A2" title="深さ優先探索 – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Przeszukiwanie_w_g%C5%82%C4%85b" title="Przeszukiwanie w głąb – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/Busca_em_profundidade" title="Busca em profundidade – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA_%D0%B2_%D0%B3%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D1%83" title="Поиск в глубину – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-sr"><a href="//sr.wikipedia.org/wiki/Pretraga_u_dubinu" title="Pretraga u dubinu – Serbian" lang="sr" hreflang="sr">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="//fi.wikipedia.org/wiki/Syvyyssuuntainen_l%C3%A4pik%C3%A4ynti" title="Syvyyssuuntainen läpikäynti – Finnish" lang="fi" hreflang="fi">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="//sv.wikipedia.org/wiki/Djup-f%C3%B6rst-s%C3%B6kning" title="Djup-först-sökning – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-tl"><a href="//tl.wikipedia.org/wiki/Paghahanap_na_lalim-muna" title="Paghahanap na lalim-muna – Tagalog" lang="tl" hreflang="tl">Tagalog</a></li><li class="interlanguage-link interwiki-uk"><a href="//uk.wikipedia.org/wiki/%D0%9F%D0%BE%D1%88%D1%83%D0%BA_%D1%83_%D0%B3%D0%BB%D0%B8%D0%B1%D0%B8%D0%BD%D1%83" title="Пошук у глибину – Ukrainian" lang="uk" hreflang="uk">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="//vi.wikipedia.org/wiki/T%C3%ACm_ki%E1%BA%BFm_theo_chi%E1%BB%81u_s%C3%A2u" title="Tìm kiếm theo chiều sâu – Vietnamese" lang="vi" hreflang="vi">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2" title="深度优先搜索 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q816319#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 25 July 2015, at 15:23.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Depth-first_search&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="//en.wikipedia.org/static/1.26wmf15/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="//en.wikipedia.org/static/1.26wmf15/resources/assets/poweredby_mediawiki_132x47.png 1.5x, //en.wikipedia.org/static/1.26wmf15/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>if(window.jQuery)jQuery.ready();</script><script>if(window.mw){
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","mw.PopUpMediaTransform":"loading","site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+document.write("\u003Cscript src=\"//en.wikipedia.org/w/load.php?debug=false\u0026amp;lang=en\u0026amp;modules=mw.PopUpMediaTransform\u0026amp;only=scripts\u0026amp;skin=vector\u0026amp;*\"\u003E\u003C/script\u003E");
+}</script>
+<link rel="stylesheet" href="//en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2CWatchlistGreenIndicators%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector&amp;*" />
+<script>if(window.mw){
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.imageMetrics.loader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.statsd","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.WatchlistGreenIndicators","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"],null,true);
+}</script>
+<script>if(window.mw){
+document.write("\u003Cscript src=\"//en.wikipedia.org/w/load.php?debug=false\u0026amp;lang=en\u0026amp;modules=site\u0026amp;only=scripts\u0026amp;skin=vector\u0026amp;*\"\u003E\u003C/script\u003E");
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":90,"wgHostname":"mw1163"});
+}</script>
+	</body>
+</html>

@@ -1,0 +1,511 @@
+\documentclass[compress, serif, onlymath, professionalfonts]{beamer}
+\usepackage{amsmath, amssymb, amsfonts}%, mathrsfs}
+\usepackage{subfigure,graphicx,enumerate}
+\usepackage{times} 
+%\usepackage{color}
+%   5  \usepackage[colorlinks=true,linkcolor= blue]{hyperref}
+%\usepackage{color}
+%\usepackage{hyperref}
+%5%5\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[authoryear]{natbib}
+\usepackage{tikz}
+\usetheme{Boadilla}
+%\%usepackage{hyperref}
+%\usetheme{Antibes}
+\usecolortheme{beetle}
+\useoutertheme{tree}
+%[footline=authortitleslidenumber]
+\definecolor{MidnightBlue}{rgb}{.3,.5,.85}
+%\definecolor{darkchampagne}{rgb}{0.76, 0.7, 0.5}
+%\definecolor{ballblue}{rgb}{0.13, 0.67, 0.8}
+\setbeamercolor{palette primary}{fg=gray!30} %for setting font colour on topmost layer of header
+\setbeamercolor{titlelike}{fg=black} %for setting font colour for title
+\setbeamercolor{section in toc}{fg=black!80} %for setting font colour for Table of Contents
+\setbeamercolor{block body}{bg=MidnightBlue!40} %for changing colour of block body. can specify colour for block title also, as below
+\setbeamercolor{block title}{bg=MidnightBlue!80!black}
+\setbeamercolor{background canvas}{bg=white} %or setting slide/frame background colour 
+%\beamertemplateshadingbackground{white!25}{white!15} %for setting slide/frame background colour (in shades of 2 colours)
+
+\setbeamercolor{bibliography entry author}{use=structure,fg=black} %for setting font colour of bibliographical entries
+\setbeamercolor{bibliography entry title}{use=normal text,fg=black}
+\setbeamercolor{bibliography entry location}{use=structure,fg=black!50}
+\setbeamercolor{bibliography entry note}{use=structure,fg=black}
+
+\beamertemplateballitem
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{assm}{Assumption}[section]
+\newtheorem{defn}{Definition}[section]
+\newtheorem{algo}{Algorithm}
+%\newtheorem{thm}{Theorem}[chapter]
+%\newtheorem{cor}[thm]{Corollary}
+%\newtheorem{lem}[thm]{Lemma}
+%\newtheorem{defn}[thm]{Definition}
+\newtheorem{claim}[thm]{Claim}
+
+
+\title[Pricing and Completeness for Dynamic Priority]{\textsc{Pricing and Completeness for Dynamic Priority in Multiclass Queues}}
+\subtitle{2nd Annual Progress Seminar}
+\author[Manu K. Gupta]{\large{Manu K. Gupta} \\  [0.5cm] \small{under the guidance of \\ Prof J. Venkateswaran \& Prof. N. Hemachandra}}
+\institute[IEOR@IITB]{Industrial Engineering and Operations Research\\ Indian Institute of Technology Bombay}
+\date{August, 2013}
+
+\begin{document}
+
+% slide #1
+\begin{frame}
+% Cover slide
+\titlepage
+\end{frame}
+
+% slide #2
+\begin{frame}{Outline}
+\tableofcontents
+%[pausesections]
+\end{frame}
+\section{1st APS Work}
+\begin{frame}{Problem Description}
+
+ \begin{figure}[htb!]
+\centering
+%\begin{minipage}[b]{0.3\linewidth}
+\resizebox{0.7 \textwidth}{!}{\includegraphics{sks_basic.png}}
+\vspace{-.25in}
+\label{basicmodel}
+%\end{minipage}
+\end{figure}
+\begin{itemize}
+	%\item There are two classes of customers, primary and secondary.
+	\item Pricing server's surplus capacity.
+    \item Primary are the existing customers and their mean waiting time is promised below $S_p$.
+	%\item There is a surplus capacity to accommodate new
+%customers.
+	\item There is no pre-emption.
+	\item The demand of new customers (secondary class) is
+sensitive to both unit admission price and mean waiting time.
+   \item The problem is to quote the unit admission price and
+service level.
+\end{itemize}
+%\frametitle{Problem Description}
+\end{frame}
+\begin{frame}
+\begin{itemize}
+\item A finite step algorithm is proposed by \citet{Sudhir_standard_style} assuming a conjecture is true.
+\item This conjecture is about comparison of objectives.
+\item A complete proof of conjecture. 
+\item Preemptive delay dependent priority across classes.
+\item Comparison of two systems:
+\begin{itemize}
+\item Preemptive priority
+\item Non preemptive priority
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+\section{Multi-class Queues}
+\subsection{Conservation Law and Completeness}
+\begin{frame}%{Conservation law for multi-class queues}
+\textbf{Notations:}
+\begin{itemize}
+\item Single server system with $N$ different classes.
+\item Poisson arrival rate $\lambda_i$ and mean service time $1/\mu_i$.
+\item $\rho_i = \lambda_i/\mu_i$ and $\rho = \rho_1 + \rho_2 + \cdots +\rho_N < 1$
+\item Performance measure $\mathbf{W} = (w_1,w_2, \ldots, w_n )$.
+\item All performance vectors are not possible for example $\mathbf{W=0}$.
+\item Kleinrock's conservation law gives achievable region for $\mathbf{W}$.
+\end{itemize}
+\begin{block}{Assumptions }
+\begin{enumerate}
+\item Server is not idle when there are jobs in the system. 
+\item Information about remaining processing time does not affect the system in any way.
+\end{enumerate}
+\end{block}
+\end{frame}
+
+\begin{frame}{Kleinrock's conservation law \citep{Kleinrock1965}}
+\begin{equation}
+\sum_{i=1}^N\rho_i w_i = \dfrac{\rho W_0}{1-\rho}
+\end{equation} 
+where $W_0 = \sum_{i=1}^n\dfrac{\lambda_i}{2}\left(\sigma_i^2 + \dfrac{1}{\mu_i^2}\right)$ and $\sigma_i^2$ is variance of class $i$.
+\begin{block}{Some Properties}
+\begin{itemize}
+\item This equation defines a \textit{\textbf{hyperplane}} in $N$-dimensional space of $\mathbf{W}$.
+\item Dimension of this \textit{\textbf{hyperplane}} is $N-1$ for $N$ customer's type.
+\item In case of two classes, achievable region is a \textit{\textbf{straight line segment}}
+\item In case of three classes, achievable region is a \textit{\textbf{polytope}}.   
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[ht]
+\begin{minipage}[htb]{0.4\linewidth}
+\resizebox{0.9 \textwidth}{!}{\input{2class}}
+%\caption{Achievable performance vectors in a two class M/G/1 queue \cite{mitranibook}}%\label{fig:Gls}
+\end{minipage}
+%\hspace{0.5cm}
+\begin{minipage}[htb]{0.4\linewidth}
+\centering
+\resizebox{1.1 \textwidth}{!}{\input{3class}}
+%\caption{ Achievable performance vectors in a three class M/G/1 queue }
+\end{minipage}
+\caption{ Achievable performance vectors in a three class M/G/1 queue \citep{mitranibook}}
+\end{figure}
+\vspace{-.6cm}
+\begin{itemize}
+\item $(N)!$ extreme points corresponding to non-preemptive strict priority. 
+\item  Achievable performance vectors form a \textit{polytope} with these \textit{vertices}.
+\item A family of scheduling strategy is \textit{complete} if it achieves the \textit{polytope} \citep{complete}.% described above .
+\end{itemize}
+%\begin{block}{Completeness}
+%A family of scheduling strategy is \textit{complete} if it achieves the polytope described above.
+%\end{block}
+\end{frame}
+\section{Multi-class dynamic priority scheme}
+\subsection{Delay dependent priority}
+\begin{frame}{Delay Dependent Priority \citep{Kleinrock_ddp}}
+\begin{figure}[htb!]
+\centering
+%\resizebox{0.4 \textwidth}{!}{ddpi}
+\includegraphics[scale=0.35]{ddpi}
+\vspace{-.85cm}
+%\caption{Illustration of delay dependent priority \cite{Kleinrock_ddp}}
+\label{basicmodel}
+\end{figure}
+\begin{itemize}
+%\item Proposed by \citet{Kleinrock_ddp}.
+\item Class $i$ customers are assigned a queue discipline parameter $b_i$.
+\item Instantaneous dynamic priority for customers of class $i$ at time $t$
+$$q_i(t) = (delay)\times b_i, i = 1,2, \cdots, N.$$
+\item Customer with highest instantaneous priority receives service.
+\item Recursion for mean waiting time is derived by \citet{Kleinrock_ddp} which depends on ratio of $b_i$.
+\end{itemize}
+\end{frame}
+\subsection{Relative priority}
+\begin{frame}{Relative Priority \citep{RPhaviv} }
+\begin{itemize}
+\item A \textit{positive} parameter $p_i$ is associated with each class $i$.
+\item If there are $n_j$ jobs of class $j$ on service completion, the next job to commence service is from class $i$ with following probability:
+\begin{equation}\nonumber
+\dfrac{n_i p_i}{\sum_{j=1}^N n_j p_j}, ~~~1 \leq i \leq N
+\end{equation}
+%\item Mean waiting time for class $i$ \citep{RPhaviv}:
+%\begin{equation}\nonumber
+%W_i = W_0 + \sum_{j}W_j \rho_j\dfrac{p_j}{p_i + p_j} + \tau_i W_i,~~~1\leq i\leq N.
+%\end{equation}  
+ % where $\tau_i = \displaystyle \sum_{j = 1}^N\rho_j\dfrac{p_j}{p_i + p_j},~~1 \leq i \leq N $. 
+  \item Mean waiting time for class $i$ when $N = 2$ and (without loss of generality) $p_1 + p_2 = 1$, 
+  \begin{equation}\nonumber
+  W_i = \dfrac{1-\rho p_i}{(1- \rho_1 - p_2 \rho_2)(1 - \rho_1 - p_1\rho_1)-p_1 p_2 \rho_1\rho_2}W_0, ~~i=1,2
+\end{equation}   
+  where $\rho = \rho_1 + \rho_2$.% and $\tau_i =  \sum_{j = 1}^N\rho_j\dfrac{p_j}{p_i + p_j},~~1 \leq i \leq N $.
+
+\end{itemize}
+\end{frame}
+\subsection{Earliest due date dynamic priority}
+\begin{frame}{Earliest due date dynamic priority \citep{EDDgoldberg}}
+\begin{itemize}
+\item $u_i$ is the urgency number associated with class $i$.
+\item Classes are numbered so that $u_1 \leq u_2 \leq \dots \leq u_N$ (WLOG).
+\item A customer from class $i$ is assigned a real number $t_i + u_i$ where $t_i$ is the arrival time of customer.
+\item Upon service completion, server chooses the customer with minimum value of $\{t_i +u_i\}$.
+\item Mean waiting time for class $r$ in non preemptive priority is given by:
+\end{itemize}
+\begin{equation}\nonumber
+E(W_{r,n}) = E(W) + \sum_{i=1}^{r-1}\rho_i\int_{0}^{u_r-u_i}P(W_{r,n} > t)dt - \sum_{i=r+1}^{N}\rho_i\int_{0}^{u_i-u_r}P(W_{i,n} > t)dt 
+\end{equation}
+\end{frame}
+\section{Completeness and Equivalence of dynamic priority}
+\begin{frame}{Modified Relative priorities}
+%\textbf{Definition: \textit{Modified Relative priorities} }\\
+Consider weights given to class $i$ as $p_i$ to be non-negative instead of only positive and this happens for at most one $p_i$. Also when $p_i = 0$ and $n_i > 0 = n_j~\forall~j$ then class $i$ customer is served. Remaining setting is same as \textit{relative priority}.
+%\begin{defn}[\textbf{Modified Relative priorities}]
+% Consider weights given to class $i$ as $p_i$ to be non-negative instead of only positive and this happens for at most one $p_i$. Also when $p_i = 0$ and $n_i > 0 = n_j~\forall~j$ then class $i$ customer is served. Remaining setting is same as \textit{relative priority}.
+%\end{defn}
+\begin{claim}\label{clm:relprt2cls}
+ In two classes, Modified relative priorities are complete.
+\end{claim}
+\textit{Proof.}
+\begin{itemize}
+\item On putting $p_2=0$, we get waiting time corresponding to strict priority.
+\item On considering convex combination of strict priority, i.e., $W_{\alpha}^{(i)} = \alpha W_{12}^{(i)} + (1-\alpha)W_{21}^{(i)}$
+\item $\exists$ unique $p_1$ for every $\alpha \in (0,1)$. So entire line segment achieved.
+\end{itemize}
+\end{frame}
+\begin{frame}{Equivalence between DDP and relative priority}
+\begin{claim}
+In two classes, Delay dependent priority and modified relative priorities are equivalent.
+\end{claim}
+\textit{Proof.} Define $\beta:= b_2/b_1$, Average waiting time under DDP is given by:
+\begin{equation}\nonumber
+W_1 = \frac{\lambda \psi (\mu-\lambda(1-\beta))}{\mu(\mu-\lambda)(\mu-\lambda_1(1-\beta))}\mathbf{1}_{\{\beta \leq 1\}}+\frac{\lambda \psi }{\mu(\mu-\lambda)(\mu -\lambda_2(1-\frac{1}{\beta}))}\mathbf{1}_{\{\beta > 1\}}
+\label{primary_wait}
+\end{equation}\begin{enumerate}
+\item $0 < \beta \leq 1$:  $\beta = \dfrac{(2\mu - \lambda)(1 - p_1)}{\mu - \lambda(1 - p_1)} \implies 0 \leq \beta \leq 1 \Leftrightarrow \frac{1}{2} \leq p_1 \leq 1 $
+\item $1 < \beta \leq \infty $: $\beta = \dfrac{\mu -\lambda p_1}{(2\mu -\lambda)p_1}$ $\implies 1 < \beta \leq \infty \Leftrightarrow 0 \leq p_1 < \frac{1}{2}$
+\end{enumerate}
+Hence for every $\beta$ there exists a $p_1$.
+\end{frame}
+\begin{frame}{Mixed relative priority}
+Consider all partition of classes, each partition is denoted by $\{E_i\}_{i=1}^l$ if $l$ partitions are done. Each $E_i$ is called subfamily of classes. Subfamily $E_i$ has strict priority over $E_j$ for $i>j$. Modified relative priorities are used within subclass $i$. (Definition is motivated from \citep{federgruen})
+\begin{claim}
+Mixed relative priorities are complete with finite number of classes.
+\end{claim}
+\textit{Proof.}\begin{itemize}
+\item Follows from strong induction.
+\item Follows for $N=2$ from earlier claim.
+\item For $N=3$, boundary is achieved by suitably choosing the partition $E_i$ and then interior is achieved by considering all classes.    
+\end{itemize}
+\end{frame}
+\begin{frame}{Generalised EDD dynamic priority}
+Consider the more general type of EDD dynamic priority where $u1, u2 \ge 0$ be the weights associated with class 1 and class 2.\\
+Let $\bar{u} = u_1 - u_2 \in [-\infty, \infty ]$
+\footnotesize{ 
+ \begin{eqnarray}\label{eqn:EDDcombined1}
+ E(W_1) = E(W) + \rho_2\left[\int_0^{\bar{u}}P(T_2(W) > y)dy ~\mathbf{1}_{\{\bar{u} \geq 0\}} -\int_0^{-\bar{u}}P(T_1(W) > y)dy\nonumber ~\mathbf{1}_{\{\bar{u} < 0\}} \right]\\
+  E(W_2) = E(W) - \rho_1\left[\int_0^{\bar{u}}P(T_2(W) > y)dy ~\mathbf{1}_{\{\bar{u} \geq 0\}} -\int_0^{-\bar{u}}P(T_1(W) > y)dy\nonumber ~\mathbf{1}_{\{\bar{u} < 0\}} \right]\label{eqn:EDDcombined2}
+ \end{eqnarray}}
+ \begin{claim}
+\begin{itemize}
+\item In two classes, generalised EDD dynamic priority is complete.
+\item In two classes, delay dependent priority and earliest due date priority are equivalent.
+\end{itemize}
+\end{claim}
+\end{frame}
+\begin{frame}{Optimal Scheduling Rule}
+To find the optimal scheduling policy that minimizes linear cost function
+$$c_1W_1+c_2W_2$$
+\vspace{-.6cm}
+\begin{itemize}
+\item $c/\rho$ rule is known to be optimal.
+\item Enough to show the optimality of $c/\rho$ rule over delay dependent priority.
+\end{itemize}
+\vspace{.3cm}
+$$f(\beta) = \frac{W_0(c_1+c_2 - c_2 \rho) + W_0 c_2\rho\beta}{(1-\rho)(1-\rho_2) + \rho_2(1-\rho)\beta} = \frac{a_1 + a_2\beta}{a_3 + a_4\beta}$$
+$$f(\beta +\delta) - f(\beta) = \frac{\delta(a_2a_3-a_1a_4)}{(a_3+a_4x)(a_3+a_4(x+\delta))} > 0 \text{ if } a_2a_3 > a_1a_4$$
+$$a_2a_3 > a_1a_4 \Rightarrow \frac{c_2}{\rho_2} > \frac{c_1}{\rho_1}, ~~\beta = 0 \Rightarrow b_1 = 0$$ 
+\end{frame}
+\subsection{Global FCFS}
+\begin{frame}{Global FCFS Policy}
+\begin{itemize}
+\item Global FCFS is the policy when customers are served in the order of arrival.
+\item On keeping weights given to each class equal, global FCFS is achieved. \item $b_i$, $p_i$ and $u_i$'s equal.
+\item We get $W_i = \frac{W_0}{1-\rho}$ (Pollaczek - Khinchine formula for M/G/1 queue).
+\item Criterion for fairness in multi-class queues: \textit{minimize the maximum dissatisfaction of each customer's class}
+\begin{equation}\nonumber
+\min_{i \in \mathcal{I}}\max_{\alpha \in \mathcal{W}}~(W_{\alpha}^{(i)}) 
+\end{equation}
+where $\mathcal{I}$ and $\mathcal{W}$ are number of classes and set of all possible achievable waiting time vectors.
+\end{itemize}
+\end{frame}
+\begin{frame}{Nature of Global FCFS Policy}
+\begin{itemize}
+\item Global FCFS point is in interior of the polytope.
+\item In case of two classes, weights given to corner points  $\alpha_1 = \frac{(1-\rho_1)}{(2-\rho_1 -\rho_2)}$ and $\alpha_2 = \frac{(1-\rho_2)}{(2-\rho_1 -\rho_2)}$.
+\end{itemize}
+\begin{equation}\nonumber
+ \begin{bmatrix} W^{(1)}_{1,2,\cdots n} & W^{(1)}_{2,1,\cdots n} & \cdots & W^{(1)}_{n,n-1,\cdots 1}\\ W^{(2)}_{1,2,\cdots n} & W^{(2)}_{2,1,\cdots n} & \cdots & W^{(2)}_{n,n-1,\cdots 1}\\
+ \vdots & \vdots & \ddots & \vdots \\
+ W^{(n)}_{1,2,\cdots n} & W^{(n)}_{2,1,\cdots n} & \cdots & W^{(n)}_{n,n-1,\cdots 1}\\
+ 1 & 1 & \cdots & 1
+  \end{bmatrix}  \left[ \begin{array}{c} \alpha_1 \\ \alpha_2 \\  \vdots \\ \vspace{0.2cm} \\ \alpha_{n!} \end{array} \right] =   \left[ \begin{array}{cc} W^{(1)}_{GFCFS} \\ W^{(2)}_{GFCFS} \\ \vdots \\ W^{(n)}_{GFCFS} \\ 1 \end{array} \right]
+\end{equation}
+\begin{block}{}
+We could not find any structure in higher dimension.
+\end{block}
+\end{frame}
+
+\section{2-moments completeness}
+\begin{frame}{$2^{nd}$ moment of waiting time}
+\begin{itemize}
+\item Queue discipline does not affect the mean waiting time.
+\item Second moment of waiting time heavily depends on queue discipline. 
+\item Variance of waiting time is minimum with FCFS queue discipline and maximum with LCFS queue discipline.
+%\item We extend the definition of 
+\end{itemize}
+\begin{defn}
+ A parametrized queue discipline policy is \textbf{2-moment complete} if all possible second moments are achievable and queue discipline satisfies the following assumptions.
+\begin{enumerate}
+\item Service is non-preemptive.
+\item Customers are selected for service in a manner that is independent of their subsequent service time. 
+\item Server is work conserving.
+\end{enumerate}
+\end{defn}
+\end{frame}
+
+\begin{frame}
+\textbf{Premptive Last In First Out (PLIFO)}
+\begin{equation}\nonumber
+Var(T)_{PLCFS} -Var(T)_{LCFS} = \dfrac{2\mu\lambda}{\mu^2(\mu-\lambda)^2} >0
+\end{equation} 
+\textbf{Longest Remaining Processing Time (LRPT)}
+\begin{equation}\nonumber
+Var(T)_{LRPT} - Var(T)_{LCFS} = \frac{2\lambda^3 + \mu^2\lambda + 7\mu\lambda(\mu-\lambda)}{\mu(\mu-\lambda)^4} >0
+\end{equation}
+\begin{block}{}
+This justifies assumptions 1 and 2.
+\end{block}
+\end{frame}
+\begin{frame}{A 2-moment complete queue parametrization}
+Consider the queue discipline parametrization for M/M/1 setting as proposed
+in \citet{Q_parameter}.
+\begin{itemize}
+\item Newly arriving customer joins the queue at its end.
+\item Whenever server becomes free it picks first or last customer with probability $\delta$ and $1 -\delta$ respectively and $0 \leq \delta \leq 1$.
+\end{itemize}
+\begin{claim}
+Queue discipline parametrization proposed in \citet{Q_parameter} is 2-moment complete.
+\end{claim}
+\textit{Proof.} $$E[W^2] = \dfrac{2\lambda}{(\mu-\lambda)^2(\mu-\lambda+\delta\lambda)}$$\\
+$\delta =1 \Rightarrow \text{ FIFO} $ and $\delta =0 \Rightarrow \text{ LIFO} $.
+\end{frame}
+\subsection{Queue Disciplines}
+\begin{frame}{ROS and RI}
+\begin{block}{Random order of service (ROS)}
+Each customer will have equal probability of getting selected and this decision is made at departure epoch.
+\end{block}
+\begin{block}{Random Insertion (RI)}
+If there are $n$ customers waiting in queue, a newly arrived customer
+will be inserted in any of the $(n+1)$ positions with probability $1/(n+1)$.
+\end{block}
+On equating the second moment of waiting time with parametrized queue discipline, we get 
+$$\delta =1/2$$ 
+\end{frame}
+\begin{frame}{Random Assigned Priority (RAP)}
+\begin{itemize}
+\item Every arriving customer is independently assigned a random value
+that is uniformly distributed over interval [0,1].
+\item Customers in queue are then served according to non
+pre-emptive priority based on there assigned values.
+\item Second moment of waiting time is \citep{Questa_comparision}:
+\end{itemize}
+$$E(W^2)_{RAP} = \dfrac{\rho(1-\rho)(2-\rho)E(H)E(H^3)+ \rho^2(3-\rho)[E(H^2)]^2}{6(1-\rho)^3[E(H)]^2}$$
+$$\delta = \dfrac{(\mu-\lambda)(3\mu-\lambda)}{3\mu(2\mu-\lambda)+\lambda^2} = \dfrac{(1-\rho)(3-\rho)}{3(2-\rho)+\rho^2}$$
+$\rho < 1 \Rightarrow 0\le \delta\le 1/2$
+\begin{block}{}
+$\rho \rightarrow 1 \Rightarrow \delta \rightarrow 0$ hence queue discipline behaves as LCFS and in low traffic i.e.$\rho \rightarrow 0 \Rightarrow \delta \rightarrow 1/2$ hence queue discipline behaves as ROS.
+\end{block}
+\end{frame}
+\begin{frame}{Graphical Representation}
+\begin{figure}[htb!]
+\centering
+\resizebox{0.59 \textwidth}{!}{\input{SecondMomentVsDelta}}
+\caption{Variance Vs parameter $\delta$}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Processor Sharing}
+\begin{itemize}
+\item Server capacity is equally shared among customers in system.
+\item On equating the variance with parametrized policy, we get
+\end{itemize}
+$$\delta = 1-\dfrac{1}{\rho(3-\rho)}$$
+On simplifying $\delta \geq 0$,\small{$$\left(\rho - \frac{3+\sqrt{5}}{2}\right)\left(\rho + \frac{3+\sqrt{5}}{2}\right) \leq 0$$}
+\begin{block}{}
+\begin{itemize}
+\item $\delta \geq 0$ for $\rho \in [\frac{3 - \sqrt{5}}{2},1]$ and as $\rho \downarrow \frac{3 - \sqrt{5}}{2} \Rightarrow \delta \downarrow 0$. 
+\item In heavy traffic, $\rho \rightarrow 1 \Rightarrow \delta \rightarrow 1/2$. Hence processor sharing behaves like ROS 
+\end{itemize}
+\end{block}
+\end{frame}
+\begin{frame}
+\begin{figure}[htb!]
+\centering
+\resizebox{0.79 \textwidth}{!}{\input{PSvsRho}}
+\caption{Analysis of PS queue with $\rho$}
+\end{figure}
+\end{frame}
+\begin{frame}{Two Level Priority}
+\begin{itemize}
+\item Arriving customers are divided in higher and lower priority class with probability $p$ and $(1-p)$.
+\item Higher priority class will have strict static
+priority.
+\item Mean and second moment of waiting time are calculated by conditioning
+\end{itemize}\scriptsize
+$$E(W^{(2)}) = \dfrac{2\lambda p}{\mu(\mu-\lambda p)^2} + \dfrac{2\lambda(\mu^2-\lambda^2)(1-p)}{(\mu-\lambda)^2(\mu-\lambda p )^3}$$
+$p=1\Rightarrow \delta = 1$ and $p=0\Rightarrow \delta = 1$, with $p=1/2$
+$$\delta = \dfrac{4\left(1-\dfrac{\rho}{2}\right)^3- (1-\rho)^4 - (1-\rho)(3-2\rho)}{\rho((1-\rho)^3 + (3-2\rho))}$$
+\begin{block}{}
+\begin{itemize}
+\item $\rho \rightarrow 1 \Rightarrow \delta \rightarrow 1/2$. Hence above system in heavy traffic can be good approximation for ROS system.
+
+\end{itemize}
+\end{block}
+\end{frame}
+\section{Summary and Future Work}
+\begin{frame}{Summary and Future Work}
+\begin{itemize}
+\item Some results on \textit{completeness} and equivalence of dynamic priority.
+\item Fairness structure of global FCFS priority policy.
+\item \textit{2-moment complete} policy in single class queue.
+\item Some examples of \textit{2-moment complete} policy and comparison with few standard queue disciplines like ROS, RI, PS etc.
+\end{itemize}
+\begin{block}{On single class queue parametrization}
+\begin{enumerate}\scriptsize
+\item  Queue discipline parametrization for M/M/1 queue proposed by \cite{Q_parameter} is 2-moment complete.  Will the similar policy be complete with G/G/1 or M/G/1 setting?
+\item Is waiting time distribution with impolite customers arrival and parametrized queue discipline same? Second moment of waiting time turn out to be same for these two discipline and this makes the intuition stronger.
+\item Can we define a modified queueing discipline such that it covers $1/2 \le \delta \le 1$ i.e variance from ROS to FCFS?
+\item In case of processor sharing for low traffic, $\rho \rightarrow 0 \Rightarrow \delta \rightarrow \infty$. What does this imply? What is the implication of number $\rho =\frac{3 - \sqrt{5}}{2}$? what does this critical $\rho$ imply?
+\end{enumerate}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\begin{block}{On multi-class queue parametrization}
+\begin{enumerate}\small
+\item \textit{2-level priority} turn out to be good approximation for processor sharing in two classes for heavy traffic.  Can we generalize these results?. Does it have any connection with completeness?
+\item Will changing queue discipline parameter ($\delta$) in one class change variance in other class?
+\item What kind of center is presented by global FCFS policy in polytope? 
+\item How can we define completeness with multi-class setting?
+\item How will variance of waiting time change if two dimensional parametrization is considered i.e. in queue discipline as well as across queues via priority.
+\end{enumerate}
+\end{block}
+
+\begin{block}{On comparison of priority system }
+\begin{enumerate}
+\item Find the arguments for comparison of two priority systems. 
+\item Come up with an algorithm based on comparison results. 
+\end{enumerate}
+\end{block}
+\end{frame}
+%\begin{frame}
+%
+%\textbf{Problem B:} \textit{On simulation of dynamic priorities }
+%%\begin{enumerate}
+%
+%\end{frame}
+\begin{frame}
+\begin{block}{On simulation of dynamic priorities}
+%\textit{ }
+\begin{enumerate}\scriptsize
+\item Try to prove analytically the conjecture developed by numerical study in technical report \cite{bharat_tech}. This conjecture states that \textit{the convex combination of waiting time standard deviation is constant and is equal to that of waiting time in FCFS queue.}
+$$\frac{\lambda_p}{\lambda_p + \lambda_s}\sigma_{W_p}+\frac{\lambda_s}{\lambda_p + \lambda_s}\sigma_{W_s} = \sigma_{FCFS}$$
+\item Will the above result hold with respect to other dynamic priorities i.e. relative and earliest due date based?
+\item Can this conjecture be generalised with multiple classes as follows?
+\begin{equation}\nonumber
+\dfrac{\lambda_1}{\lambda_1 + \lambda_2+ \cdots + \lambda_n}\sigma_{W_1} + \dfrac{\lambda_2}{\lambda_1 + \lambda_2+ \cdots + \lambda_n}\sigma_{W_2} +  \cdots + \dfrac{\lambda_n}{\lambda_1 + \lambda_2+ \cdots + \lambda_n}\sigma_{W_n} = \sigma_{FCFS}
+\end{equation}
+\end{enumerate}
+\end{block}
+
+\end{frame}
+\section{References}
+\begin{frame}[allowframebreaks]{References}	
+\bibliographystyle{model5-names}
+\def\newblock{\hskip .11em plus .33em minus .07em}
+\renewcommand\bibsection{\chapter{~}} %\refname
+\bibliography{aps2ref.bib}
+\end{frame}
+
+\section*{~}
+\begin{frame}
+%\begin{block}{}
+\begin{center}
+\Huge
+Thank You!!!
+\end{center}
+%\end{block}
+\end{frame}
+\end{document}
