@@ -14,10 +14,3 @@ redirect_from:
 I graduated from the <a href = "http://www.ieor.iitb.ac.in/" target="_blank">IEOR@IITB</a> 
 with my Ph.D. studying stochastic systems. 
 
-<h3>Contact Information</h3>
-<table border="0">
-<tr><td>Email:<td>manu-kumar.gupta@irit.fr</tr>
-<!--<tr><td>Office:<td> IEOR PhD lab,
-<a href="https://maps.google.co.in/maps/ms?hl=en&gl=in&ie=UTF8&oe=UTF8&msa=0&msid=212518250248303923567.0004e0c99852d626e5568">
-Old CSE Building, IIT Bombay</a>-->
-<tr><td>Phone (O):&nbsp;<td> +33 06 51 11 60 57</tr>
