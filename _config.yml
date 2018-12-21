@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Manu K. Gupta"
-  avatar           : "profile.png"
+  avatar           : "/profile.png"
   bio              : "PhD, Applied Mathematics"
   location         : "Toulouse, France"
   employer         :
