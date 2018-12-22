@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: 
+title: Peer Reviewed Articles
 permalink: /publications/
 author_profile: true
 ---
