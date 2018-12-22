@@ -15,3 +15,5 @@ I graduated from the <a href = "http://www.ieor.iitb.ac.in/" target="_blank">IEO
 with my Ph.D. studying stochastic systems. </p>
 
 <p>On these pages you will be able to find a lot about my technical interests. I hope you enjoy them and find them helpful to what interests you. </p>
+
+<p>I am currently in the <b>job market</b>. Please feel free to <a href="mailto:manu-kumar.gupta@irit.fr">reach</a> me if my professional skills interest you.</p>
