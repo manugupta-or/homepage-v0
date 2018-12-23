@@ -13,6 +13,7 @@ Full CV in <b>PDF</b> format. Brief details of my research interests, education 
 
   
 <b>Research Interests</b>
+
 I am interested in theory, applications, algorithms and cotrols in stochastic systems. More broadly, I am excited by research at the intersection of computer science, mathematics, and statistics, and its applications in scientific discovery.
 
 <b>Education</b>
