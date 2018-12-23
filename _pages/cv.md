@@ -11,14 +11,12 @@ Full CV in <b>PDF</b> format. A brief details on my education, work experience a
 
 {% include base_path %}
 
-Education
-======
+<b>Education</b>
 * B.Sc in Statistics, Mathematics and Computer Applications, Lucknow Christian Degree College, India 2009
 * M.Sc in Industrial Engineering and Operations Research, IIT Bombay, 2016
 * Ph.D in Industrial Engineering and Operations Research, IIT Bombay, 2016
 
-Work experience
-======
+<b>Work experience</b>
 * August 2017 - present: CIMI Postdoc Fellow
   * IRIT
   * Research Domain: Multi-armed restless bandits
@@ -29,12 +27,6 @@ Work experience
   * Research Domain: Game theoretic approches for healt-care operations 
   * Supervisor: Professor S. Sharma and Y. Xu
   
-Research Interests
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+<b>Research Interests</b>
 
+I am interested in theory, applications, algorithms and cotrols in stochastic systems. More broadly, I am excited by research at the intersection of computer science, mathematics, and statistics, and its applications in scientific discovery.
