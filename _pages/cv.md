@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-Full CV in <b>PDF</b> format. A brief details on my education, work experience and  
+Full CV in <b>PDF</b> format. A brief details of my education, work experience and research interests are included below.
 
 {% include base_path %}
 
