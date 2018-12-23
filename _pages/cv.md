@@ -7,27 +7,29 @@ redirect_from:
   - /resume
 ---
 
+Full CV in <b>PDF</b> format. A brief details on my education, work experience and  
+
 {% include base_path %}
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.Sc in Statistics, Mathematics and Computer Applications, Lucknow Christian Degree College, India 2009
+* M.Sc in Industrial Engineering and Operations Research, IIT Bombay, 2016
+* Ph.D in Industrial Engineering and Operations Research, IIT Bombay, 2016
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* August 2017 - present: CIMI Postdoc Fellow
+  * IRIT
+  * Research Domain: Multi-armed restless bandits
+  * Supervisor: Professor U. Ayesta and I. M. Verloop
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* July 2016 - July 2017: Postdoc Research Fellow
+  * SUTD
+  * Research Domain: Game theoretic approches for healt-care operations 
+  * Supervisor: Professor S. Sharma and Y. Xu
   
-Skills
+Research Interests
 ======
 * Skill 1
 * Skill 2
@@ -36,24 +38,3 @@ Skills
   * Sub-skill 2.3
 * Skill 3
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
