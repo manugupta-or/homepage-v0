@@ -10,17 +10,12 @@ author_profile: true
 for Markovian bandits” (Preliminary version: ISMP-2018 conference)</li>.
 <p></p>
 
-<li>: Manu K. Gupta, S. Sharma and Ying Xu, “Pricing Scheme and Equilibrium Analysis for
+<li>Manu K. Gupta, S. Sharma and Ying Xu, “Pricing Scheme and Equilibrium Analysis for
 Controlling Emergency Crowd in Hospitals” (Preliminary version: MSOM-2017 conference). </li>
 <p></p>
 
 
 <h3>Submitted</h3>
-
-<li>Manu K. Gupta, N. Hemachandra and J. Venkateswaran, "Optimal Revenue Management
-in Two Class Pre-emptive Delay Dependent Markovian Queues", <i>Applied Mathematical
-Modelling</i>, 2017. [<a href="https://doi.org/10.1016/j.apm.2016.11.016" target="_blank">PDF</a>]</li>
-<p> </p>
 
 
 <li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank">ArXiv</a>], (Submitted). </li>
