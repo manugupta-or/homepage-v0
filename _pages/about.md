@@ -24,8 +24,8 @@ with my Ph.D. studying stochastic systems. </p>
 
 
 <li>12 December, 2018. SURGE summer intern, 2018 (IITK).</li>
-<li> summer intern, 2018 (LNMIT, Jaipur).</li>
-<li> 30 November, 2018. Submitted a revised version of the paper "Some Parametrized Dynamic Priority Policies for 2-lass M/G/1 Queues: Completeness and Applications" coauthored with N. Hemachandra to ACM TOMPECS </li>
+<li> 10 December, 2018. Submitted a revised version of the paper "" coauthored with N. Hemachandra to ACM TOMPECS.</li>
+<li> <font size="2">30 November, 2018. Submitted a revised version of the paper "Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications" coauthored with N. Hemachandra to ACM TOMPECS.</font></li>
 
 
 
