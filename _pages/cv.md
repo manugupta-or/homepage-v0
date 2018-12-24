@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-Full CV is available in <b>PDF</b> format. Brief details of my research interests, education and work experience are included below.
+Full CV is available in <a href="/papers/kpo.pdf"><b>PDF</b></a> format. Brief details of my research interests, education and work experience are included below.
 
 {% include base_path %}
 
