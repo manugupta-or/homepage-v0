@@ -23,9 +23,9 @@ I am interested in developing theory, applications, algorithms and controls for 
 
 <b>Work experience</b>
 * August 2017 - present: CIMI Postdoc Fellow
-  * Research Domain: Multi-armed restless bandits and 
-  * Supervisor: U. Ayesta and I. M. Verloop at <a href="https://www.irit.fr/" target="_blank">IRIT,</a>, Toulouse
+  * Research Domain: Multi-armed restless bandits and reinforcement learning
+  * Supervisor: U. Ayesta and I. M. Verloop at <a href="https://www.irit.fr/" target="_blank">IRIT, Toulouse, France.</a> 
 
 * July 2016 - July 2017: Postdoc Research Fellow
   * Research Domain: Game theoretic approches for healt-care operations 
-  * Supervisor: S. Sharma and Y. Xu at <a href="https://www.sutd.edu.sg/" target="_blank">SUTD,</a>, Singapore
+  * Supervisor: S. Sharma and Y. Xu at <a href="https://www.sutd.edu.sg/" target="_blank">SUTD, Singapore.</a> 
