@@ -7,7 +7,7 @@ author_profile: true
 
 <h3>To be Submitted</h3>
 <li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
-for Markovian bandits” (Preliminary version: ISMP-2018 conference)</li>.
+for Markovian bandits” (Preliminary version: ISMP-2018 conference).</li>
 <p></p>
 
 <li>Manu K. Gupta, S. Sharma and Ying Xu, “Pricing Scheme and Equilibrium Analysis for
@@ -34,7 +34,7 @@ Power Control in Small Cell Networks”, [<a href = "https://arxiv.org/pdf/1812.
 
 <li>Manu K. Gupta, N. Hemachandra and J. Venkateswaran, "Optimal Revenue Management
 in Two Class Pre-emptive Delay Dependent Markovian Queues", <i>Applied Mathematical
-Modelling</i>, 2017. [<a href="https://doi.org/10.1016/j.apm.2016.11.016" target="_blank">PDF</a>]</li>
+Modelling</i>, , pp. 31-54, 2017. [<a href="https://doi.org/10.1016/j.apm.2016.11.016" target="_blank">PDF</a>]</li>
 <p> </p>
 
 
@@ -45,9 +45,7 @@ IIT Bombay, Mumbai, 05/2015 (DOI: 10.1109/WIOPT.2015.7151082) [<a href="https://
 <p> </p>
 
 
-<li>Manu K. Gupta and Hemachandra, N., "On a Conservation Law and the Achievable Region for Waiting Time Tail Probabilities in 2-class M/G/1 
-Queueing Systems", <i>International Workshop on Resource Allocation, Cooperation and Competition in Wireless Networks (RAWNET)</i> , 
-IIT Bombay, Mumbai, 05/2015 (DOI: 10.1109/WIOPT.2015.7151064) [<a href="https://doi.org/10.1109/WIOPT.2015.7151064" target="_blank">PDF</a>]</li>
+<li>Manu K. Gupta and Hemachandra, N., "On a Conservation Law and the Achievable Region for Waiting Time Tail Probabilities in 2-class M/G/1 Queueing Systems", <i>International Workshop on Resource Allocation, Cooperation and Competition in Wireless Networks (RAWNET)</i> , IIT Bombay, Mumbai, 05/2015 (DOI: 10.1109/WIOPT.2015.7151064) [<a href="https://doi.org/10.1109/WIOPT.2015.7151064" target="_blank">PDF</a>]</li>
 <p> </p>
 
 
@@ -58,8 +56,7 @@ IIT Bombay, Mumbai, 05/2015 (DOI: 10.1109/WIOPT.2015.7151062) [<a href="https://
 
 
 <li>Manu K. Gupta, Hemachandra, N., and Venkateswaran, J., "On mean waiting time completeness and equivalence of EDD and HOL-PJ 
-dynamic priority schemes in 2-class M/G/1 queue", <i>8th International Conference on Performance Evaluation Methodologies and Tools (ValueTools)</i> , 
-Bratislava, Slovakia. 2014 (DOI: 10.4108/icst.valuetools.2014.258212) [<a href="https://doi.org/10.4108/icst.valuetools.2014.258212" target="_blank">PDF</a>]</li>
+dynamic priority schemes in 2-class M/G/1 queue", <i>8th International Conference on Performance Evaluation Methodologies and Tools (ValueTools)</i>, Bratislava, Slovakia. 2014 (DOI: 10.4108/icst.valuetools.2014.258212) [<a href="https://doi.org/10.4108/icst.valuetools.2014.258212" target="_blank">PDF</a>]</li>
 <p> </p>
 
 
@@ -73,9 +70,5 @@ Bratislava, Slovakia. 2014 (DOI: 10.4108/icst.valuetools.2014.258212) [<a href="
 [<a href="papers/Allerton2013_smallcell.pdf" target="_blank">PDF</a>]
 <p> </p>
 
-
-<li> Ratnaji Vanga, Manu K. Gupta, and J. Venkateswaran, "Performance Evaluation of Bat Algorithm to Solve Deterministic and Stochastic Optimization Problems", <i> International Simulation Conference of India</i>, IIT Madras, Chennai, 02/2013
-[<a href="papers/ISCI2013_batalgo.pdf" target="_blank">PDF</a>]
-<p> </p>
 
 
