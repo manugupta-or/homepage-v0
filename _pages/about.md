@@ -20,7 +20,7 @@ with my Ph.D. studying stochastic systems. </p>
 <p>I am in the <b>job market</b>. Interested employers can <a href="mailto:manu-kumar.gupta@irit.fr">email</a> me for any queries and informal discussion.</p>    
 
 <b>News</b>
-
+<hr>
 <li>12 December, 2018. SURGE summer intern, 2018 (IITK).</li>
 <li> summer intern, 2018 (LNMIT, Jaipur).</li>
 <li>summer intern, 2018 (Shiv Nadar University).</li>
