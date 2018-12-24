@@ -19,12 +19,13 @@ with my Ph.D. studying stochastic systems. </p>
 
 <p>I am in the <b>job market</b>. Interested employers can <a href="mailto:manu-kumar.gupta@irit.fr">email</a> me for any queries and informal discussion.</p>    
 
-<b>News</b>
 <hr>
+<b>News</b>
+
+
 <li>12 December, 2018. SURGE summer intern, 2018 (IITK).</li>
 <li> summer intern, 2018 (LNMIT, Jaipur).</li>
-<li>summer intern, 2018 (Shiv Nadar University).</li>
-
+<li> 30 November, 2018. Submitted a revised version of the paper "Some Parametrized Dynamic Priority Policies for 2-lass M/G/1 Queues: Completeness and Applications" coauthored with N. Hemachandra to ACM TOMPECS </li>
 
 
 
