@@ -5,6 +5,14 @@ permalink: /publications/
 author_profile: true
 ---
 
+<h3>To be Submitted</h3>
+<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
+for Markovian bandits” (Preliminary version: ISMP-2018 conference)</li>.
+<p></p>
+
+<li>: Manu K. Gupta, S. Sharma and Ying Xu, “Pricing Scheme and Equilibrium Analysis for
+Controlling Emergency Crowd in Hospitals” (Preliminary version: MSOM-2017 conference). </li>
+<p></p>
 
 
 <h3>Submitted</h3>
@@ -12,6 +20,18 @@ author_profile: true
 <li>Manu K. Gupta, N. Hemachandra and J. Venkateswaran, "Optimal Revenue Management
 in Two Class Pre-emptive Delay Dependent Markovian Queues", <i>Applied Mathematical
 Modelling</i>, 2017. [<a href="https://doi.org/10.1016/j.apm.2016.11.016" target="_blank">PDF</a>]</li>
+<p> </p>
+
+
+<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank">ArXiv</a>], (Submitted). </li>
+<p> </p>
+
+<li>V. Kavitha, Manu K. Gupta, V. Capdevielle, R. Kishor and M. Haddad, “Speed Based Optimal
+Power Control in Small Cell Networks”, [<a href = "https://arxiv.org/pdf/1812.03862.pdf" target = "_blank">ArXiv</a>], (Submitted). </li>
+<p> </p>
+
+
+<li> Manu K. Gupta, N. Hemachandra and J. Venkateswaran, “Some Parametrized Dynamic Priority Policies for 2-lass M/G/1 Queues: Completeness and Applications”, [<a href = "https://arxiv.org/pdf/1804.03564.pdf" target = "_blank">ArXiv</a>], (Submitted). </li>
 <p> </p>
 
 
@@ -63,6 +83,4 @@ Bratislava, Slovakia. 2014 (DOI: 10.4108/icst.valuetools.2014.258212) [<a href="
 [<a href="papers/ISCI2013_batalgo.pdf" target="_blank">PDF</a>]
 <p> </p>
 
-<li>Manu K. Gupta, N. Hemachandra and J. Venkateswaran. "Optimal pricing and pre-emptive scheduling in exponential server with two classes of customers" <i>International Conference on Optimization, Computing and Business Analytics</i>, Kolkata, India, Allied Publishers, pp. 103-108, 12/2012 [<a
-href="papers/Optimal-Pricing_ORSI2012.pdf" target="_blank">PDF</a>].
-</ol>
+
