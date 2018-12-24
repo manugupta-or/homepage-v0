@@ -32,7 +32,7 @@ Power Control in Small Cell Networks”, [<a href = "https://arxiv.org/pdf/1812.
 
 <h3>Published</h3>
 
-<li>Manu K. Gupta and N. Hemachandra, “On a Conjecture for Dynamic Priority Queues and Nash Equilibrium for Quality of Service Sensitive Markets”, <i>In Proceedings, Performance Evaluation Methodologies and Tools (<b>ValueTools</b>)</i>, Palma de Mallorca, Spain, 2019 </li>
+<li>Manu K. Gupta and N. Hemachandra, “On a Conjecture for Dynamic Priority Queues and Nash Equilibrium for Quality of Service Sensitive Markets”, <i>In Proceedings, Performance Evaluation Methodologies and Tools (<b>ValueTools</b>)</i>, Palma de Mallorca, Spain, 2019. (Accepted) </li>
 <p> </p>
 
 
