@@ -23,8 +23,8 @@ with my Ph.D. studying stochastic systems. </p>
 <b>News</b>
 
 
-<li>12 December, 2018. SURGE summer intern, 2018 (IITK).</li>
-<li> 10 December, 2018. Submitted a revised version of the paper "" coauthored with N. Hemachandra to ACM TOMPECS.</li>
+<li><font size="2">22 December, 2018. Notification of acceptance for the paper "On a Conjecture for Dynamic Priority Queues and Nash Equilibrium for Quality of Service Sensitive Markets" coauthored with N. Hemachandra in Valuetools 2019.</font></li></li>
+<li> <font size="2">10 December, 2018. Submitted a revised version of the paper "Speed Based Optimal Power Control in Small Cell Networks" coauthored with V. Kavitha, V. Capdevielle, R. Kishor and M. Haddad to Computer Communication.</font></li>
 <li> <font size="2">30 November, 2018. Submitted a revised version of the paper "Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications" coauthored with N. Hemachandra to ACM TOMPECS.</font></li>
 
 
