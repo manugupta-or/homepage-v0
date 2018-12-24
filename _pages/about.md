@@ -22,12 +22,12 @@ with my Ph.D. studying stochastic systems. </p>
 <hr>
 <b>News</b>
 
-
+<ul style="list-style-type:circle">
 <li><font size="2">22 December, 2018. Notification of acceptance for the paper "On a Conjecture for Dynamic Priority Queues and Nash Equilibrium for Quality of Service Sensitive Markets" coauthored with N. Hemachandra in Valuetools 2019.</font></li>
 <li> <font size="2">10 December, 2018. Submitted a revised version of the paper "Speed Based Optimal Power Control in Small Cell Networks" coauthored with V. Kavitha, V. Capdevielle, R. Kishor and M. Haddad to Computer Communication.</font></li>
 <li> <font size="2">30 November, 2018. Submitted a revised version of the paper "Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications" coauthored with N. Hemachandra and J. Venkateswaran to ACM TOMPECS.</font></li>
 <li> <font size="2">16 October, 2018. Submitted a paper "Load-balancing with heterogeneous schedulers" coauthored with U. Ayesta and I. M. Verloop to European Journal of Operations Research.</font></li>
-
+</ul>
 
 
 
