@@ -17,7 +17,7 @@ redirect_from:
   *{
   box-sizing: border-box;
 }
-/* Create two unequal columns that floats next to each other */
+
 .column {
   float: left;
   padding: 10px;
@@ -43,8 +43,7 @@ redirect_from:
 <body>
 
 <div class="row">
-  <div class="column left">
-   
+  <div class="column left">   
    <p>I am currently working on restless bandits and reinforcement learning with <a href = "https://www.irit.fr/~Urtzi.Ayesta/" target="_blank">Prof. Urtzi Ayesta</a> and <a href = "http://verloop.perso.enseeiht.fr/" target="_blank">Prof. Maaike Verloop</a> at <a href = "https://www.irit.fr/?lang=en" target="_blank">IRIT</a>. </p>
 
 <p>Before transitioning to Toulouse, I was working on game theoretic approaches for health-care operations with <a href = "https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma" target="_blank"> Prof. Shruti </a> and <a href = "https://esd.sutd.edu.sg/people/faculty/ying-xu" target="_blank">Prof. Ying</a> at <a href = "https://esd.sutd.edu.sg/" target="_blank"> ESD</a>. 
@@ -58,7 +57,8 @@ with my Ph.D. studying stochastic systems. </p>
   </div>
   <div class="column right" >
     <h2>News</h2>
-    <p>Some text..</p>
+    <p>Some text about the aceeptance of the paper etc can come here?..</p>
+      <p>Some text..</p>
   </div>
 </div>
 
