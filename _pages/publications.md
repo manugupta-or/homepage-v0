@@ -49,7 +49,9 @@ Power Control in Small Cell Networks”, [<a href = "https://arxiv.org/pdf/1812.
 
 <li>P. Mayekar, J. Venkateswaran, Manu K. Gupta and N. Hemachandra. "Performance analysis and decomposition results 
 for some dynamic priority schemes in 2-class queues", <i>International Workshop on Device-to-Device Communications (<b>D2D</b>)</i> , 
-IIT Bombay, Mumbai, India, 2015. [<a href="https://doi.org/10.1109/WIOPT.2015.7151062" target="_blank">PDF</a>] </li>
+IIT Bombay, Mumbai, India, 2015. [<a href="https://doi.org/10.1109/WIOPT.2015.7151062" target="_blank">PDF</a>] 
+[<a href="https://manugupta-or.github.io/Slides/D2D_simulation.pdf" target="_blank">Slides</a>]
+</li>
 <p> </p>
 
 
