@@ -41,7 +41,7 @@ Power Control in Small Cell Networks”, [<a href = "https://arxiv.org/pdf/1812.
 
 
 
-<li>Manu K. Gupta and N. Hemachandra., "On 2-moment Completeness of Non Pre-emptive, Non Anticipative Work Conserving Scheduling Policies in Some Single Class Queues", <i>13th International Symposium on Modeling and Optimization in Mobile, Ad Hoc, and Wireless Networks (<b>WiOpt</b>)</i>, Mumbai, India, 2015. [<a href="https://doi.org/10.1109/WIOPT.2015.7151082" target="_blank">PDF</a>]</li>
+<li>Manu K. Gupta and N. Hemachandra., "On 2-moment Completeness of Non Pre-emptive, Non Anticipative Work Conserving Scheduling Policies in Some Single Class Queues", <i>13th International Symposium on Modeling and Optimization in Mobile, Ad Hoc, and Wireless Networks (<b>WiOpt</b>)</i>, Mumbai, India, 2015. [<a href="https://doi.org/10.1109/WIOPT.2015.7151082" target="_blank">PDF</a>] [<a href="Slides/Wiopt_2moment.pdf" target="_blank">Slides</a>]</li>
 <p> </p>
 
 <li>Manu K. Gupta and N. Hemachandra, "On a Conservation Law and the Achievable Region for Waiting Time Tail Probabilities in 2-class M/G/1 Queueing Systems", <i>International Workshop on Resource Allocation, Cooperation and Competition in Wireless Networks (<b>RAWNET</b>)</i>,  Mumbai, India 2015. [<a href="https://doi.org/10.1109/WIOPT.2015.7151064" target="_blank">PDF</a>]</li>
