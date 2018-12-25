@@ -9,9 +9,9 @@ redirect_from:
 ---
     
     
- <p>I am currently working on restless bandits and reinforcement learning with <a href = "https://www.irit.fr/~Urtzi.Ayesta/" target="_blank">Prof. Urtzi Ayesta</a> and <a href = "http://verloop.perso.enseeiht.fr/" target="_blank">Prof. Maaike Verloop</a> at <a href = "https://www.irit.fr/?lang=en" target="_blank">IRIT</a>. </p>
+ <p>I am currently working on restless bandits and reinforcement learning with <a href = "https://www.irit.fr/~Urtzi.Ayesta/" target="_blank">U. Ayesta</a> and <a href = "http://verloop.perso.enseeiht.fr/" target="_blank">I. M. Verloop</a> at <a href = "https://www.irit.fr/?lang=en" target="_blank">IRIT</a>. </p>
 
-<p>Before transitioning to Toulouse, I was working on game theoretic approaches for health-care operations with <a href = "https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma" target="_blank"> Prof. Shruti </a> and <a href = "https://esd.sutd.edu.sg/people/faculty/ying-xu" target="_blank">Prof. Ying</a> at <a href = "https://esd.sutd.edu.sg/" target="_blank"> ESD</a>. 
+<p>Before transitioning to Toulouse, I was working on game theoretic approaches for health-care operations with <a href = "https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma" target="_blank"> S. Sharma </a> and <a href = "https://esd.sutd.edu.sg/people/faculty/ying-xu" target="_blank">Y. Xu</a> at <a href = "https://esd.sutd.edu.sg/" target="_blank"> ESD</a>. 
 I graduated from <a href = "http://www.ieor.iitb.ac.in/" target="_blank">IEOR@IITB</a> 
 with my Ph.D. studying stochastic systems. </p>
 
