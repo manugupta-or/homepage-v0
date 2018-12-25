@@ -1,9 +1,10 @@
 ---
-layout: archive
 title: Peer reviewed articles
 permalink: /publications/
 author_profile: true
 ---
+
+%layout: archive makes the pages with no links visible..
 
 <h3>To be Submitted</h3>
 <li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
