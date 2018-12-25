@@ -23,8 +23,8 @@ I am interested in developing theory, algorithms and controls for stochastic sys
 <b>Work experience</b>
 * July 2016 - July 2017: Postdoc Research Fellow
   * Research Domain: Game theoretic approches for health-care operations.
-  * Supervisor: <a href = "https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma" target="_blank"> S. Sharma </a> and <a href = "https://esd.sutd.edu.sg/people/faculty/ying-xu" target="_blank">Y. Xu</a> at <a href="https://www.sutd.edu.sg/" target="_blank">SUTD, Singapore.</a> 
+  * Advisor: <a href = "https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma" target="_blank"> S. Sharma </a> and <a href = "https://esd.sutd.edu.sg/people/faculty/ying-xu" target="_blank">Y. Xu</a> at <a href="https://www.sutd.edu.sg/" target="_blank">SUTD, Singapore.</a> 
 
 * August 2017 - present: CIMI Postdoc Fellow
   * Research Domain: Multi-armed restless bandits and reinforcement learning.
-  * Supervisor: <a href = "https://www.irit.fr/~Urtzi.Ayesta/" target="_blank">U. Ayesta</a> and <a href = "http://verloop.perso.enseeiht.fr/" target="_blank">I. M. Verloop</a> at <a href="https://www.irit.fr/" target="_blank">IRIT, Toulouse, France.</a> 
+  * Advisor: <a href = "https://www.irit.fr/~Urtzi.Ayesta/" target="_blank">U. Ayesta</a> and <a href = "http://verloop.perso.enseeiht.fr/" target="_blank">I. M. Verloop</a> at <a href="https://www.irit.fr/" target="_blank">IRIT, Toulouse, France.</a> 
