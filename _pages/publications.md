@@ -47,7 +47,6 @@ Power Control in Small Cell Networks”, [<a href = "https://arxiv.org/pdf/1812.
 <li>Manu K. Gupta and N. Hemachandra, "On a Conservation Law and the Achievable Region for Waiting Time Tail Probabilities in 2-class M/G/1 Queueing Systems", <i>International Workshop on Resource Allocation, Cooperation and Competition in Wireless Networks (<b>RAWNET</b>)</i>,  Mumbai, India 2015. [<a href="https://doi.org/10.1109/WIOPT.2015.7151064" target="_blank">PDF</a>]  [<a href="https://manugupta-or.github.io/Slides/RAWNET_2015.pdf" target="_blank">Slides</a>]</li>
 <p> </p>
 
-
 <li>P. Mayekar, J. Venkateswaran, Manu K. Gupta and N. Hemachandra. "Performance analysis and decomposition results 
 for some dynamic priority schemes in 2-class queues", <i>International Workshop on Device-to-Device Communications (<b>D2D</b>)</i> , 
 IIT Bombay, Mumbai, India, 2015. [<a href="https://doi.org/10.1109/WIOPT.2015.7151062" target="_blank">PDF</a>] </li>
