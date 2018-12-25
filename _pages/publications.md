@@ -59,11 +59,11 @@ dynamic priority schemes in 2-class M/G/1 queue", <i>8th International Conferenc
 <p> </p>
 
 
-<li> A. Rawal, V. Kavitha and Manu K. Gupta, "Optimal Surplus Capacity Utilization in Polling Systems via Fluid Models", <i> 12th International Symposium on Modeling and Optimization in Mobile, Ad Hoc, and Wireless Networks (<b>WiOpt</b>) </i>, Hammamet, Tunisia, 2014. [<a href="papers/FinTRWiOptPollingFluidModels.pdf" target="_blank">PDF</a>]
+<li> A. Rawal, V. Kavitha and Manu K. Gupta, "Optimal Surplus Capacity Utilization in Polling Systems via Fluid Models", <i> 12th International Symposium on Modeling and Optimization in Mobile, Ad Hoc, and Wireless Networks (<b>WiOpt</b>) </i>, Hammamet, Tunisia, 2014. [<a href="https://ieeexplore.ieee.org/document/6850323" target="_blank">PDF</a>]
 <p> </p>
 
 
-<li> V. Kavitha, V. Capdevielle, and Manu K. Gupta, "Small Cell Networks: Speed Based Power Allocation", <i> 51st Annual Allerton Conference on Communication, Control, and Computing (<b>ALLERTON</b>),</i> University of Illinois at Urbana-Champaign, Allerton Retreat Center, Illinois, USA, 2013. [<a href="papers/Allerton2013_smallcell.pdf" target="_blank">PDF</a>]
+<li> V. Kavitha, V. Capdevielle, and Manu K. Gupta, "Small Cell Networks: Speed Based Power Allocation", <i> 51st Annual Allerton Conference on Communication, Control, and Computing (<b>ALLERTON</b>),</i> University of Illinois at Urbana-Champaign, Allerton Retreat Center, Illinois, USA, 2013. [<a href="https://ieeexplore.ieee.org/document/6736688" target="_blank">PDF</a>]
 <p> </p>
 
 
