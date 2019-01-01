@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Manu K. Gupta"
   avatar           : "manu.jpg"
-  bio              : "PhD, Applied Mathematics"
+  bio              : "PhD, <a href="http://www.ieor.iitb.ac.in/" target="_blank">Industrial Engineering and Operations Research,</a> (Applied Mathematics)"
   location         : "Toulouse, France"
   employer         :
   googlescholar    : "https://scholar.google.co.in/citations?user=qg_A4VoAAAAJ&hl=en"
