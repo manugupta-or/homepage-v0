@@ -16,7 +16,7 @@ Full CV is available in <a href="/papers/CV_Manu.pdf" target="_blank"><b>PDF</b>
 I am interested in developing theory, algorithms and controls for stochastic systems and their applications in scientific discovery. More broadly, I am excited by research at the intersection of computer science, mathematics, and statistics. 
 
 <b>Education</b>
-* B.Sc in Statistics, Mathematics and Computer Applications, <a href="http://www.lcdc.edu.in/" target="_blank">Lucknow Christian College,</a> 2009.
+* B.Sc in Statistics, Mathematics and Computer Science, <a href="http://www.lcdc.edu.in/" target="_blank">Lucknow Christian College,</a> 2009.
 * M.Sc in <a href="http://www.ieor.iitb.ac.in/" target="_blank">Industrial Engineering and Operations Research,</a> <a href="http://www.iitb.ac.in/" target="_blank">IIT Bombay,</a> 2016.
 * Ph.D in <a href="http://www.ieor.iitb.ac.in/" target="_blank">Industrial Engineering and Operations Research,</a> <a href="http://www.iitb.ac.in/" target="_blank">IIT Bombay,</a> 2016.
 
