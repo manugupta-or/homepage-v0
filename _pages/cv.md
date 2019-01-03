@@ -13,7 +13,9 @@ Full CV is available in <a href="/papers/CV_Manu.pdf" target="_blank"><b>PDF</b>
   
 <b>Research Interests</b>
 
-I am interested in developing theory, algorithms and controls for complex random (or deterministic) environment. More broadly, I am excited by research at the intersection of computer science, mathematics, statistics and their applications in scientific discovery. 
+I am interested in developing theory, algorithms and controls for complex random (or deterministic) environment. 
+
+More broadly, I am excited by research at the intersection of computer science, mathematics, statistics and their applications in scientific discovery. 
 
 <b>Education</b>
 * B.Sc in Statistics, Mathematics and Computer Science, <a href="http://www.lcdc.edu.in/" target="_blank">Lucknow Christian College,</a> 2009.
