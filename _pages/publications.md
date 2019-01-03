@@ -26,7 +26,7 @@ Power Control in Small Cell Networks”, [<a href = "https://arxiv.org/pdf/1812.
 <p> </p>
 
 
-<li> Manu K. Gupta, N. Hemachandra and J. Venkateswaran, “Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications”, [<a href = "https://arxiv.org/pdf/1804.03564.pdf" target = "_blank"><span style="color:Turquoise;text-decoration: underline">ArXiv</span></a>], (Submitted). </li>
+<li> Manu K. Gupta, N. Hemachandra and J. Venkateswaran, “Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications”, [<a href = "https://arxiv.org/pdf/1804.03564.pdf" target = "_blank"><span style="color:SkyBlue;text-decoration: underline">ArXiv</span></a>], (Submitted). </li>
 <p> </p>
 
 
