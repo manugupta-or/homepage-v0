@@ -18,7 +18,7 @@ Controlling Emergency Crowd in Hospitals” (Preliminary version: MSOM-2017 conf
 <h3>Submitted</h3>
 
 
-<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank"><b>ArXiv</b></a>], (Submitted). </li>
+<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank"><span style="color:Turquoise;text-decoration: underline">ArXiv</span></a></a>], (Submitted). </li>
 <p> </p>
 
 <li>V. Kavitha, Manu K. Gupta, V. Capdevielle, R. Kishor and M. Haddad, “Speed Based Optimal
@@ -26,7 +26,7 @@ Power Control in Small Cell Networks”, [<a href = "https://arxiv.org/pdf/1812.
 <p> </p>
 
 
-<li> Manu K. Gupta, N. Hemachandra and J. Venkateswaran, “Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications”, [<a href = "https://arxiv.org/pdf/1804.03564.pdf" target = "_blank"><b>ArXiv</b></a>], (Submitted). </li>
+<li> Manu K. Gupta, N. Hemachandra and J. Venkateswaran, “Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications”, [<a href = "https://arxiv.org/pdf/1804.03564.pdf" target = "_blank"><span style="color:Turquoise;text-decoration: underline">ArXiv</span></a></a>], (Submitted). </li>
 <p> </p>
 
 
