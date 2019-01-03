@@ -1,5 +1,5 @@
 ---
-layout: archive
+#layout: archive
 title: Peer reviewed articles
 permalink: /publications/
 author_profile: true
