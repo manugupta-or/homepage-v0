@@ -22,7 +22,7 @@ Controlling Emergency Crowd in Hospitals” (Preliminary version: MSOM-2017 conf
 <p> </p>
 
 <li>V. Kavitha, Manu K. Gupta, V. Capdevielle, R. Kishor and M. Haddad, “Speed Based Optimal
-Power Control in Small Cell Networks”, [<a href = "https://arxiv.org/pdf/1812.03862.pdf" target = "_blank"><b>ArXiv</b></a>], (Submitted). </li>
+Power Control in Small Cell Networks”, [<a href = "https://arxiv.org/pdf/1812.03862.pdf" target = "_blank"><u>ArXiv</u></a>], (Submitted). </li>
 <p> </p>
 
 
