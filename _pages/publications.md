@@ -18,7 +18,7 @@ Controlling Emergency Crowd in Hospitals” (Preliminary version: MSOM-2017 conf
 <h3>Submitted</h3>
 
 
-<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank"><span style="color:Turquoise;text-decoration: underline">ArXiv</span></a>], (Submitted). </li>
+<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank"><span style="color:DeepSkyBlue;text-decoration: underline">ArXiv</span></a>], (Submitted). </li>
 <p> </p>
 
 <li>V. Kavitha, Manu K. Gupta, V. Capdevielle, R. Kishor and M. Haddad, “Speed Based Optimal
