@@ -13,7 +13,7 @@ Full CV is available in <a href="/papers/CV_Manu.pdf" target="_blank"><b>PDF</b>
   
 <b>Research Interests</b>
 
-I am interested in developing theory, algorithms and controls for complex random (or deterministic) environment. 
+Theory, applications, algorithms and controls in complex random or deterministic environment. 
 
 More broadly, I am excited by research at the intersection of computer science, mathematics, statistics and their applications in scientific discovery. 
 
