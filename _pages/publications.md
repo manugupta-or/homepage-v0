@@ -56,7 +56,7 @@ IIT Bombay, Mumbai, India, 2015. [<a href="https://doi.org/10.1109/WIOPT.2015.71
 
 
 <li>Manu K. Gupta, N. Hemachandra, and J. Venkateswaran, "On mean waiting time completeness and equivalence of EDD and HOL-PJ 
-dynamic priority schemes in 2-class M/G/1 queue", <i>8th International Conference on Performance Evaluation Methodologies and Tools (<b>ValueTools</b>)</i>, Bratislava, Slovakia, 2014. [<a href="https://doi.org/10.4108/icst.valuetools.2014.258212" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>] [<a href="https://manugupta-or.github.io/Slides/Valuetools2014completeness.pdf" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">Slides</span></a>]</li>
+dynamic priority schemes in 2-class M/G/1 queue", <i>8th International Conference on Performance Evaluation Methodologies and Tools (<b>ValueTools</b>)</i>, Bratislava, Slovakia, 2014. [<a href="https://dl.acm.org/citation.cfm?id=2747650.2747695" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>] [<a href="https://manugupta-or.github.io/Slides/Valuetools2014completeness.pdf" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">Slides</span></a>]</li>
 <p> </p>
 
 
