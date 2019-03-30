@@ -23,7 +23,7 @@ More broadly, I am excited by research at the intersection of computer science, 
 * Ph.D in <a href="http://www.ieor.iitb.ac.in/" target="_blank">Industrial Engineering and Operations Research,</a> <a href="http://www.iitb.ac.in/" target="_blank">IIT Bombay,</a> 2016.
 
 <b>Work experience</b>
-* July 2016 - July 2017: Postdoc Research Fellow
+* August 2016 - July 2017: Postdoc Research Fellow
   * Research Domain: Game theoretic approches for health-care operations.
   * Advisor: <a href = "https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma" target="_blank"> S. Sharma </a> and <a href = "https://esd.sutd.edu.sg/people/faculty/ying-xu" target="_blank">Y. Xu</a> at <a href="https://www.sutd.edu.sg/" target="_blank">SUTD, </a> Singapore.
 
