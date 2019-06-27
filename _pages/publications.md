@@ -6,8 +6,7 @@ author_profile: true
 ---
 
 <h3>To be Submitted</h3>
-<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
-for Markovian bandits” (Preliminary version: ISMP-2018 conference).</li>
+<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Optimal control in queues: reinforcement learning approach”.</li>
 <p></p>
 
 <li>Manu K. Gupta, S. Sharma and Ying Xu, “Pricing Scheme and Equilibrium Analysis for
@@ -18,11 +17,12 @@ Controlling Emergency Crowd in Hospitals” (Preliminary version: MSOM-2017 conf
 <h3>Submitted</h3>
 
 
-<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted). </li>
-<p> </p>
+<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
+for Markovian bandits” [<a href = "https://arxiv.org/pdf/1906.10946.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).</li>
+<p></p>
 
-<li>V. Kavitha, Manu K. Gupta, V. Capdevielle, R. Kishor and M. Haddad, “Speed Based Optimal
-Power Control in Small Cell Networks”, [<a href = "https://arxiv.org/pdf/1812.03862.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted). </li>
+
+<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted). </li>
 <p> </p>
 
 
@@ -32,11 +32,16 @@ Power Control in Small Cell Networks”, [<a href = "https://arxiv.org/pdf/1812.
 
 <h3>Published</h3>
 
+
+<li>V. Kavitha, Manu K. Gupta, V. Capdevielle, R. Kishor and M. Haddad, “Speed Based Optimal
+Power Control in Small Cell Networks”, <i>Computer Communications (<b>ComCom</b>)</i>, 142,  pp. 48-61, 2019. [<a href="https://doi.org/10.1016/j.comcom.2019.04.009" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]. </li>
+<p> </p>
+
 <li>Manu K. Gupta and N. Hemachandra, “A proof of the conjecture in "Pricing surplus server capacity for mean waiting time sensitive customers”, <i>In Proceedings, Performance Evaluation Methodologies and Tools (<b>ValueTools</b>)</i>, Palma de Mallorca, Spain, 2019. [<a href="https://dl.acm.org/citation.cfm?doid=3306309.3306332" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>] [<a href="https://manugupta-or.github.io/Slides/Valuetools2019proof.pdf" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">Slides</span></a>] </li>
 <p> </p>
 
 
-<li>Manu K. Gupta, N. Hemachandra and J. Venkateswaran, "Optimal Revenue Management in Two Class Pre-emptive Delay Dependent Markovian Queues", <i>Applied Mathematical Modelling (<b>AMM</b>)</i>, pp. 31-54, 2017. [<a href="https://doi.org/10.1016/j.apm.2016.11.016" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]</li>
+<li>Manu K. Gupta, N. Hemachandra and J. Venkateswaran, "Optimal Revenue Management in Two Class Pre-emptive Delay Dependent Markovian Queues", <i>Applied Mathematical Modelling (<b>AMM</b>)</i>, 45, pp. 31-54, 2017. [<a href="https://doi.org/10.1016/j.apm.2016.11.016" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]</li>
 <p> </p>
 
 
