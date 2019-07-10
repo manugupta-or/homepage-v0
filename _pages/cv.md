@@ -1,12 +1,12 @@
 ---
-title: "CV"
+title: "Bio"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-Full CV is available in <a href="/papers/CV_Manu.pdf" target="_blank"><b>PDF</b></a> format. Brief details of my research interests, education and work experience are included below.
+Brief details of my research interests, education and work experience are included below.
 
 {% include base_path %}
 
