@@ -10,7 +10,6 @@ author_profile: true
 
 
 
-<ol>
   
 <li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
 for Markovian bandits” [<a href = "https://arxiv.org/pdf/1906.10946.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).</li><p> </p>
@@ -22,7 +21,6 @@ for Markovian bandits” [<a href = "https://arxiv.org/pdf/1906.10946.pdf" targe
 
 <h3>Published</h3>
 
-<ol>
 <li>V. Kavitha, Manu K. Gupta, V. Capdevielle, R. Kishor and M. Haddad, “Speed Based Optimal
 Power Control in Small Cell Networks”, <i>Computer Communications (<b>ComCom</b>)</i>, 142,  pp. 48-61, 2019. [<a href="https://doi.org/10.1016/j.comcom.2019.04.009" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]. </li>
 <p> </p>
