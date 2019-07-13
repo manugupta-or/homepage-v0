@@ -5,30 +5,19 @@ permalink: /publications/
 author_profile: true
 ---
 
-<h3>To be Submitted</h3>
-<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Optimal control in queues: reinforcement learning approach”.</li>
-<p></p>
-
-<li>Manu K. Gupta, S. Sharma and Ying Xu, “Pricing Scheme and Equilibrium Analysis for
-Controlling Emergency Crowd in Hospitals” (Preliminary version: MSOM-2017 conference). </li>
-<p></p>
-
 
 <h3>Submitted</h3>
 
+<ol>
 
-<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
-for Markovian bandits” [<a href = "https://arxiv.org/pdf/1906.10946.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).</li>
-<p></p>
+<br>[S3]&nbsp; U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
+for Markovian bandits” [<a href = "https://arxiv.org/pdf/1906.10946.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).<p></p>
+  
+<br>[S2]&nbsp; U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).<p></p>
 
+<br>[S1]&nbsp;Manu K. Gupta, N. Hemachandra and J. Venkateswaran, “Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications”, [<a href = "https://arxiv.org/pdf/1804.03564.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).<p></p>
 
-<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted). </li>
-<p> </p>
-
-
-<li> Manu K. Gupta, N. Hemachandra and J. Venkateswaran, “Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications”, [<a href = "https://arxiv.org/pdf/1804.03564.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted). </li>
-<p> </p>
-
+</ol>
 
 <h3>Published</h3>
 
