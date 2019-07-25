@@ -17,6 +17,25 @@ Theory, applications, algorithms and controls in complex random or deterministic
 
 More broadly, I am excited by research at the intersection of computer science, mathematics, statistics and their applications in scientific discovery. 
 
+<h4>Education</h4>
+<ul>
+<li> <a href="http://www.lehigh.edu">Lehigh University</a>. (2003 - 2009) <br>
+PhD, <a href="http://www.lehigh.edu/~inime">Industrial and Systems Engineering
+(ISE)</a>. <br>
+Primary Field: Optimization, Minor: Mathematics. <br>
+Dissertation Title: Advances in branch-and-cut algorithms for
+Mixed-Integer Programming. <br>
+Advisor: <a href="http://coral.ie.lehigh.edu/~ted">Prof. Ted
+Ralphs</a>.
+
+<br>
+<br>
+
+<li><a href="http://www.iitd.ernet.in">Indian Institute of Technology, Delhi,
+India</a>. (1999 - 2003) <br>
+B.Tech (Hons.), Production and Industrial Engineering.
+</ul>
+
 <b>Education</b>
 * B.Sc in Statistics, Mathematics and Computer Science, <a href="http://www.lcdc.edu.in/" target="_blank">Lucknow Christian College,</a> 2009.
 * M.Sc in <a href="http://www.ieor.iitb.ac.in/" target="_blank">Industrial Engineering and Operations Research,</a> <a href="http://www.iitb.ac.in/" target="_blank">IIT Bombay,</a> 2016.
