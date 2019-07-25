@@ -6,7 +6,6 @@ redirect_from:
   - /resume
 ---
 
-Brief details of my research interests, education and work experience are included below.
 
 {% include base_path %}
 
@@ -17,16 +16,15 @@ Theory, applications, algorithms and controls in complex random or deterministic
 
 More broadly, I am excited by research at the intersection of computer science, mathematics, statistics and their applications in scientific discovery. 
 
-<h4>Education</h4>
+<b>Education</b>
 <ul>
-<li> <a href="http://www.lehigh.edu">Lehigh University</a>. (2003 - 2009) <br>
-PhD, <a href="http://www.lehigh.edu/~inime">Industrial and Systems Engineering
+<li> <a href="http://www.lehigh.edu">IIT Bombay</a>. (2003 - 2009) <br>
+Msc-PhD dual degree, <a href="http://www.lehigh.edu/~inime">Industrial and Systems Engineering
 (ISE)</a>. <br>
 Primary Field: Optimization, Minor: Mathematics. <br>
 Dissertation Title: Advances in branch-and-cut algorithms for
 Mixed-Integer Programming. <br>
-Advisor: <a href="http://coral.ie.lehigh.edu/~ted">Prof. Ted
-Ralphs</a>.
+Advisor: <a href="http://coral.ie.lehigh.edu/~ted">Prof. N. Hemachandra</a>.
 
 <br>
 <br>
@@ -35,6 +33,9 @@ Ralphs</a>.
 India</a>. (1999 - 2003) <br>
 B.Tech (Hons.), Production and Industrial Engineering.
 </ul>
+
+<br>
+<br>
 
 <b>Education</b>
 * B.Sc in Statistics, Mathematics and Computer Science, <a href="http://www.lcdc.edu.in/" target="_blank">Lucknow Christian College,</a> 2009.
