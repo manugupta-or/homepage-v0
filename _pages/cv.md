@@ -18,9 +18,8 @@ More broadly, I am excited by research at the intersection of computer science, 
 
 <b>Education</b>
 <ul>
-<li> <a href="http://www.lehigh.edu">IIT Bombay</a>. (2003 - 2009) <br>
-Msc-PhD dual degree, <a href="http://www.lehigh.edu/~inime">Industrial and Systems Engineering
-(ISE)</a>. <br>
+<li> <a href="http://www.iitb.ac.in/">IIT Bombay</a>. (2003 - 2009) <br>
+Msc-PhD dual degree, <a href="http://www.ieor.iitb.ac.in/">Industrial Engineering and Operations Research (IEOR)</a>. <br>
 Primary Field: Optimization, Minor: Mathematics. <br>
 Dissertation Title: Advances in branch-and-cut algorithms for
 Mixed-Integer Programming. <br>
