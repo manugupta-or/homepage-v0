@@ -19,8 +19,8 @@ More broadly, I am excited by research at the intersection of computer science, 
 <b>Education</b>
 <li><a href="http://www.iitb.ac.in/">IIT Bombay</a>. (2009 - 2016) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; Msc-PhD dual degree, <a href="http://www.ieor.iitb.ac.in/">Industrial Engineering and Operations Research (IEOR)</a>. <br>
-&nbsp;&nbsp;&nbsp;&nbsp; <u>Primary Field:</u> Stochastic systems. <br>
-&nbsp;&nbsp;&nbsp;&nbsp; <u>Mentors:</u> <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a> and <a href="http://www.ieor.iitb.ac.in/~jayendran">Prof. J. Venkateswaran</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <b>Research Domain:</b> Stochastic systems. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; <b>Mentors:</b> <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a> and <a href="http://www.ieor.iitb.ac.in/~jayendran">Prof. J. Venkateswaran</a>
 
 <br>
 <br>
@@ -36,19 +36,18 @@ India</a>. (2006 - 2009) <br>
 <br>
 
 <li><a href="http://www.cimi.univ-toulouse.fr/en/post-doctoral-fellowships" target="_blank">CIMI</a> Research Fellow (August 2016 - July 2019) <br>
-&nbsp <a href="https://www.irit.fr/?lang=en"> Institut de Recherche en Informatique de Toulouse (IRIT) Toulouse</a>. 
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.irit.fr/?lang=en"> Institut de Recherche en Informatique de Toulouse (IRIT) Toulouse</a>. 
 <ul>
-<li>. 
+<li> 
 <li> Developed a new open-source solver, MINOTAUR, for solving MINLPs.
 <li> Applied optimization techniques to tackle complex scientific and
 engineering problems.
 </ul>
 
 
-<li>Postdoctoral Research Appointment (May 2009 -
-April 2012) <br>
-<a href="http://www.mcs.anl.gov">Mathematics and Computer Science Division,
-Argonne National Lab</a>. 
+<li>Postdoctoral Research Appointment (August 2016 -
+July 2017) <br>
+<a href="http://esd.sutd.edu.sg/">Engineering Systems and Design, SUTD, Singapore</a>. 
 <ul>
 <li>Developed new theoretical and computational techniques
 for solving Mixed-Integer Nonlinear Programs (MINLP). 
