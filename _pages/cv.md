@@ -44,7 +44,7 @@ India</a>. (2006 - 2009) <br>
 
 <li>Postdoctoral Research Appointment (August 2016 -
 July 2017) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://esd.sutd.edu.sg/">Engineering Systems and Design, SUTD, Singapore</a>. 
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://esd.sutd.edu.sg/">Engineering Systems and Design, SUTD, Singapore</a>.<br> 
 &nbsp;&nbsp;&nbsp;&nbsp; <b>Research Domain:</b> Stochastic systems. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; <b>Mentors:</b> <a href="http://www.ieor.iitb.ac.in/~nh">Prof. S. Sharma</a> and <a href="http://www.ieor.iitb.ac.in/~jayendran">Prof. Y. Xu</a> <br>
   
