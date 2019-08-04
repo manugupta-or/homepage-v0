@@ -20,7 +20,7 @@ More broadly, I am excited by research at the intersection of computer science, 
 <li><a href="http://www.iitb.ac.in/">IIT Bombay</a>. (2009 - 2016) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; Msc-PhD dual degree, <a href="http://www.ieor.iitb.ac.in/">Industrial Engineering and Operations Research (IEOR)</a>. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; <i>Primary Field:</i> Stochastic systems. <br>
-&nbsp;&nbsp;&nbsp;&nbsp; <i>Mentors:</i> <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a> and <a href="http://www.ieor.iitb.ac.in/~jayendran">Prof. J. Venkateswaran</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <i>Thesis Supervisors:</i> <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a>, <a href="http://www.ieor.iitb.ac.in/vkavitha">Prof. V. Kavitha</a> and <a href="http://www.ieor.iitb.ac.in/~jayendran">Prof. J. Venkateswaran</a>
 
 <br>
 <br>
