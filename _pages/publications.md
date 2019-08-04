@@ -6,10 +6,8 @@ author_profile: true
 ---
 
 
-<h3>Submitted</h3>
-
-
-
+<h3>Submitted</h3><br>
+<ol>
 <li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
 for Markovian bandits” [<a href = "https://arxiv.org/pdf/1906.10946.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).<br><br>
   
@@ -18,7 +16,7 @@ for Markovian bandits” [<a href = "https://arxiv.org/pdf/1906.10946.pdf" targe
 <li>Manu K. Gupta, N. Hemachandra and J. Venkateswaran, “Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications”, [<a href = "https://arxiv.org/pdf/1804.03564.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).<br><br>
  
 
-<h3>Published</h3>
+<h3>Published</h3><br>
 <ol>
 <li>V. Kavitha, Manu K. Gupta, V. Capdevielle, R. Kishor and M. Haddad, “Speed Based Optimal
 Power Control in Small Cell Networks”, <i>Computer Communications (<b>ComCom</b>)</i>, 142,  pp. 48-61, 2019. [<a href="https://doi.org/10.1016/j.comcom.2019.04.009" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>].<br><br>
@@ -49,4 +47,3 @@ dynamic priority schemes in 2-class M/G/1 queue", <i>8th International Conferenc
 
 <li> V. Kavitha, V. Capdevielle, and Manu K. Gupta, "Small Cell Networks: Speed Based Power Allocation", <i> 51st Annual Allerton Conference on Communication, Control, and Computing (<b>ALLERTON</b>),</i> University of Illinois at Urbana-Champaign, Allerton Retreat Center, Illinois, USA, 2013. [<a href="https://ieeexplore.ieee.org/document/6736688" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]<br><br>
 
-</ol>
