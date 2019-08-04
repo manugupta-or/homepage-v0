@@ -19,9 +19,9 @@ More broadly, I am excited by research at the intersection of computer science, 
 <b>Education</b>
 <li><a href="http://www.iitb.ac.in/">IIT Bombay</a>. (2009 - 2016) <br>
 &nbsp;&nbsp; Msc-PhD dual degree, <a href="http://www.ieor.iitb.ac.in/">Industrial Engineering and Operations Research (IEOR)</a>. <br>
-&nbsp Primary Field: Stochastic systems. <br>
-&nbsp Dissertation Title: Dynamic Priority Scheduling in Multi-class Queues: Pricing, Achievable Regions and Applications.<br>
-&nbsp Advisor: <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a>.
+&nbsp;&nbsp;&nbsp;&nbsp; Primary Field: Stochastic systems. <br>
+&nbsp;&nbsp;&nbsp; Dissertation Title: Dynamic Priority Scheduling in Multi-class Queues: Pricing, Achievable Regions and Applications.<br>
+&nbsp; Advisor: <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a>.
 
 <br>
 <br>
