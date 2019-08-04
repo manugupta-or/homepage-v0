@@ -34,6 +34,7 @@ India</a>. (2006 - 2009) <br>
 
 <b>Work experience</b>
 <br>
+<br>
 <li><a href="http://www.cimi.univ-toulouse.fr/en/post-doctoral-fellowships" target="_blank">CIMI</a> Research Fellow (August 2017 - July 2019) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.irit.fr/?lang=en"> Institut de Recherche en Informatique de Toulouse (IRIT),</a> Toulouse, France.<br> 
 &nbsp;&nbsp;&nbsp;&nbsp; <font size="-1"><b>Research Domain:</b> Restless bandits.</font> <br>
@@ -45,6 +46,6 @@ India</a>. (2006 - 2009) <br>
 <li>Postdoctoral Research Appointment (August 2016 -
 July 2017) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://esd.sutd.edu.sg/">Engineering Systems and Design, SUTD,</a> Singapore.<br> 
-&nbsp;&nbsp;&nbsp;&nbsp; <b>Research Domain:</b> Game theorertic approaches for operations management. <br>
-&nbsp;&nbsp;&nbsp;&nbsp; <b>Mentors:</b> <a href="https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma">Prof. S. Sharma</a> and <a href="https://esd.sutd.edu.sg/people/faculty/ying-xu">Prof. Y. Xu</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp; <u>Research Domain:</u> Game theorertic approaches for operations management. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; Mentors: <a href="https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma">Prof. S. Sharma</a> and <a href="https://esd.sutd.edu.sg/people/faculty/ying-xu">Prof. Y. Xu</a> <br>
   
