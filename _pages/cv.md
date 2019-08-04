@@ -19,7 +19,7 @@ More broadly, I am excited by research at the intersection of computer science, 
 <b>Education</b>
 <li><a href="http://www.iitb.ac.in/">IIT Bombay</a>. (2009 - 2016) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; Msc-PhD dual degree, <a href="http://www.ieor.iitb.ac.in/">Industrial Engineering and Operations Research (IEOR)</a>. <br>
-&nbsp;&nbsp;&nbsp;&nbsp; <b>Primary Field:</b> <font weight="600">Stochastic systems. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; <b>Primary Field:</b> <font weight="800">Stochastic systems. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; <b>Mentors:</b> <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a> and <a href="http://www.ieor.iitb.ac.in/~jayendran">Prof. J. Venkateswaran</a>
 
 <br>
@@ -47,5 +47,5 @@ India</a>. (2006 - 2009) <br>
 July 2017) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://esd.sutd.edu.sg/">Engineering Systems and Design, SUTD,</a> Singapore.<br> 
 &nbsp;&nbsp;&nbsp;&nbsp; <u>Research Domain:</u> Game theorertic approaches for operations management. <br>
-&nbsp;&nbsp;&nbsp;&nbsp; Mentors: <a href="https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma">Prof. S. Sharma</a> and <a href="https://esd.sutd.edu.sg/people/faculty/ying-xu">Prof. Y. Xu</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp; <i>Mentors:</i> <a href="https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma">Prof. S. Sharma</a> and <a href="https://esd.sutd.edu.sg/people/faculty/ying-xu">Prof. Y. Xu</a> <br>
   
