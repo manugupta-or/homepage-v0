@@ -34,12 +34,12 @@ B.Sc, Statistics, Mathematics and Computer Aplications.
 <br>
 
 <b>Work experience</b>
+<br>
 
 <li><a href="http://www.cimi.univ-toulouse.fr/en/post-doctoral-fellowships" target="_blank">CIMI</a> Research Fellow (August 2016 - July 2019) <br>
-<a href="https://www.irit.fr/?lang=en"> Institut de Recherche en Informatique de Toulouse</a>. 
+<a href="https://www.irit.fr/?lang=en"> Institut de Recherche en Informatique de Toulouse (IRIT) Toulouse</a>. 
 <ul>
-<li>Developed new theoretical and computational techniques
-for solving Mixed-Integer Nonlinear Programs (MINLP). 
+<li>. 
 <li> Developed a new open-source solver, MINOTAUR, for solving MINLPs.
 <li> Applied optimization techniques to tackle complex scientific and
 engineering problems.
