@@ -19,15 +19,15 @@ More broadly, I am excited by research at the intersection of computer science, 
 <b>Education</b>
 <li><a href="http://www.iitb.ac.in/">IIT Bombay</a>. (2009 - 2016) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; Msc-PhD dual degree, <a href="http://www.ieor.iitb.ac.in/">Industrial Engineering and Operations Research (IEOR)</a>. <br>
-&nbsp;&nbsp;&nbsp;&nbsp; Primary Field: Stochastic systems. <br>
-&nbsp;&nbsp;&nbsp;&nbsp; Mentors: <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a> and <a href="http://www.ieor.iitb.ac.in/~jayendran">Prof. J. Venkateswaran</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <u>Primary Field:</u> Stochastic systems. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; <u>Mentors:</u> <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a> and <a href="http://www.ieor.iitb.ac.in/~jayendran">Prof. J. Venkateswaran</a>
 
 <br>
 <br>
 
 <li><a href="http://www.iitd.ernet.in">Lucknow Christian Degree College, Lucknow,
 India</a>. (2006 - 2009) <br>
-&nbsp B.Sc, Statistics, Mathematics and Computer Aplications.
+&nbsp;&nbsp;&nbsp;&nbsp; B.Sc, Statistics, Mathematics and Computer Aplications.
 
 <br>
 <br>
