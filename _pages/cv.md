@@ -17,8 +17,7 @@ Theory, applications, algorithms and controls in complex random or deterministic
 More broadly, I am excited by research at the intersection of computer science, mathematics, statistics and their applications in scientific discovery. 
 
 <b>Education</b>
-<ul>
-<li> <a href="http://www.iitb.ac.in/">IIT Bombay</a>. (2003 - 2009) <br>
+<li> <a href="http://www.iitb.ac.in/">IIT Bombay</a>. (2009 - 2016) <br>
 Msc-PhD dual degree, <a href="http://www.ieor.iitb.ac.in/">Industrial Engineering and Operations Research (IEOR)</a>. <br>
 Primary Field: Stochastic systems. <br>
 Dissertation Title: Dynamic Priority Scheduling in Multi-class Queues: Pricing, Achievable Regions and Applications.<br>
@@ -27,10 +26,9 @@ Advisor: <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a>.
 <br>
 <br>
 
-<li><a href="http://www.iitd.ernet.in">Indian Institute of Technology, Delhi,
-India</a>. (1999 - 2003) <br>
-B.Tech (Hons.), Production and Industrial Engineering.
-</ul>
+<li><a href="http://www.iitd.ernet.in">Lucknow Christian Degree College, Lucknow,
+India</a>. (2006 - 2009) <br>
+B.Sc, Statistics, Mathematics and Computer Aplications.
 
 <br>
 <br>
