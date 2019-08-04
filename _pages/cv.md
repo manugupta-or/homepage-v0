@@ -36,7 +36,7 @@ India</a>. (2006 - 2009) <br>
 <br>
 <li><a href="http://www.cimi.univ-toulouse.fr/en/post-doctoral-fellowships" target="_blank">CIMI</a> Research Fellow (August 2017 - July 2019) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.irit.fr/?lang=en"> Institut de Recherche en Informatique de Toulouse (IRIT),</a> Toulouse, France.<br> 
-&nbsp;&nbsp;&nbsp;&nbsp; <b>Research Domain:</b> Restless bandits. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; <b><font size="-1">Research Domain:</font></b> Restless bandits. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; <b>Mentors:</b> <a href="https://www.irit.fr/~Urtzi.Ayesta/">Prof. U. Ayesta</a> and <a href="http://verloop.perso.enseeiht.fr/">Prof. I. M. Verloop</a>
 
 <br>
