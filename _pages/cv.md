@@ -34,17 +34,17 @@ India</a>. (2006 - 2009) <br>
 
 <b>Work experience</b>
 <br>
-
 <li><a href="http://www.cimi.univ-toulouse.fr/en/post-doctoral-fellowships" target="_blank">CIMI</a> Research Fellow (August 2016 - July 2019) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.irit.fr/?lang=en"> Institut de Recherche en Informatique de Toulouse (IRIT),</a> Toulouse, France.<br> 
 &nbsp;&nbsp;&nbsp;&nbsp; <b>Research Domain:</b> Stochastic systems. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; <b>Mentors:</b> <a href="http://www.ieor.iitb.ac.in/~nh">Prof. U. Ayesta</a> and <a href="http://www.ieor.iitb.ac.in/~jayendran">Prof. I. M. Verloop</a>
 
+<br>
+<br>
 
 <li>Postdoctoral Research Appointment (August 2016 -
 July 2017) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://esd.sutd.edu.sg/">Engineering Systems and Design, SUTD, Singapore</a>. 
-<ul>
 &nbsp;&nbsp;&nbsp;&nbsp; <b>Research Domain:</b> Stochastic systems. <br>
-&nbsp;&nbsp;&nbsp;&nbsp; <b>Mentors:</b> <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a> and <a href="http://www.ieor.iitb.ac.in/~jayendran">Prof. J. Venkateswaran</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp; <b>Mentors:</b> <a href="http://www.ieor.iitb.ac.in/~nh">Prof. S. Sharma</a> and <a href="http://www.ieor.iitb.ac.in/~jayendran">Prof. Y. Xu</a> <br>
   
