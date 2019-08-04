@@ -18,17 +18,17 @@ More broadly, I am excited by research at the intersection of computer science, 
 
 <b>Education</b>
 <li><a href="http://www.iitb.ac.in/">IIT Bombay</a>. (2009 - 2016) <br>
-Msc-PhD dual degree, <a href="http://www.ieor.iitb.ac.in/">Industrial Engineering and Operations Research (IEOR)</a>. <br>
-Primary Field: Stochastic systems. <br>
-Dissertation Title: Dynamic Priority Scheduling in Multi-class Queues: Pricing, Achievable Regions and Applications.<br>
-Advisor: <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a>.
+&nbsp Msc-PhD dual degree, <a href="http://www.ieor.iitb.ac.in/">Industrial Engineering and Operations Research (IEOR)</a>. <br>
+&nbsp Primary Field: Stochastic systems. <br>
+&nbsp Dissertation Title: Dynamic Priority Scheduling in Multi-class Queues: Pricing, Achievable Regions and Applications.<br>
+&nbsp Advisor: <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a>.
 
 <br>
 <br>
 
 <li><a href="http://www.iitd.ernet.in">Lucknow Christian Degree College, Lucknow,
 India</a>. (2006 - 2009) <br>
-B.Sc, Statistics, Mathematics and Computer Aplications.
+&nbsp B.Sc, Statistics, Mathematics and Computer Aplications.
 
 <br>
 <br>
@@ -37,7 +37,7 @@ B.Sc, Statistics, Mathematics and Computer Aplications.
 <br>
 
 <li><a href="http://www.cimi.univ-toulouse.fr/en/post-doctoral-fellowships" target="_blank">CIMI</a> Research Fellow (August 2016 - July 2019) <br>
-<a href="https://www.irit.fr/?lang=en"> Institut de Recherche en Informatique de Toulouse (IRIT) Toulouse</a>. 
+&nbsp <a href="https://www.irit.fr/?lang=en"> Institut de Recherche en Informatique de Toulouse (IRIT) Toulouse</a>. 
 <ul>
 <li>. 
 <li> Developed a new open-source solver, MINOTAUR, for solving MINLPs.
