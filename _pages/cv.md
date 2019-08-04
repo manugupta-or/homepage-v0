@@ -20,10 +20,9 @@ More broadly, I am excited by research at the intersection of computer science, 
 <ul>
 <li> <a href="http://www.iitb.ac.in/">IIT Bombay</a>. (2003 - 2009) <br>
 Msc-PhD dual degree, <a href="http://www.ieor.iitb.ac.in/">Industrial Engineering and Operations Research (IEOR)</a>. <br>
-Primary Field: Optimization, Minor: Mathematics. <br>
-Dissertation Title: Advances in branch-and-cut algorithms for
-Mixed-Integer Programming. <br>
-Advisor: <a href="http://coral.ie.lehigh.edu/~ted">Prof. N. Hemachandra</a>.
+Primary Field: Stochastic systems. <br>
+Dissertation Title: Dynamic Priority Scheduling in Multi-class Queues: Pricing, Achievable Regions and Applications.<br>
+Advisor: <a href="http://www.ieor.iitb.ac.in/~nh">Prof. N. Hemachandra</a>.
 
 <br>
 <br>
