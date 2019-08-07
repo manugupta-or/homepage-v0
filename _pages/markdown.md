@@ -1,6 +1,6 @@
 ---
 permalink: /markdown/
-title: "Deviation"
+title: "Other interests"
 author_profile: true
 redirect_from: 
   - /md/
