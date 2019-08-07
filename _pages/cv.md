@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
   
-<b>Research Interests</b>
+<b>Research interests</b>
 
 Theory, applications, algorithms and controls in complex random or deterministic environment. 
 
