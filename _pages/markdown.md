@@ -1,6 +1,6 @@
 ---
 permalink: /markdown/
-title: "Other interests"
+title: "Other Interests"
 author_profile: true
 redirect_from: 
   - /md/
