@@ -1,6 +1,6 @@
 ---
 permalink: /markdown/
-title: "Other interests"
+title: 
 author_profile: true
 redirect_from: 
   - /md/
@@ -11,5 +11,5 @@ Work is fun. But there are other things that I do when I am not into research. T
 
 * Music
 * Language (French)
-* <a href="/markdown/Reading.html" target="_blank">Reading</a>
+* <a href="/markdown/Reading.html">Reading</a>
 * Travelling
