@@ -1,9 +1,11 @@
 ---
 layout: archive
-title: Peer reviewed articles
+title: 
 permalink: /publications/
 author_profile: true
 ---
+
+<b>Peer reviewed articles</b>
 
 <ol>
 <li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
