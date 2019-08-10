@@ -13,3 +13,5 @@ Work is fun. But there are other things that I do when I am not into research. T
 * Language (French)
 * <a href="/markdown/Reading.html">Reading</a>
 * Travelling
+* Sports
+* Writing
