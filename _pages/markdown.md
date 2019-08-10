@@ -9,9 +9,9 @@ redirect_from:
 
 Work is fun. But there are other things that I do when I am not into research. This page is devoted to some of the things I like to do in my spare time (when there is any!).
 
-* Music
-* <a href="/markdown/french.html">Language (French)</a>
 * <a href="/markdown/Reading.html">Reading</a>
 * Travelling
+* <a href="/markdown/music.html">Music</a>
+* <a href="/markdown/french.html">Language (French)</a>
 * Sports
 * Writing
