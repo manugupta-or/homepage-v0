@@ -13,5 +13,5 @@ Work is fun. But there are other things that I do when I am not into research. T
 * <a href="/markdown/travel.html">Travelling</a>
 * <a href="/markdown/music.html">Music</a>
 * <a href="/markdown/french.html">Language (French)</a>
-* Sports
+* <a href="/markdown/sports.html">Sports</a>
 * <a href="/markdown/writing.html">Writing</a>
