@@ -17,7 +17,7 @@ with my Ph.D. studying stochastic systems. </p>
 
 <p>On these pages you will be able to find a lot about my technical interests. I hope you enjoy them and find them helpful to what interests you. </p>
 
-<p>I believe that a curious mind along with the good knowledge of techniques can systematically approach several challenging problems. </p> 
+<p>I believe that a curious mind along with good knowledge of techniques can systematically approach several challenging problems. </p> 
 
 <hr>
 <b>News</b>
