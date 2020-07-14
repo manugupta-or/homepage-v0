@@ -10,9 +10,6 @@ author_profile: true
   
 <li> S. Sharma, Y. Xu, Manu K. Gupta, and C. Courcoubetis, “Non-urgent Visits and Emergency Department Congestion: Patients' Choice and Incentive Mechanisms.”, [<a href = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3480940" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">SSRN</span></a>], (Submitted).<br><br>
   
-  
-<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).<br><br>
-
 
 <li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
 for Markovian bandits” [<a href = "https://arxiv.org/pdf/1906.10946.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).<br><br>
