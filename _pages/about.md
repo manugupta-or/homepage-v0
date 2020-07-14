@@ -9,13 +9,13 @@ redirect_from:
 ---
     
     
- <p>I am currently working on sequential decision making with <a href = "https://www.irit.fr/~Urtzi.Ayesta/" target="_blank">U. Ayesta</a> and <a href = "http://verloop.perso.enseeiht.fr/" target="_blank">I. M. Verloop</a> at <a href = "https://www.irit.fr/?lang=en" target="_blank">IRIT</a>. </p>
-
-<p>Before transitioning to Toulouse, I was working on game theoretic approaches for health-care operations with <a href = "https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma" target="_blank"> S. Sharma </a> and <a href = "https://esd.sutd.edu.sg/people/faculty/ying-xu" target="_blank">Y. Xu</a> at <a href = "https://esd.sutd.edu.sg/" target="_blank"> ESD</a>. 
+ <p>I am an assistant professor in <a href = "https://www.iitr.ac.in/departments/DM/" target="_blank">department of management studies</a>  at <a href = "https://www.iitr.ac.in/" target="_blank">IIT Roorkee</a>. My research interests are broadly in bandit optimization and decision making under uncertainty. 
+ 
+In the past, I have worked on several areas such as machine learning, restless bandits, game theory and queuing theory. I spent a year at TCS innovation labs in developing dynamic pricing algorithms. I worked on sequential decision making with <a href = "https://www.irit.fr/~Urtzi.Ayesta/" target="_blank">U. Ayesta</a> and <a href = "http://verloop.perso.enseeiht.fr/" target="_blank">I. M. Verloop</a> at <a href = "https://www.irit.fr/?lang=en" target="_blank">IRIT, Toulouse</a>. </p> <p>Before transitioning to Toulouse, I was working on game theoretic approaches for health-care operations with <a href = "https://esd.sutd.edu.sg/people/faculty/shrutivandana-sharma" target="_blank"> S. Sharma </a> and <a href = "https://esd.sutd.edu.sg/people/faculty/ying-xu" target="_blank">Y. Xu</a> at <a href = "https://esd.sutd.edu.sg/" target="_blank"> ESD</a>. 
 I graduated from <a href = "http://www.ieor.iitb.ac.in/" target="_blank">IEOR@IITB</a> 
 with my Ph.D. studying stochastic systems. </p>
 
-<p>On these pages you will be able to find a lot about my technical interests. I hope you enjoy them and find them helpful to what interests you. </p>
+<p>On these pages you will be able to find a lot about my technical interests. I hope you enjoy them and find them helpful to what interests you. If you are interested in the areas that I work on/would like to provide suggestions/have discussions on any topic mentioned in this site, please drop me  a mail. </p>
 
 <p>I believe that a curious mind along with good knowledge of techniques can systematically approach several challenging problems. </p> 
 
