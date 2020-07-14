@@ -9,7 +9,7 @@ redirect_from:
 ---
     
     
- <p>I am an assistant professor in <a href = "https://www.iitr.ac.in/departments/DM/" target="_blank">management studies</a>  at <a href = "https://www.iitr.ac.in/" target="_blank">IIT Roorkee</a>. My research interests are broadly in decision making under uncertainty. In the past, I have worked on several areas such as machine learning, restless bandits, game theory and queuing theory. </p>
+ <p>I am an assistant professor in <a href = "https://www.iitr.ac.in/departments/DM/" target="_blank">management studies</a>  at <a href = "https://www.iitr.ac.in/" target="_blank">IIT Roorkee</a>. My research interests are broadly in decision making under uncertainty. In the past, I have worked on several areas such as machine learning, restless bandits, game theory and queuing systems. </p>
 
 <p>On these pages you will be able to find a lot about my technical interests. I hope you enjoy them and find them helpful to what interests you. I believe that a curious mind along with good knowledge of techniques can systematically approach several challenging problems. </p> 
 
