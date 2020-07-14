@@ -31,7 +31,6 @@ More broadly, I am excited by research at the intersection of computer science, 
 <li>Assistant Professor(July 2020 - present) <br>
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.iitr.ac.in/departments/DM/"> Department of Management Studies,</a> IIT Roorkee, India.<br> 
 &nbsp;&nbsp;&nbsp;&nbsp; <i>Research Domain:</i> Operations Management.<br>
-
 <br>
 <br>
 <li>Scientist (August 2019 - July 2020) <br>
