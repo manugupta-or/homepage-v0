@@ -16,11 +16,11 @@ for Markovian bandits” [<a href = "https://arxiv.org/pdf/1906.10946.pdf" targe
   
 <li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).<br><br>
 
-<li>Manu K. Gupta, N. Hemachandra and J. Venkateswaran, “Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications”, [
-  <i>ACM Trans. Model. Perform. Eval. Comput. Syst. (<b>TOMPECS</b>) </i> 5, 2, Article 10 (April 2020)
-  <a href = "https://doi.org/10.1145/3384390" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>].<br><br>
+<li>Manu K. Gupta, N. Hemachandra and J. Venkateswaran, “Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications”,
+  <i>ACM Trans. Model. Perform. Eval. Comput. Syst. (<b>TOMPECS</b>) </i> 5, 2, Article 10, 2020.
+  [<a href = "https://doi.org/10.1145/3384390" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>].<br><br>
 
-<li>V. Kavitha, Manu K. Gupta, V. Capdevielle, R. Kishor and M. Haddad, “Speed Based Optimal
+<li>V. Kavitha, Manu K. Gupta, V. Capdevielle, R. Kishor and M. Haddad, “Spehttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=3480940ed Based Optimal
 Power Control in Small Cell Networks”, <i>Computer Communications (<b>ComCom</b>)</i>, 142,  pp. 48-61, 2019. [<a href="https://doi.org/10.1016/j.comcom.2019.04.009" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>].<br><br>
 
 <li>Manu K. Gupta and N. Hemachandra, “A proof of the conjecture in "Pricing surplus server capacity for mean waiting time sensitive customers”, <i>In Proceedings, Performance Evaluation Methodologies and Tools (<b>ValueTools</b>)</i>, Palma de Mallorca, Spain, 2019. [<a href="https://dl.acm.org/citation.cfm?doid=3306309.3306332" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>] [<a href="https://manugupta-or.github.io/Slides/Valuetools2019proof.pdf" target="_blank"><span style="color:DodgerBlue;text-decoration: underline">Slides</span></a>] <br><br>
