@@ -12,9 +12,9 @@ redirect_from:
   
 <b>Research interests</b>
 
-Theory, applications, algorithms and controls in complex random or deterministic environment. 
+Theory, applications, algorithms and controls in random or deterministic environment. 
 
-More broadly, I am excited by research at the intersection of computer science, mathematics, statistics and their applications in scientific discovery. 
+More broadly, I am excited by research at the intersection of computer science, mathematics, statistics and their applications in management science. 
 
 <b>Education</b>
 <li><a href="http://www.iitb.ac.in/">IIT Bombay</a>. (2009 - 2016) <br>
@@ -25,14 +25,13 @@ More broadly, I am excited by research at the intersection of computer science, 
 <br>
 <br>
 
-<li><a href="http://www.iitd.ernet.in">Lucknow Christian Degree College, Lucknow,
-India</a>. (2006 - 2009) <br>
-&nbsp;&nbsp;&nbsp;&nbsp; B.Sc, Statistics, Mathematics and Computer Aplications.
-
-<br>
-<br>
-
 <b>Work experience</b>
+<br>
+<br>
+<li>Scientist (August 2019 - July 2020) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.tcs.com/making-big-data-work-for-you"> Data and decision sciences,</a> TCS Hyderabad, India.<br> 
+&nbsp;&nbsp;&nbsp;&nbsp; <i>Research Domain:</i> Machine learning techniques for dynamic pricing.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; <i>Mentor:</i> <a href="https://in.linkedin.com/in/sanjay-bhat-39b36a1b/">Dr. S. Bhat</a> 
 <br>
 <br>
 <li><a href="http://www.cimi.univ-toulouse.fr/en/post-doctoral-fellowships" target="_blank">CIMI</a> Research Fellow (August 2017 - July 2019) <br>
