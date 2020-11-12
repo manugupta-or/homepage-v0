@@ -24,5 +24,5 @@ redirect_from:
 <li> <font size="2">24 April, 2019. Notification of acceptance for the <a href = "https://arxiv.org/pdf/1812.03862.pdf" target="_blank">paper</a> "Speed Based Optimal Power Control in Small Cell Networks" coauthored with V. Kavitha, V. Capdevielle, R. Kishor and M. Haddad to <a href = "https://www.journals.elsevier.com/computer-communications" target="_blank">Computer Communication</a>.</font></li>
 <li><font size="2">22 December, 2018. Notification of acceptance for the paper "On a Conjecture for Dynamic Priority Queues and Nash Equilibrium for Quality of Service Sensitive Markets" coauthored with N. Hemachandra in <a href = "http://valuetools.org/" target="_blank">Valuetools 2019</a>.</font></li>
 <li> <font size="2">16 October, 2018. Submitted a <a href = "https://arxiv.org/pdf/1810.07782.pdf" target="_blank">paper</a> "Load-balancing with heterogeneous schedulers" coauthored with U. Ayesta and I. M. Verloop to <a href = "https://link.springer.com/journal/10479" target="_blank">Annals of Operations Research</a>.</font></li>
-<li> <font size="2">01 October, 2018 and older news. <a href="/markdown/oldnews.html">Click here.</a></font></li>
+<li> <font size="2">31 December, 2019 and older news. <a href="/markdown/oldnews.html">Click here</a></font></li>
 
