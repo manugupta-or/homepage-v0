@@ -33,7 +33,7 @@ https://www.smu.edu.sg/" target="_blank">Universiti Teknologi Malaysia
 
 
 
-<li> <font size="2">10 August, 2020. Signed to teach a course on "leveraging data science for supply chain management" with <a href = "https://www.coursera.org/" target="_blank">coursera</a>.</font></li>
+<li> <font size="2">10 August, 2020. Signed to develop a specialization on "leveraging data science for supply chain management" with <a href = "https://www.coursera.org/" target="_blank">coursera</a>.</font></li>
 
 
 <li> <font size="2">09 july, 2020. Joined <a href = "https://ms.iitr.ac.in/" target="_blank">DoMS@IITR</a> in operations area :) </font></li>
