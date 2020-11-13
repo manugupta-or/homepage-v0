@@ -10,11 +10,12 @@ author_profile: true
   
 <li> S. Sharma, Y. Xu, Manu K. Gupta, and C. Courcoubetis, “Non-urgent Visits and Emergency Department Congestion: Patients' Choice and Incentive Mechanisms.”, [<a href = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3480940" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">SSRN</span></a>], (Submitted).<br><br>
   
-
-<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
-for Markovian bandits” [<a href = "https://arxiv.org/pdf/1906.10946.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).<br><br>
   
 <li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).<br><br>
+
+<li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
+for Markovian bandits” Mathematical Method of Operations Research, 2020.  [<a href = "https://link.springer.com/article/10.1007/s00186-020-00731-9" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]<br><br>
+  
 
 <li>Manu K. Gupta, N. Hemachandra and J. Venkateswaran, “Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications”,
   <i>ACM Trans. Model. Perform. Eval. Comput. Syst. (<b>TOMPECS</b>) </i> 5, 2, Article 10, 2020.
