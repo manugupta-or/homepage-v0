@@ -23,13 +23,18 @@ redirect_from:
 <li> <font size="2">05 November, 2020. Submitted a revised version of the paper "Computing an Efficient Exploration Basis for Learning with Univariate Polynomial Features" coauthored with S. Bhat and C. Amballa to <a href = "https://aaai.org/Conferences/AAAI-20/" target="_blank">AAAI 2020</a>.</font></li>
 
 
+<li> <font size="2">30 October, 2020. Submitted a proposal on "Reinforcement Learning for Innovative Business Models" in collaboration with <a href = "
+https://www.smu.edu.sg/" target="_blank">Singapore Management University</a> and <a href = "
+https://www.smu.edu.sg/" target="_blank">Universiti Teknologi Malaysia
+</a> to <a href = "https://aistic.gov.in/ASEAN/aistdfCollaborative" target="_blank">ASEAN INDIA</a>.</font></li>
+
+
 <li> <font size="2">25 September, 2020. Co-ordinator for operations area in <a href = "https://sites.google.com/view/etmr2020/home" target="_blank">Knowledge Sharing Workshop on Emerging Trends of Management Research</a> at DoMS, IITR. 
 
-<li> <font size="2">30 November, 2019. Notification of acceptance for the <a href = "https://arxiv.org/pdf/1804.03564.pdf" target="_blank">paper</a> "Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications" coauthored with N. Hemachandra and J. Venkateswaran to <a href = "https://tompecs.acm.org/" target="_blank">ACM TOMPECS</a>.</font></li>
 
-<li> <font size="2">24 April, 2019. Notification of acceptance for the <a href = "https://arxiv.org/pdf/1812.03862.pdf" target="_blank">paper</a> "Speed Based Optimal Power Control in Small Cell Networks" coauthored with V. Kavitha, V. Capdevielle, R. Kishor and M. Haddad to <a href = "https://www.journals.elsevier.com/computer-communications" target="_blank">Computer Communication</a>.</font></li>
 
-<li><font size="2">22 December, 2018. Notification of acceptance for the paper "On a Conjecture for Dynamic Priority Queues and Nash Equilibrium for Quality of Service Sensitive Markets" coauthored with N. Hemachandra in <a href = "http://valuetools.org/" target="_blank">Valuetools 2019</a>.</font></li>
+<li> <font size="2">10 August, 2020. Signed to teach a course on "leveraging data science for supply chain management" with <a href = "https://www.coursera.org/" target="_blank">coursera</a>.</font></li>
+
 
 <li> <font size="2">09 july, 2020. Joined <a href = "https://ms.iitr.ac.in/" target="_blank">DoMS@IITR</a> in operations area :) </font></li>
 
