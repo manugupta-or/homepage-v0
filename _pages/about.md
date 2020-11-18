@@ -19,7 +19,7 @@ redirect_from:
 <b>News</b>
 
 
-<li> <font size="2"> 18 November, 2020. Coordinating TEQIP-III sponsered faculty development program on "Open-source tools for scientific
+<li> <font size="2"> 18 November, 2020. Coordinating a TEQIP-III sponsered faculty development <a href = "https://drive.google.com/file/d/16-nOEuUeFmZNfU8ciNS6rqQsnaii7Bzm/view?usp=sharing" target="_blank">program</a> on "Open-source tools for scientific
 computing: Scilab, Python, R, and Latex" with A. Tripathi. <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeGfxU0sMHLiXazPmvTTW8Igll9H-5enJHAuv_eXuR0i_QGmA/viewform?usp=sf_link" target="_blank">Click here</a> to register.</font></li>
 
 
