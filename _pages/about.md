@@ -18,6 +18,12 @@ redirect_from:
 <hr>
 <b>News</b>
 
+
+<li> <font size="2"> 18 November, 2020. Coordinating TEQIP-III sponsered faculty development program on "Open-source tools for scientific
+computing: Scilab, Python, R, and Latex" with A. Tripathi. <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeGfxU0sMHLiXazPmvTTW8Igll9H-5enJHAuv_eXuR0i_QGmA/viewform?usp=sf_link" target="_blank">Click here</a> to register.</font></li>
+
+
+
 <li> <font size="2">13 November, 2020. Notification of acceptance for the <a href = "https://link.springer.com/article/10.1007/s00186-020-00731-9" target="_blank">paper</a> "A unifying computation of Whittle’s Index for Markovian bandits" coauthored with U. Ayesta and I. M. Verloop to <a href = "https://www.springer.com/mathematics/journal/186" target="_blank">Mathematical Methods of Operations Research</a>.</font></li>
 
 <li> <font size="2">05 November, 2020. Submitted a revised version of the paper "Computing an Efficient Exploration Basis for Learning with Univariate Polynomial Features" coauthored with S. Bhat and C. Amballa to <a href = "https://aaai.org/Conferences/AAAI-20/" target="_blank">AAAI 2020</a>.</font></li>
