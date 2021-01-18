@@ -41,12 +41,7 @@ https://www.smu.edu.sg/" target="_blank">Universiti Teknologi Malaysia
 
 <li> <font size="2">25 September, 2020. Co-ordinator for operations area in <a href = "https://sites.google.com/view/etmr2020/home" target="_blank">Knowledge Sharing Workshop on Emerging Trends of Management Research</a> at DoMS, IITR. 
 
-
-
 <li> <font size="2">10 August, 2020. Signed to develop a specialization on "leveraging data science for supply chain management" with <a href = "https://www.coursera.org/" target="_blank">coursera</a>.</font></li>
-
-
-<li> <font size="2">09 july, 2020. Joined <a href = "https://ms.iitr.ac.in/" target="_blank">DoMS@IITR</a> in operations area :) </font></li>
 
 <li> <font size="2">31 December, 2019 and older news. <a href="/markdown/oldnews.html">Click here</a></font></li>
 
