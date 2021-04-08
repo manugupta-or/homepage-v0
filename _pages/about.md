@@ -19,7 +19,8 @@ redirect_from:
 <b>News</b>
 
 
-<li> <font size="2">18 January, 2021. Launched a <a href = "https://mgupta-iitr.github.io/" target="_blank">website</a> for teaching activities.</font></li>
+<li> <font size="2">12 March, 2021. Submitted a proposal on "Reinforcement Learning Approaches for Multi-armed
+Restless Bandit Problems" to <a href = "https://serbonline.in" target="_blank">serb</a>.</font></li> 
 
 
 <li> <font size="2">20 December, 2020. Notification of acceptance for the paper "Computing an Efficient Exploration Basis for Learning with Univariate Polynomial Features" coauthored with S. Bhat and C. Amballa to <a href = "https://aaai.org/Conferences/AAAI-20/" target="_blank">AAAI 2020</a>.</font></li>
