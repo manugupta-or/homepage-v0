@@ -9,8 +9,7 @@ redirect_from:
 ---
     
     
- <p>I am an assistant professor in <a href = "https://www.iitr.ac.in/departments/DM/" target="_blank">management studies</a>  at <a href = "https://www.iitr.ac.in/" target="_blank">IIT Roorkee</a>. I am also a joint faculty in Centre of Artificial
-Intelligence and Data Sciences (CAIDS) at IIT Roorkee. </p> 
+ <p>I am an assistant professor in <a href = "https://www.iitr.ac.in/departments/DM/" target="_blank">Management Studies</a>  at <a href = "https://www.iitr.ac.in/" target="_blank">IIT Roorkee</a>. I am also a joint faculty in <a href = "https://iitr.ac.in/centers/CAIDS/pages/index.html" target="_blank">Centre of Artificial Intelligence and Data Sciences (CAIDS)</a> at IIT Roorkee. </p> 
   
 <p>My research interests are broadly in decision making under uncertainty. In the past, I have worked on several areas such as machine learning, restless bandits, game theory and queuing systems. </p>
 
