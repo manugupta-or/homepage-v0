@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
- <p>I am an assistant professor in <a href = "https://doms.iitr.ac.in/" target="_blank">Management Studies</a>  at <a href = "https://www.iitr.ac.in/" target="_blank">IIT Roorkee</a>. I am also a joint faculty in <a href = "https://www.iitr.ac.in/mfsdsai/" target="_blank">MFS of Artificial Intelligence and Data Sciences </a> at IIT Roorkee. </p>
+ <p>I am an assistant professor in <a href = "https://doms.iitr.ac.in/" target="_blank">Management Studies</a>  at <a href = "https://www.iitr.ac.in/" target="_blank">IIT Roorkee</a>. I am also a joint faculty in <a href = "https://www.iitr.ac.in/mfsdsai/" target="_blank">MFS of Artificial Intelligence and Data Sciences</a>  at IIT Roorkee. </p>
 
 <p>My research interests are broadly in decision making under uncertainty. In the past, I have worked on several areas such as machine learning, restless bandits, game theory and queuing systems. </p>
 
@@ -23,7 +23,7 @@ redirect_from:
 
 <li> <font size="2">10 May, 2022. Submitted a proposal on "AI-enabled decision support systems for smart mobility" to <a href = "https://serbonline.in" target="_blank">serb</a>.</font></li>
 
-<li> <font size="2">14 November, 2021. Paper presentation on "Game Theoretic Approach for Webrooming with Multiple Brick and Mortar Stores and Giant Online Retailer" at the XXIV Annual International Conference of The Society of Operations Management (<a href = "https://acad.xlri.ac.in/conference/som-2020/" target="_blank">SOM 2021</a>), XLRI..</font></li>
+<li> <font size="2">14 November, 2021. Paper presentation on "Game Theoretic Approach for Webrooming with Multiple Brick and Mortar Stores and Giant Online Retailer" at the XXIV Annual International Conference of The Society of Operations Management (<a href = "https://acad.xlri.ac.in/conference/som-2020/" target="_blank">SOM 2021</a>), XLRI.</font></li>
 
 
 <li> <font size="2">21 May, 2021. Publication of the paper "<a href = "https://www.aaai.org/AAAI21Papers/AAAI-6446.AmballaC.pdf" target="_blank">Computing an Efficient Exploration Basis for Learning with Univariate Polynomial Features</a>" coauthored with S. Bhat and C. Amballa to <a href = "https://aaai.org/Conferences/AAAI-20/" target="_blank">AAAI 2020</a>.</font></li>
