@@ -69,7 +69,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : 
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -93,7 +93,7 @@ analytics:
 # Site Author
 author:
   name             : "Manu K. Gupta"
-  avatar           : "manu_new.png"
+  avatar           : "manu1.png"
   bio              : "PhD, Operations Research"
   location         : "Roorkee, India"
   employer         :
@@ -112,7 +112,7 @@ author:
   instagram        :
   lastfm           :
   linkedin         : "manu-gupta-649a2b19"
-  orcid            : 
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
