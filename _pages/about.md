@@ -19,32 +19,23 @@ redirect_from:
 
 <hr>
 <b>News</b>
+<li> <font size="2">06 July, 2022. Paper presentation on "Cooperative Game Theoretic Models to Analyze Multi-class Queueing Systems" at <a href = "https://gta2022.spbu.ru/en/" target="_blank">the International Conference “Game Theory and Applications”</a> with A. Mitra and N. Hemachandra.</font></li>
 
 
 <li> <font size="2">10 May, 2022. Submitted a proposal on "AI-enabled decision support systems for smart mobility" to <a href = "https://serbonline.in" target="_blank">serb</a>.</font></li>
 
+<li> <font size="2">12 April, 2022. Published a book chapter on "Learning in sequential decision-making under uncertainty" on <a href = "https://www.elsevier.com/books/artificial-intelligence-and-machine-learning-for-edge-computing/pandey/978-0-12-824054-0" target="_blank">Artificial Intelligence and Machine Learning for EDGE Computing</a> with N. Hemachandra and S. Bhatnagar.</font></li>
+
+
+<li> <font size="2">20 March, 2022. Teaching machine Learning module for times executive education certification program on data science and machine learning.</font></li>
+
 <li> <font size="2">14 November, 2021. Paper presentation on "Game Theoretic Approach for Webrooming with Multiple Brick and Mortar Stores and Giant Online Retailer" at the XXIV Annual International Conference of The Society of Operations Management (<a href = "https://acad.xlri.ac.in/conference/som-2020/" target="_blank">SOM 2021</a>), XLRI.</font></li>
 
+<li> <font size="2">4 October, 2021. Proposal acceptance on "Reinforcement learning as a decision support tool in non-stationary environment" by sponsored research and industrial consultancy, IIT Roorkee.</font></li>
 
-<li> <font size="2">21 May, 2021. Publication of the paper "<a href = "https://www.aaai.org/AAAI21Papers/AAAI-6446.AmballaC.pdf" target="_blank">Computing an Efficient Exploration Basis for Learning with Univariate Polynomial Features</a>" coauthored with S. Bhat and C. Amballa to <a href = "https://aaai.org/Conferences/AAAI-20/" target="_blank">AAAI 2020</a>.</font></li>
 
-
-<li> <font size="2"> 18 November, 2020. Coordinating a TEQIP-III sponsored <a href = "https://drive.google.com/file/d/16-nOEuUeFmZNfU8ciNS6rqQsnaii7Bzm/view?usp=sharing" target="_blank">faculty development program</a> on "Open-source tools for scientific
-computing: Scilab, Python, R, and Latex" with A. Tripathi. <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeGfxU0sMHLiXazPmvTTW8Igll9H-5enJHAuv_eXuR0i_QGmA/viewform?usp=sf_link" target="_blank">Click here</a> to register.</font></li>
+<li> <font size="2">21 May, 2021. Publication of the paper "<a href = "https://www.aaai.org/AAAI21Papers/AAAI-6446.AmballaC.pdf" target="_blank">Computing an Efficient Exploration Basis for Learning with Univariate Polynomial Features</a>" coauthored with S. Bhat and C. Amballa to <a href = "https://aaai.org/Conferences/AAAI-20/" target="_blank">AAAI 2021</a>.</font></li>
 
 
 
-<li> <font size="2">13 November, 2020. Notification of acceptance for the <a href = "https://link.springer.com/article/10.1007/s00186-020-00731-9" target="_blank">paper</a> "A unifying computation of Whittle’s Index for Markovian bandits" coauthored with U. Ayesta and I. M. Verloop to <a href = "https://www.springer.com/mathematics/journal/186" target="_blank">Mathematical Methods of Operations Research</a>.</font></li>
-
-
-<li> <font size="2">30 October, 2020. Submitted a proposal on "Reinforcement Learning for Innovative Business Models" in collaboration with <a href = "
-https://www.smu.edu.sg/" target="_blank">Singapore Management University</a> and <a href = "
-https://www.smu.edu.sg/" target="_blank">Universiti Teknologi Malaysia
-</a> to <a href = "https://aistic.gov.in/ASEAN/aistdfCollaborative" target="_blank">ASEAN INDIA</a>.</font></li>
-
-
-<li> <font size="2">25 September, 2020. Co-ordinator for operations area in <a href = "https://sites.google.com/view/etmr2020/home" target="_blank">Knowledge Sharing Workshop on Emerging Trends of Management Research</a> at DoMS, IITR.
-
-<li> <font size="2">10 August, 2020. Signed to develop a specialization on "leveraging data science for supply chain management" with <a href = "https://www.coursera.org/" target="_blank">coursera</a>.</font></li>
-
-<li> <font size="2">31 December, 2019 and older news. <a href="/markdown/oldnews.html">Click here</a></font></li>
+<li> <font size="2">31 December, 2020 and older news. <a href="/markdown/oldnews.html">Click here</a></font></li>
