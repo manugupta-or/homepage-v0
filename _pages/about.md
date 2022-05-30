@@ -19,12 +19,12 @@ redirect_from:
 
 <hr>
 <b>News</b>
-<li> <font size="2">06 July, 2022. Paper presentation on "Cooperative Game Theoretic Models to Analyze Multi-class Queueing Systems" at the International Conference “Game Theory and Applications”<a href = "https://gta2022.spbu.ru/en/" target="_blank">gta2022</a> with A. Mitra and N. Hemachandra.</font></li>
+<li> <font size="2">06 July, 2022. Paper presentation on "Cooperative Game Theoretic Models to Analyze Multi-class Queueing Systems" at the International Conference “Game Theory and Applications”<a href = "https://gta2022.spbu.ru/en/" target="_blank"> (GTA2022) </a> with A. Mitra and N. Hemachandra.</font></li>
 
 
 <li> <font size="2">10 May, 2022. Submitted a proposal on "AI-enabled decision support systems for smart mobility" to <a href = "https://serbonline.in" target="_blank">serb</a>.</font></li>
 
-<li> <font size="2">12 April, 2022. Published a book chapter on "Learning in sequential decision-making under uncertainty" on Artificial Intelligence and Machine Learning for EDGE Computing, <a href = "https://www.elsevier.com/books/artificial-intelligence-and-machine-learning-for-edge-computing/pandey/978-0-12-824054-0" target="_blank">a book chapter</a> with N. Hemachandra and S. Bhatnagar.</font></li>
+<li> <font size="2">12 April, 2022. Published a book chapter on "Learning in sequential decision-making under uncertainty" on Artificial Intelligence and Machine Learning for EDGE Computing, a book <a href = "https://www.elsevier.com/books/artificial-intelligence-and-machine-learning-for-edge-computing/pandey/978-0-12-824054-0" target="_blank"> chapter</a> with N. Hemachandra and S. Bhatnagar.</font></li>
 
 
 <li> <font size="2">20 March, 2022. Teaching machine Learning module for times executive education certification program on data science and machine learning.</font></li>
