@@ -1,13 +1,13 @@
 ---
 permalink: /markdown/
-title: 
+title:
 author_profile: true
-redirect_from: 
+redirect_from:
   - /md/
   - /markdown.html
 ---
 
-Work is fun. But there are other things that I do when I am not into research. This page is devoted to some of the things I like to do in my spare time (when there is any!).
+Work is fun. But there are other things that I do when I am not into teaching/research. This page is devoted to some of the things I like to do in my spare time (when there is any!).
 
 * <a href="/markdown/Reading.html">Reading</a>
 
