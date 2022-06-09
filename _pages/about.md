@@ -21,6 +21,8 @@ redirect_from:
 <b>News</b>
 <li> <font size="2">06 July, 2022. Paper presentation on "Cooperative Game Theoretic Models to Analyze Multi-class Queueing Systems" at the International Conference “Game Theory and Applications”<a href = "https://gta2022.spbu.ru/en/" target="_blank"> (GTA2022) </a> with A. Mitra and N. Hemachandra.</font></li>
 
+<li> <font size="2">09 June, 2022. Accepted the invitation for being Technical Program Committee (TPC) member in <a href = "https://valuetools.eai-conferences.org/2022/" target="_blank">Valuetools 2022.</a> Thanks for the invite!</font></li>
+
 
 <li> <font size="2">10 May, 2022. Submitted a proposal on "AI-enabled decision support systems for smart mobility" to <a href = "https://serbonline.in" target="_blank">serb</a>.</font></li>
 
