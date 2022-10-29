@@ -20,7 +20,7 @@ redirect_from:
 <hr>
 <b>News</b>
 
-<li> <font size="2">1 Nov, 2022. Teaching machine learning module to train executives from <a href = "https://www2.deloitte.com/in/en.html" target="_blank">Deloitte Inc.</font></li>
+<li> <font size="2">1 Nov, 2022. Teaching machine learning module to train executives from <a href = "https://www2.deloitte.com/in/en.html" target="_blank">Deloitte Inc.</a></font></li>
 
 <li> <font size="2">26 Oct, 2022. Muskan Goel and Gopal Saha will be presenting their research work in an International Conference on Shaping the Future of Management Education for Sustainable Emerging Economies <a href = "https://iitr.ac.in/sfme2022/index.html" target="_blank">SFME 2022.</a> </font></li>
 
