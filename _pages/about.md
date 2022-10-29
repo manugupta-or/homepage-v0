@@ -24,13 +24,13 @@ redirect_from:
 
 <li> <font size="2">26 Oct, 2022. Muskan Goel and Gopal Saha will be presenting their research work in an International Conference on Shaping the Future of Management Education for Sustainable Emerging Economies <a href = "https://iitr.ac.in/sfme2022/index.html" target="_blank">SFME 2022.</a> </font></li>
 
-<li> <font size="2">21 Oct, 2022. Paper acceptance on "Cooperative Game Theoretic Analysis of Shared Services" at the International Conference on Performance Evaluation Methodologies and Toolsa <a href = "https://valuetools.eai-conferences.org/2022/" target="_blank">Valuetools 2022.</a> with A. Mitra and N. Hemachandra.</font></li>
+<li> <font size="2">21 Oct, 2022. Paper acceptance on "Cooperative Game Theoretic Analysis of Shared Services" at the International Conference on Performance Evaluation Methodologies and Tools <a href = "https://valuetools.eai-conferences.org/2022/" target="_blank">Valuetools 2022.</a> with A. Mitra and N. Hemachandra.</font></li>
 
 <li> <font size="2">21 Sept, 2022. Started an executive program on <a href = "https://www.coursera.org/certificates/strategic-supply-chain-management-ai-iitr" target="_blank">PG Certificate in Strategic Supply Chain Management with AI.</a></font></li>
 
 <li> <font size="2">20 August, 2022. Teaching optimization module for times executive education certification program on Business Aanlytics.</font></li>
 
-<li> <font size="2">06 July, 2022. Paper presentation on "Cooperative Game Theoretic Models to Analyze Multi-class Queueing Systems" at the International Conference “Game Theory and Applications”<a href = "https://gta2022.spbu.ru/en/" target="_blank"> (GTA2022) </a> with A. Mitra and N. Hemachandra.</font></li>
+<li> <font size="2">06 July, 2022. Paper presentation on "Cooperative Game Theoretic Models to Analyze Multi-class Queueing Systems" at the International Conference “Game Theory and Applications”<a href = "https://gta2022.spbu.ru/en/" target="_blank">(GTA2022)</a> with A. Mitra and N. Hemachandra.</font></li>
 
 <li> <font size="2">09 June, 2022. Accepted the invitation for being Technical Program Committee (TPC) member in <a href = "https://valuetools.eai-conferences.org/2022/" target="_blank">Valuetools 2022.</a></font></li>
 
