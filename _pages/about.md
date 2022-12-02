@@ -20,7 +20,7 @@ redirect_from:
 <hr>
 <b>News</b>
 
-<li> <font size="2">12-23 Dec, 2022. Attending a winter school sponsored by  <a href = "https://www.infosys.com/" target="_blank">Infosys Inc.</a></font></li>
+<li> <font size="2">12-23 Dec, 2022. Attending a winter school on machine learning sponsored by  <a href = "https://www.infosys.com/" target="_blank">Infosys Inc.</a></font></li>
 
 <li> <font size="2">1 Nov, 2022. Teaching machine learning module to train executives from <a href = "https://www2.deloitte.com/in/en.html" target="_blank">Deloitte Inc.</a></font></li>
 
