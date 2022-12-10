@@ -46,13 +46,7 @@ redirect_from:
 
 <li> <font size="2">20 March, 2022. Teaching machine Learning module for times executive education certification program on data science and machine learning.</font></li>
 
-<li> <font size="2">14 November, 2021. Paper presentation on "Game Theoretic Approach for Webrooming with Multiple Brick and Mortar Stores and Giant Online Retailer" at the XXIV Annual International Conference of The Society of Operations Management (<a href = "https://acad.xlri.ac.in/conference/som-2020/" target="_blank">SOM 2021</a>), XLRI.</font></li>
-
-<li> <font size="2">4 October, 2021. Proposal acceptance on "Reinforcement learning as a decision support tool in non-stationary environment" by sponsored research and industrial consultancy, IIT Roorkee.</font></li>
-
-
-<li> <font size="2">21 May, 2021. Publication of the  "<a href = "https://www.aaai.org/AAAI21Papers/AAAI-6446.AmballaC.pdf" target="_blank"> paper</a>" Computing an Efficient Exploration Basis for Learning with Univariate Polynomial Features coauthored with S. Bhat and C. Amballa to <a href = "https://aaai.org/Conferences/AAAI-20/" target="_blank">AAAI 2021</a>.</font></li>
 
 
 
-<li> <font size="2">31 December, 2020 and older news. <a href="/markdown/oldnews.html">Click here</a></font></li>
+<li> <font size="2">31 December, 2021 and older news. <a href="/markdown/oldnews.html">Click here</a></font></li>
