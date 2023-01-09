@@ -17,6 +17,9 @@ redirect_from:
 
 <p>If you are interested in the areas that I work on/would like to provide suggestions/have discussions on any topic mentioned in this site, please drop me  a mail.</p>
 
+<p style="color:red;">We are organizing a conference on Sustainable Business Management. Please submit your abstract <a href = "https://sbm2023.sciencesconf.org/" target="_blank">here</a>.</p>
+
+
 <hr>
 <b>News</b>
 
