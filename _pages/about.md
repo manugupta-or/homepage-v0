@@ -17,11 +17,14 @@ redirect_from:
 
 <p>If you are interested in the areas that I work on/would like to provide suggestions/have discussions on any topic mentioned in this site, please drop me  a mail.</p>
 
-<p style="color:red;">We are organizing a conference on Sustainable Business Management. Please submit your abstract <a href = "https://sbm2023.sciencesconf.org/" target="_blank">here</a>.</p>
+<p style="color:red;">A project position to jointly work with me and Prof. Bala on "AI-driven trading platform". The advertisement can be seen <a href = "https://iitr.ac.in/Careers/static/Project_Jobs/CSE/2023/adv13012023.pdf" target="_blank">here</a>.</p>
 
 
 <hr>
 <b>News</b>
+
+
+<li> <font size="2">20 Jan, 2022. Last date to submit the abstract for a conference on Sustainable Business Management. Please submit your abstract <a href = "https://sbm2023.sciencesconf.org/" target="_blank">here</a>.</font></li>
 
 <li> <font size="2">12-23 Dec, 2022. Attending a winter school on machine learning sponsored by  <a href = "https://www.infosys.com/" target="_blank">Infosys Inc.</a></font></li>
 
