@@ -17,7 +17,7 @@ redirect_from:
 
 <p>If you are interested in the areas that I work on/would like to provide suggestions/have discussions on any topic mentioned in this site, please drop me  a mail.</p>
 
-<p style="color:red;">A project position to jointly work with me and <a href = "https://faculty.iitr.ac.in/cs/bala/" target="_blank">Prof. Bala</a> on "AI-driven trading platform". The advertisement can be seen <a href = "https://iitr.ac.in/Careers/static/Project_Jobs/CSE/2023/adv13012023.pdf" target="_blank">here</a>.</p>
+<p style="color:red;">Two internship positions are available on bandit algorithms and reinforcement learning in the upcoming summer. Please feel free to apply <a href = "https://spark.iitr.ac.in/175iitr" target="_blank">here</a>.</p>
 
 
 <hr>
