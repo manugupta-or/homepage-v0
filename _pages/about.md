@@ -26,7 +26,7 @@ redirect_from:
 <b>News</b>
 
 
-<li> <font size="2">20 Jan, 2022. Last date to submit the <a href = "https://sbm2023.sciencesconf.org/" target="_blank">abstract</a> for a conference on Sustainable Business Management.</font></li>
+<li> <font size="2">20 Jan, 2023. Last date to submit the <a href = "https://sbm2023.sciencesconf.org/" target="_blank">abstract</a> for a conference on Sustainable Business Management.</font></li>
 
 <li> <font size="2">12-23 Dec, 2022. Attending a winter school on machine learning sponsored by  <a href = "https://www.infosys.com/" target="_blank">Infosys Inc.</a></font></li>
 
