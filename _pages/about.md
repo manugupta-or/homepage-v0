@@ -17,9 +17,9 @@ redirect_from:
 
 <p>If you are interested in the areas that I work on/would like to provide suggestions/have discussions on any topic mentioned in this site, please drop me  a mail.</p>
 
-<p style="color:red;">Two internship positions are available on bandit algorithms and reinforcement learning in the upcoming summer. Please feel free to apply <a href = "https://spark.iitr.ac.in/175iitr" target="_blank">here</a>.</p>
+<p style="color:red;">Two internship positions are available with me in the upcoming summer. Please feel free to apply <a href = "https://spark.iitr.ac.in/175iitr" target="_blank">here</a>.</p>
 
-<p style="color:red;">I will be happy to mentor students for post doctoral fellowships from  <a href = "https://serbonline.in/SERB/npdf" target="_blank">SERB</a> or <a href = "https://www.indiascienceandtechnology.gov.in/nurturing-minds/scholarships/women/ugc-post-doctoral-fellowship-women-candidates" target="_blank">UGC</a>.</p>
+<p style="color:red;">I am open to mentor students for post doctoral fellowships from  <a href = "https://serbonline.in/SERB/npdf" target="_blank">SERB</a> or <a href = "https://www.indiascienceandtechnology.gov.in/nurturing-minds/scholarships/women/ugc-post-doctoral-fellowship-women-candidates" target="_blank">UGC</a>.</p>
 
 
 <hr>
