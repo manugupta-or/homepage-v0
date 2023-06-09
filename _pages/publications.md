@@ -13,6 +13,8 @@ author_profile: true
 
 <li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).<br><br>
 
+<li>A. Mitra, Manu K. Gupta and N. Hemachandra, “Cooperative Game Theoretic Analysis of Shared Services” <i>15th International Conference on Performance Evaluation Methodologies and Tools (<b>ValueTools</b>)</i>, Ghent, Belgium (Virtual), 2022.  [<a href = "https://link.springer.com/chapter/10.1007/978-3-031-31234-2_3" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]<br><br>
+
 <li>Manu K. Gupta, N. Hemachandra and S. Bhatnagar, “Learning in sequential decision-making under uncertainty” <i> Artificial Intelligence and Machine Learning for EDGE Computing,   pp. 75-85. Academic Press,</i> 2022.  [<a href = "https://www.elsevier.com/books/artificial-intelligence-and-machine-learning-for-edge-computing/pandey/978-0-12-824054-0" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]<br><br>
 
 <li>C. Amballa, Manu K. Gupta and Sanjay P. Bhat, “Computing an Efficient Exploration Basis for Learning with Univariate Polynomial Features” <i> Proceedings of the AAAI Conference on Artificial Intelligence (<b>AAAI</b>) </i>, Vol. 35. No. 8. 2021.  [<a href = "https://www.aaai.org/AAAI21Papers/AAAI-6446.AmballaC.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]<br><br>
