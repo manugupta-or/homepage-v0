@@ -24,6 +24,7 @@ redirect_from:
 <hr>
 <b>News</b>
 <li> <font size="2">09 June, 2023. Submitted a proposal as Co-PI to <a href = "https://dst.gov.in/" target="_blank">DST</a> on AI-embedded Decision-Making System Architecture for Sustainable Traffic Management.</font></li>
+<li> <font size="2">05 June, 2023. Zoya Ahmad joined as a summer intern under <a href = "https://spark.iitr.ac.in/" target="_blank">SPARK</a> summer internship program at IITR.</font></li>
 
 <li> <font size="2">11 April, 2023. Submitted a proposal as Co-PI to <a href = "https://dst.gov.in/" target="_blank">DST</a> on AI Enabled Tech Tools for Mental Health and Yogic Sciences.</font></li>
 
