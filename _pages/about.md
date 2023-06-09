@@ -23,7 +23,9 @@ redirect_from:
 
 <hr>
 <b>News</b>
+<li> <font size="2">09 June, 2023. Submitted a proposal as Co-PI to <a href = "https://dst.gov.in/" target="_blank">DST</a> on AI-embedded Decision-Making System Architecture for Sustainable Traffic Management.</font></li>
 
+<li> <font size="2">11 April, 2023. Submitted a proposal as Co-PI to <a href = "https://dst.gov.in/" target="_blank">DST</a> on AI Enabled Tech Tools for Mental Health and Yogic Sciences.</font></li>
 
 <li> <font size="2">20 Jan, 2023. Last date to submit the <a href = "https://sbm2023.sciencesconf.org/" target="_blank">abstract</a> for a conference on Sustainable Business Management.</font></li>
 
