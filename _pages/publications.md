@@ -17,7 +17,7 @@ author_profile: true
 
 <li>Manu K. Gupta, N. Hemachandra and S. Bhatnagar, “Learning in sequential decision-making under uncertainty” <i> Artificial Intelligence and Machine Learning for EDGE Computing,   pp. 75-85. Academic Press,</i> 2022.  [<a href = "https://www.elsevier.com/books/artificial-intelligence-and-machine-learning-for-edge-computing/pandey/978-0-12-824054-0" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]<br><br>
 
-<li>C. Amballa, Manu K. Gupta and Sanjay P. Bhat, “Computing an Efficient Exploration Basis for Learning with Univariate Polynomial Features” <i> Proceedings of the AAAI Conference on Artificial Intelligence (<b>AAAI</b>) </i>, Vol. 35. No. 8. 2021.  [<a href = "https://www.aaai.org/AAAI21Papers/AAAI-6446.AmballaC.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]<br><br>
+<li>C. Amballa, Manu K. Gupta and Sanjay P. Bhat, “Computing an Efficient Exploration Basis for Learning with Univariate Polynomial Features” <i> Proceedings of the AAAI Conference on Artificial Intelligence (<b>AAAI</b>) </i>, Vol. 35. No. 8. 2021.  [<a href = "https://ojs.aaai.org/index.php/AAAI/article/view/16821" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]<br><br>
 
 
 <li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
