@@ -18,8 +18,8 @@ redirect_from:
 <p>If you are interested in the areas that I work on/would like to provide suggestions/have discussions on any topic mentioned in this site, please drop me  a mail.</p>
 
 
-<p style="color:red;">I am open to mentor students for post doctoral fellowships from  <a href = "https://serbonline.in/SERB/npdf" target="_blank">SERB</a> or <a href = "https://www.indiascienceandtechnology.gov.in/nurturing-minds/scholarships/women/ugc-post-doctoral-fellowship-women-candidates" target="_blank">UGC</a>.</p>
-
+<!--<p style="color:red;">I am open to mentor students for post doctoral fellowships from  <a href = "https://serbonline.in/SERB/npdf" target="_blank">SERB</a> or <a href = "https://www.indiascienceandtechnology.gov.in/nurturing-minds/scholarships/women/ugc-post-doctoral-fellowship-women-candidates" target="_blank">UGC</a>.</p>
+-->
 
 <hr>
 <b>News</b>
