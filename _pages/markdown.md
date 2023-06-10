@@ -15,6 +15,8 @@ Work is fun. But there are other things that I do when I am not into teaching/re
 * Music
 * Writing
 * Language (French)
+
+
 <!--
 * <a href="/markdown/travel.html">Travelling</a>
 * <a href="/markdown/music.html">Music</a>
