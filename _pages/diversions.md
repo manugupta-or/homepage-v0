@@ -1,15 +1,15 @@
 ---
-permalink: /markdown/
+permalink: /diversions/
 title:
 author_profile: true
 redirect_from:
   - /md/
-  - /markdown.html
+  - /diversions.html
 ---
 
 Work is fun. But there are other things that I do when I am not into teaching/research. This page is devoted to some of the things I like to do in my spare time (when there is any!).
 
-* <a href="/markdown/Reading.html">Reading</a>
+* <a href="/diversions/Reading.html">Reading</a>
 * Yoga
 * Photography
 * Music
