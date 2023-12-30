@@ -23,7 +23,7 @@ author_profile: true
 
 
 <li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “A unifying computation of Whittle’s Index
-for Markovian bandits” <i> Mathematical Method of Operations Research (<b>MMOR</b>) </i>, 2020.  [<a href = "https://link.springer.com/article/10.1007/s00186-020-00731-9" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]<br><br>
+for Markovian bandits” <i> Mathematical Method of Operations Research (<b>MMOR</b>) </i>,  Volume 93, pages 179–208, 2021.  [<a href = "https://link.springer.com/article/10.1007/s00186-020-00731-9" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]<br><br>
 
 
 <li>Manu K. Gupta, N. Hemachandra and J. Venkateswaran, “Some Parametrized Dynamic Priority Policies for 2-class M/G/1 Queues: Completeness and Applications”,
