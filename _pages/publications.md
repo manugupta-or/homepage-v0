@@ -13,7 +13,7 @@ author_profile: true
 
 <li>U. Ayesta, Manu K. Gupta and I. M. Verloop, “Load-balancing with heterogeneous schedulers.”, [<a href = "https://arxiv.org/pdf/1810.07782.pdf" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">ArXiv</span></a>], (Submitted).<br><br> -->
 
-<li>G. Saha and Manu K. Gupta, “Fair Cost-savings Allocation in Transportation Game” <i>17th IEEE International Conference on Industrial Engineering and Engineering Management (<b>IEEM</b>)</i>, Singapore, 2023. <br><br>
+<li>G. Saha and Manu K. Gupta, “Fair Cost-savings Allocation in Transportation Game” <i>17th IEEE International Conference on Industrial Engineering and Engineering Management (<b>IEEM</b>)</i>, Singapore, 2023. [Shortlisted for best paper (among top 4%)] <br><br>
 
 <li>A. Mitra, Manu K. Gupta and N. Hemachandra, “Cooperative Game Theoretic Analysis of Shared Services” <i>15th International Conference on Performance Evaluation Methodologies and Tools (<b>ValueTools</b>)</i>, Ghent, Belgium (Virtual), 2022.  [<a href = "https://link.springer.com/chapter/10.1007/978-3-031-31234-2_3" target = "_blank"><span style="color:DodgerBlue;text-decoration: underline">PDF</span></a>]<br><br>
 
