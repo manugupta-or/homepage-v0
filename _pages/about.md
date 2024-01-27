@@ -22,40 +22,15 @@ redirect_from:
 
 <hr>
 <b>News</b>
-<li> <font size="2">09 June, 2023. Submitted a proposal as Co-PI to <a href = "https://dst.gov.in/" target="_blank">DST</a> on AI-embedded Decision-Making System Architecture for Sustainable Traffic Management.</font></li>
-<li> <font size="2">05 June, 2023. Zoya Ahmad joined as a summer intern under <a href = "https://spark.iitr.ac.in/" target="_blank">SPARK</a> summer internship program at IITR.</font></li>
 
-<li> <font size="2">11 April, 2023. Submitted a proposal as Co-PI to <a href = "https://dst.gov.in/" target="_blank">DST</a> on AI Enabled Tech Tools for Mental Health and Yogic Sciences.</font></li>
+<li> <font size="2">21-25 January, 2024. PhD student Anirban Mitra attended a workshop on <a href = "https://www.ieor.iitb.ac.in/Combinatorial_Games" target="_blank">Combinatorial Games</a>  at IIT Bombay.</font></li>
 
-<li> <font size="2">20 Jan, 2023. Last date to submit the <a href = "https://sbm2023.sciencesconf.org/" target="_blank">abstract</a> for a conference on Sustainable Business Management.</font></li>
+<li> <font size="2">18 January, 2024. A talk on "Strategic interaction between service providers and the user-set in (abandonment) queues" at a <a href = "https://www.isid.ac.in/~icorgtdm24/" target="_blank">Conference</a> based on joint work with N. Hemachandra and A. Mitra.</font></li>
 
-<li> <font size="2">12-23 Dec, 2022. Attending a winter school on machine learning sponsored by  <a href = "https://www.infosys.com/" target="_blank">Infosys Inc.</a></font></li>
+<li> <font size="2">15-25 January, 2024. PhD student Gopal Saha attended a GIAN Course on Advances in <a href = "https://www.ieor.iitb.ac.in/minlo23" target="_blank">Mixed Integer Nonlinear Optimization</a>  at IIT Bombay.</font></li>
 
-<li> <font size="2">06 Dec, 2022. Consulting work titled AI-driven trading platform for <a href = "http://www.smartalpha.co.in/" target="_blank">SmartAlpha Inc.</a></font></li>
+<li> <font size="2">13 January, 2024. Submitted a paper titled "Multi-Objective Fixed-Cost Transportation Problem: A Cooperative Game Theory Approach" with Gopal Saha.</font></li>
 
-<li> <font size="2">1 Nov, 2022. Teaching machine learning module to train executives from <a href = "https://www2.deloitte.com/in/en.html" target="_blank">Deloitte Inc.</a></font></li>
+<li> <font size="2">02 January, 2024. Notification of acceptance of a proposal on Sustainability and Social Welfare of National Logistic Policy. Thank you <a href = "https://icssr.org/" target="_blank">ICSSR</a>.</font></li>
 
-<li> <font size="2">26 Oct, 2022. Muskan Goel and Gopal Saha will be presenting their research work in an International Conference on Shaping the Future of Management Education for Sustainable Emerging Economies <a href = "https://iitr.ac.in/sfme2022/index.html" target="_blank">SFME 2022.</a> </font></li>
-
-<li> <font size="2">21 Oct, 2022. Paper acceptance on "Cooperative Game Theoretic Analysis of Shared Services" at the International Conference on Performance Evaluation Methodologies and Tools <a href = "https://valuetools.eai-conferences.org/2022/" target="_blank">Valuetools 2022.</a> with A. Mitra and N. Hemachandra.</font></li>
-
-<li> <font size="2">21 Sept, 2022. Started an executive program on <a href = "https://www.coursera.org/certificates/strategic-supply-chain-management-ai-iitr" target="_blank">PG Certificate in Strategic Supply Chain Management with AI.</a></font></li>
-
-<li> <font size="2">20 August, 2022. Teaching optimization module for times executive education certification program on Business Aanlytics.</font></li>
-
-<li> <font size="2">06 July, 2022. Paper presentation on "Cooperative Game Theoretic Models to Analyze Multi-class Queueing Systems" at the International Conference “Game Theory and Applications”<a href = "https://gta2022.spbu.ru/en/" target="_blank">(GTA2022)</a> with A. Mitra and N. Hemachandra.</font></li>
-
-<li> <font size="2">09 June, 2022. Accepted the invitation for being Technical Program Committee (TPC) member in <a href = "https://valuetools.eai-conferences.org/2022/" target="_blank">Valuetools 2022.</a></font></li>
-
-
-<li> <font size="2">10 May, 2022. Submitted a proposal on "AI-enabled decision support systems for smart mobility" to <a href = "https://serbonline.in" target="_blank">serb</a>.</font></li>
-
-<li> <font size="2">12 April, 2022. Published a book chapter on "Learning in sequential decision-making under uncertainty" on Artificial Intelligence and Machine Learning for EDGE Computing, a book <a href = "https://www.elsevier.com/books/artificial-intelligence-and-machine-learning-for-edge-computing/pandey/978-0-12-824054-0" target="_blank"> chapter</a> with N. Hemachandra and S. Bhatnagar.</font></li>
-
-
-<li> <font size="2">20 March, 2022. Teaching machine Learning module for times executive education certification program on data science and machine learning.</font></li>
-
-
-
-
-<li> <font size="2">31 December, 2021 and older news. <a href="/markdown/oldnews.html">Click here</a></font></li>
+<li> <font size="2">31 December, 2023 and older news. <a href="/markdown/oldnews.html">Click here</a></font></li>
