@@ -23,11 +23,11 @@ redirect_from:
 <hr>
 <b>News</b>
 
-<li> <font size="2">21-25 January, 2024. PhD student Anirban Mitra attended a workshop on <a href = "https://www.ieor.iitb.ac.in/Combinatorial_Games" target="_blank">Combinatorial Games</a>  at IIT Bombay.</font></li>
+<li> <font size="2">21-25 January, 2024. PhD student Anirban Mitra attended a workshop on <a href = "https://www.ieor.iitb.ac.in/Combinatorial_Games" target="_blank">Combinatorial Games</a>.</font></li>
 
 <li> <font size="2">18 January, 2024. A talk on "Strategic interaction between service providers and the user-set in (abandonment) queues" at a <a href = "https://www.isid.ac.in/~icorgtdm24/" target="_blank">Conference</a> based on joint work with N. Hemachandra and A. Mitra.</font></li>
 
-<li> <font size="2">15-25 January, 2024. PhD student Gopal Saha attended a GIAN Course on Advances in <a href = "https://www.ieor.iitb.ac.in/minlo23" target="_blank">Mixed Integer Nonlinear Optimization</a>  at IIT Bombay.</font></li>
+<li> <font size="2">15-25 January, 2024. PhD student Gopal Saha attended a GIAN Course on Advances in <a href = "https://www.ieor.iitb.ac.in/minlo23" target="_blank">Mixed Integer Nonlinear Optimization</a>.</font></li>
 
 <li> <font size="2">13 January, 2024. Submitted a paper titled "Multi-Objective Fixed-Cost Transportation Problem: A Cooperative Game Theory Approach" with Gopal Saha.</font></li>
 
